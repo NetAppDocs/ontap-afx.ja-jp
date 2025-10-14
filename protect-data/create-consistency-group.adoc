@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: protect-data/create-consistency-group.html 
+keywords: afx, afx system, consistency group, create consistency group 
+summary: 整合性グループを作成すると、アプリケーション ワークロードのストレージ管理とデータ保護を簡素化できます。整合性グループは、既存のボリュームまたは新しいボリュームに基づくことができます。 
+---
+= AFX ストレージ システムに整合性グループを作成する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+整合性グループを作成すると、アプリケーション ワークロードのストレージ管理とデータ保護を簡素化できます。整合性グループは、既存のボリュームまたは新しいボリュームに基づくことができます。
+
+.開始する前に
+新たに 1 つのボリュームを作成する予定の場合は、新しいボリュームを作成するときに構成オプションに注意する必要があります。
+
+.手順
+. システム マネージャーで、*保護* を選択し、次に *整合性グループ* を選択します。
+. 選択image:icon_add_blue_bg.png["プラス記号と白い文字で「add」という単語が続く青い四角形"]次のいずれかを選択します。
++
+** 既存のボリュームを使用する
+** 新しいNASボリュームの使用
+
+
+. 名前、ボリューム、アプリケーションの種類、保護などの構成の詳細を指定します。
+. *追加*を選択します。
+
+
+.関連情報
+* link:../protect-data/manage-consistency-groups.html["一貫性グループの管理"]
+* link:../manage-data/create-configure-volume.html["AFXボリュームを作成して構成する"]
+

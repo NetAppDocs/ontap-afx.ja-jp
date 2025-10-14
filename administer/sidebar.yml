@@ -1,0 +1,56 @@
+---
+section: administer
+title: クラスターを管理する
+entries:
+- title: クラスタプロセスを監視する
+  entries:
+  - title: ダッシュボードとクラスターのステータスを表示する
+    url: "/administer/view-dashboard.html"
+  - title: インサイトを見る
+    url: "/administer/view-insights.html"
+  - title: パフォーマンスを監視する
+    url: "/administer/monitor-cluster-performance.html"
+  - title: イベントとログを表示する
+    url: "/administer/view-events-log.html"
+  - title: ジョブの表示
+    url: "/administer/view-jobs.html"
+- title: ネットワークとセキュリティを管理する
+  entries:
+  - title: クラスターネットワークを管理する
+    url: "/administer/manage-cluster-networking.html"
+  - title: イーサネットポートを管理する
+    url: "/administer/manage-ethernet-ports.html"
+  - title: 認証サービスの準備
+    url: "/administer/prepare-authentication.html"
+  - title: ユーザーとロールを管理する
+    url: "/administer/manage-users-roles.html"
+  - title: 証明書の管理
+    url: "/administer/manage-certificates.html"
+- title: ストレージVMの管理
+  entries:
+  - title: SVMを表示する
+    url: "/administer/display-svms.html"
+  - title: データSVMを作成する
+    url: "/administer/create-svm.html"
+  - title: データSVMを構成する
+    url: "/administer/configure-svm.html"
+  - title: SVMの移行
+    url: "/administer/migrate-svm.html"
+- title: クラスターをサポートする
+  entries:
+  - title: AutoSupportの管理
+    url: "/administer/manage-autosupport.html"
+  - title: サポート ケースの表示と送信
+    url: "/administer/submit-view-case.html"
+- title: クラスターのアップグレードとメンテナンス
+  entries:
+  - title: クラスターを拡張
+    url: "/administer/expand-cluster.html"
+  - title: ONTAPのアップグレード
+    url: "/administer/upgrade-ontap.html"
+  - title: ファームウェアの更新
+    url: "/administer/update-firmware.html"
+  - title: ハードウェアのメンテナンス
+    url: "/administer/maintain-hardware.html"
+- title: 追加投与
+  url: "/administer/additional-ontap-cluster.html"

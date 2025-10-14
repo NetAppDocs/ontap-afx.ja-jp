@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: administer/submit-view-case.html 
+keywords: afx, afx system, support, support case 
+summary: サポートが必要な問題がある場合は、 ONTAP System Manager を使用してテクニカル サポートにケースを送信できます。  ONTAP System Manager を使用して、進行中または終了したケースを表示することもできます。 
+---
+= AFX ストレージ システムのサポート ケースを送信して表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+サポートが必要な問題がある場合は、 ONTAP System Manager を使用してテクニカル サポートにケースを送信できます。  ONTAP System Manager を使用して、進行中または終了したケースを表示することもできます。
+
+.開始する前に
+あなたはそうする必要がありますlink:https://activeiq-link.netapp.com/["Active IQに登録済み"]AFX ストレージ システムのサポート ケースを表示します。
+
+.手順
+. 新しいサポート ケースを作成して送信するには、System Manager で次の項目を選択します。
++
+.. *クラスター*、そして*サポート*
+.. * NetAppサポートへ移動*
+
+
+. 以前に送信したケースを表示するには、システム マネージャーで次の項目を選択します。
++
+.. *クラスター*、そして*サポート*
+.. *私のケースを見る*
+
+
+
+
+.関連情報
+* https://docs.netapp.com/us-en/ontap/task_admin_view_submit_support_cases.html["ONTAP System Manager を使用してサポートケースを表示および送信する"^]
+

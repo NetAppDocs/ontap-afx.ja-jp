@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: rest/api-reference.html 
+keywords: afx, afx system, rest api, rest api reference, swagger 
+summary: AFX REST API リファレンスには、すべての API 呼び出しに関する詳細が含まれています。このドキュメントは、自動化アプリケーションを開発するときに役立ちます。 
+---
+= AFX ストレージ システムの REST API リファレンス
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFX REST API リファレンスには、すべての API 呼び出しに関する詳細が含まれています。このドキュメントは、自動化アプリケーションを開発するときに役立ちます。
+
+.開始する前に
+次のものが必要になります:
+
+* AFX クラスタ管理 LIF の IP アドレスまたは FQDN
+* クラスタ管理者アカウントの資格情報
+
+
+.手順
+. Web ブラウザをクラスター管理 IP アドレスまたはドメイン名に接続します。
++
+`\https://$FQDN_IP_PORT/docs/api`
+
++
+*例*
+
++
+`\https://10.61.25.33/docs/api`
+
+. プロンプトが表示されたら、ユーザー名とパスワードを入力します。
+. *Cluster*カテゴリまでスクロールダウンし、エンドポイントの横にある*GET*を選択します。 `/cluster`個々の API 呼び出しの例については、こちらをご覧ください。
+
+
+.関連情報
+* https://docs.netapp.com/us-en/ontap-restapi/index.html["ONTAP REST APIリファレンス"^]
+

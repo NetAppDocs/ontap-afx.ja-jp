@@ -1,0 +1,85 @@
+---
+sidebar: sidebar 
+permalink: administer/additional-ontap-cluster.html 
+keywords: afx, afx system, additional administration, advanced administration 
+summary: 一般的な AFX クラスター管理に加えて、環境に応じて実行する必要がある他のタスクがある場合があります。追加タスクのほとんどは System Manager を使用して実行できますが、場合によっては CLI を使用する必要があることもあります。 
+---
+= AFX ストレージ システム クラスターの追加管理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+一般的な AFX クラスター管理に加えて、環境に応じて実行する必要がある他のタスクがある場合があります。追加タスクのほとんどは System Manager を使用して実行できますが、場合によっては CLI を使用する必要があることもあります。
+
+
+NOTE: ここで説明するONTAP の機能と管理は、AFX ストレージ システムと、Unified ONTAPを実行するAFFまたはFASシステムに共通です。関連する Unified ONTAPドキュメントへのリンクが必要に応じて含まれています。
+
+
+
+== ライセンス
+
+AFX システムは、Unified ONTAP AFFおよびFASシステムと同様の方法でライセンスされます。  AFX クラスターには、サポートされているプロトコルのほとんどの機能がデフォルトで含まれています。
+
+
+
+=== ONTAPライセンス管理
+
+ONTAPライセンスは、1 つ以上のソフトウェア権限の記録です。すべてのライセンスは、 NetAppライセンス ファイル (NLF) を使用して定義および提供されます。参照 https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html["ONTAPライセンスの概要"^]詳細についてはこちらをご覧ください。
+
+
+
+=== AFXシステムにライセンスをインストールする
+
+ライセンス ファイルをインストールして、AFX ストレージ システムの必要に応じて追加機能をアクティブ化できます。
+
+.手順
+. システム マネージャーで、[クラスター] を選択し、[設定] を選択します。
+. *ライセンス*の横にあるimage:icon_arrow.gif["右向きの青い矢印"]。
+. 利用可能なONTAP機能を表示するには、[*機能*] タブを選択します。
+. オプションでライセンスをインストールするには、[*インストール済みライセンス*] タブを選択します。
+. 選択image:icon_add_blue_bg.png["プラス記号と白い文字で「add」という単語が続く青い四角形"]。
+. ローカル ライセンス ファイルを選択し、[*追加*] を選択します。
+
+
+
+
+== セキュリティ
+
+AFX 展開で構成および使用できるオプションのセキュリティ機能がいくつかあります。
+
+
+
+=== ONTAPのセキュリティとデータ暗号化
+
+AFX ストレージ システムのセキュリティとプライバシーを保護することが重要です。言い及ぶ  https://docs.netapp.com/us-en/ontap/security-encryption/index.html["セキュリティとデータ暗号化"^]
+
+
+
+=== ONTAP認証とアクセス制御
+
+AFX ストレージ システムには、認証およびアクセス制御サービスを構成するためのいくつかのオプションが用意されています。参照 https://docs.netapp.com/us-en/ontap/authentication-access-control/index.html["認証とアクセス制御"^]詳細についてはこちらをご覧ください。
+
+
+
+=== AFX システムで OAuth 2.0 を管理する
+
+OAuth 2.0 は、署名されたアクセス トークンを使用して保護されたリソースへのアクセスを制限および制御するために使用される業界標準の認証フレームワークです。
+
+.手順
+. システム マネージャーで、[クラスター] を選択し、[設定] を選択します。
+. *セキュリティ*セクションで、*OAuth 2.0認証*の横にあるimage:icon_arrow.gif["右向きの青い矢印"]。
+. OAuth.2.0を有効にする
+. *構成の追加*を選択し、構成の詳細を入力します。
+. *保存*を選択します。
+
+
+
+
+== 関連情報
+
+* link:../faq-ontap-afx.html["AFX ストレージ システムに関する FAQ"]
+* https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html["ONTAP OAuth 2.0導入の概要"^]
+* link:../administer/additional-ontap-svm.html["AFX SVMの追加管理"]
+

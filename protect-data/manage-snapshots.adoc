@@ -1,0 +1,19 @@
+---
+sidebar: sidebar 
+permalink: protect-data/manage-snapshots.html 
+keywords: afx, afx system, snapshots, manage snapshots 
+summary: AFX システムでスナップショットを管理できます。詳細については、Unified ONTAP のドキュメントを参照してください。 
+---
+= AFX ストレージ システム上のスナップショットを管理する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFX システムでスナップショットを管理できます。詳細については、Unified ONTAP のドキュメントを参照してください。
+
+.関連情報
+* https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["ONTAPスナップショットポリシーを作成する"^]
+* https://docs.netapp.com/us-en/ontap/flexgroup/protect-snapshot-copies-task.html["スナップショットを使用してONTAP FlexGroupボリュームを保護する"^]
+

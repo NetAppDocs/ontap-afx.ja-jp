@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: rest/first-call.html 
+keywords: afx, afx system, rest api, first call, curl 
+summary: 簡単な curl コマンドを発行して、AFX REST API の使用を開始し、その可用性を確認できます。 
+---
+= 最初のAFXストレージシステムREST API呼び出し
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+簡単な curl コマンドを発行して、AFX REST API の使用を開始し、その可用性を確認できます。
+
+.タスク概要
+AFX は、3 つの異なるONTAPパーソナリティの 1 つです。  REST API の呼び出しを使用して、応答に含まれる 2 つのフィールドに基づいてクラスタのONTAPパーソナリティを判別できます。
+
+.開始する前に
+ローカル ワークステーションで curl ユーティリティが使用できることに加えて、次のものも必要になります。
+
+* AFX システム クラスタ管理 LIF の IP アドレスまたは FQDN
+* ONTAP REST APIにアクセスする権限を持つアカウントのONTAP認証情報
+
+
+.手順
+. ローカル ワークステーションの CLI で次のコマンドを発行します。
++
+[source, curl]
+----
+curl --request GET \
+"https://$FQDN_IP/api/cluster?fields=disaggregated,san_optimized" \
+--user username:password
+----
+. 応答に基づいて、次のようにONTAPパーソナリティを決定します。
++
+** 「disaggregated」が*true*で、次の場合:
++
+*** 「san_optimized」が*false*の場合、パーソナリティはAFXです
+*** 「san_optimized」が*true*の場合、パーソナリティはASA r2です。
+
+
+** 「分離」が*偽*の場合、パーソナリティはUnified ONTAPです
+
+
+
+
+.関連情報
+* link:../faq-ontap-afx.html["AFX ストレージ システムに関する FAQ"]
+

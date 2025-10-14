@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: administer/display-svms.html 
+keywords: afx, afx system, svm, display svm 
+summary: AFX クラスターで定義されているデータ ストレージ VM を表示できます。各 SVM は、データを整理し、クライアント アクセスを提供するための分離された環境を提供します。 
+---
+= AFXストレージシステムのSVMを表示する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFX クラスターで定義されているデータ ストレージ VM を表示できます。各 SVM は、データを整理し、クライアント アクセスを提供するための分離された環境を提供します。
+
+.手順
+. システム マネージャーで、*クラスター* を選択し、次に *ストレージ VM* を選択します。
+. 希望するSVMにマウスを移動して選択image:icon_kabob.gif["3つの縦の青い点"]SVM の起動と停止を含む主要な管理オプションを表示します。
+. 必要に応じて特定の SVM を選択し、概要、設定、レプリケーション、ファイル システムなどの詳細を表示します。
+
+
+.関連情報
+* link:../administer/configure-svm.html["AFXシステムSVMを構成する"]
+* link:../get-started/prepare-cluster-admin.html["ストレージ仮想マシンを理解する"]
+

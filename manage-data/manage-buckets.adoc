@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: manage-data/manage-buckets.html 
+keywords: afx, afx system, manage buckets 
+summary: AFX S3 バケットとクライアント アクセスの管理の一環として実行できる管理タスクがいくつかあります。 AFX での S3 構成とサポートは、Unified ONTAPで提供されるものと同じです。詳細については、Unified ONTAP のドキュメントを参照してください。 
+---
+= AFXストレージシステムバケットを管理する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFX S3 バケットとクライアント アクセスの管理の一環として実行できる管理タスクがいくつかあります。 AFX での S3 構成とサポートは、Unified ONTAPで提供されるものと同じです。詳細については、Unified ONTAP のドキュメントを参照してください。
+
+.関連情報
+https://docs.netapp.com/us-en/ontap/s3-config/index.html["ONTAP S3 の構成について学ぶ"^]

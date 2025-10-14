@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: rest/learn-rest-api.html 
+keywords: afx, afx system, rest api, rest, automation 
+summary: AFX で提供される REST API は、Unified ONTAP REST API に基づいています。  AFX パーソナリティの独自の特性と機能に適応させる変更が数多くあります。 
+---
+= AFXストレージシステムREST APIについて学ぶ
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFX で提供される REST API は、Unified ONTAP REST API に基づいています。  AFX パーソナリティの独自の特性と機能に適応させる変更が数多くあります。
+
+
+
+== サポートされない機能
+
+AFX は、高性能な NAS および S3 ストレージ システムです。これにより、クライアントは NFS、SMB/CIFS、S3 を使用してデータにアクセスできるようになります。この特殊化のため、次のようなサポートされていない機能がいくつかあります。
+
+* Metrocluster
+* ストレージエリアネットワーク（SAN）
+* ディスクアグリゲート
+
+
+
+
+== 削除されたAPIエンドポイント
+
+サポートされていない機能に対応するいくつかのエンドポイントが REST API から削除されました。
+
+.サポートされていないエンドポイントのリスト
+[%collapsible]
+====
+[source, text]
+----
+/cluster/counter/tables
+/cluster/metrocluster
+/cluster/metrocluster/diagnostics
+/cluster/metrocluster/dr-groups
+/cluster/metrocluster/interconnects
+/cluster/metrocluster/nodes
+/cluster/metrocluster/operations
+/cluster/metrocluster/svms
+/network/fc/fabrics
+/network/fc/interfaces
+/network/fc/logins
+/network/fc/ports
+/network/fc/wwpn-aliases
+/protocols/nvme/interfaces
+/protocols/nvme/services
+/protocols/nvme/subsystem-controllers
+/protocols/nvme/subsystem-maps
+/protocols/nvme/subsystems
+/protocols/san/fcp/services
+/protocols/san/igroups
+/protocols/san/initiators
+/protocols/san/iscsi/credentials
+/protocols/san/iscsi/services
+/protocols/san/iscsi/sessions
+/protocols/san/lun-maps
+/protocols/san/portsets
+/protocols/san/vvol-bindings
+/storage/luns
+/storage/namespaces
+----
+====
+
+
+== 関連情報
+
+* https://docs.netapp.com/us-en/ontap-automation["ONTAP自動化"^]
+* https://docs.netapp.com/us-en/asa-r2/learn-more/rest-api-support.html["ASA r2 の REST API サポート"^]
+

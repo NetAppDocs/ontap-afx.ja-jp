@@ -1,0 +1,46 @@
+---
+section: get-started
+title: 始めましょう
+entries:
+- title: AFXシステムについて学ぶ
+  entries:
+  - title: NetApp AFXについて学ぶ
+    url: "/get-started/ontap-afx-storage.html"
+  - title: システム特性
+    url: "/get-started/system-design.html"
+  - title: アーキテクチャの詳細
+    url: "/get-started/software-architecture.html"
+  - title: AFXとAFFおよびFASを比較する
+    url: "/get-started/compare-unified-ontap.html"
+- title: クイック スタート
+  url: "/get-started/quick-start.html"
+- title: AFXシステムをインストールする
+  entries:
+  - title: インストールワークフロー
+    url: "/install-setup/install-setup-workflow.html"
+  - title: ハードウェア要件を確認する
+    url: "/install-setup/install-setup-requirements.html"
+  - title: インストールの準備
+    url: "/install-setup/prepare-hardware.html"
+  - title: ハードウェアを設置
+    entries:
+    - title: スイッチをインストールする
+      url: "/install-setup/install-switches.html"
+    - title: 収納システムと棚を設置する
+      url: "/install-setup/deploy-hardware.html"
+  - title: ケーブル接続
+    entries:
+    - title: サポートされている構成を確認する
+      url: "/install-setup/afx-cable-overview.html"
+    - title: ネットワーク情報を収集する
+      url: "/install-setup/install-network-reqs.html"
+    - title: ケーブルハードウェア
+      url: "/install-setup/cable-hardware.html"
+  - title: スイッチの電源を入れて設定する
+    url: "/install-setup/power-on-configure-switch.html"
+  - title: システムの電源オン
+    url: "/install-setup/power-on-hardware.html"
+- title: AFXシステムを設定する
+  url: "/install-setup/cluster-setup.html"
+- title: AFX投与の準備
+  url: "/get-started/prepare-cluster-admin.html"

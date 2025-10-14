@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: administer/additional-ontap-svm.html 
+keywords: afx, afx system, additional administration, advanced administration 
+summary: 一般的な AFX SVM 管理に加えて、環境に応じて実行する必要がある他のタスクがある場合があります。追加タスクのほとんどは System Manager を使用して実行できますが、場合によっては CLI を使用する必要があることもあります。 
+---
+= AFX ストレージ システム SVM の追加管理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+一般的な AFX SVM 管理に加えて、環境に応じて実行する必要がある他のタスクがある場合があります。追加タスクのほとんどは System Manager を使用して実行できますが、場合によっては CLI を使用する必要があることもあります。
+
+
+NOTE: ここで説明するONTAP の機能と管理は、AFX ストレージ システムと、Unified ONTAPを実行するAFFまたはFASシステムに共通です。関連する Unified ONTAPドキュメントへのリンクが必要に応じて含まれています。
+
+
+
+== ストレージ管理とパフォーマンス
+
+AFX 展開で構成および使用できるオプションのストレージ管理およびパフォーマンス機能がいくつかあります。
+
+
+
+=== ONTAP NASストレージ管理
+
+ネットワーク接続ストレージ (NAS) は、ネットワーク内の複数のクライアントがアクセスできる専用のファイル ストレージを提供します。 ONTAP は複数の NAS プロトコルをサポートしています。参照 https://docs.netapp.com/us-en/ontap/nas-management/index.html["NASストレージの管理"^]詳細についてはこちらをご覧ください。
+
+
+
+=== ONTAP FlexCacheボリューム
+
+FlexCacheは、 ONTAP のリモート キャッシュ機能です。データがクライアントに近づくため、アクセス パフォーマンスが向上し、コストが削減されます。最初に元のファイル システムからメタデータのみをコピーするFlexCacheボリュームを作成すると、ファイルの配布が簡素化され、WAN トラフィックが削減されます。参照 https://docs.netapp.com/us-en/ontap/flexcache/index.html["ONTAP FlexCacheボリュームについて学ぶ"^]詳細についてはこちらをご覧ください。
+
+
+
+=== ONTAP FlexGroupボリューム
+
+FlexGroupボリュームは、トラフィックを自動的かつ透過的に共有する複数のメンバー ボリュームで構成されます。 FlexGroupボリュームには、高パフォーマンスや管理の簡素化など、さまざまな利点があります。参照 https://docs.netapp.com/us-en/ontap/flexgroup/creation-workflow-task.html["FlexGroupボリュームのセットアップ"^]詳細についてはこちらをご覧ください。
+
+
+
+== データ保護
+
+AFX 展開で構成および使用できるオプションのデータ保護機能がいくつかあります。
+
+
+
+=== 一貫性グループ
+
+整合性グループは、1つの単位として管理されるボリュームの集まりです。参照 https://docs.netapp.com/us-en/ontap/consistency-groups/index.html["ONTAPコンシステンシーグループについて学ぶ"^]詳細についてはこちらをご覧ください。
+
+
+
+=== SnapLock
+
+ボリューム レベルでファイルを一度だけ書き込み、何度も読み取り可能 (WORM) 状態に変換することで、ファイルを保護できます。 SnapLock は2 つのモードをサポートしています。コンプライアンス モードでは、政府または業界固有の規制に対応するため、ファイルの保持期間が過ぎるまでファイルを削除できないようにします。エンタープライズ モードでは、特権ユーザーは保持期間が終了する前にファイルを削除できます。参照 https://docs.netapp.com/us-en/ontap/snaplock/index.html["ONTAP SnapLockについて学ぶ"^]詳細についてはこちらをご覧ください。
+
+
+
+== ONTAPイベントとパフォーマンスの監視
+
+クラスターの健全性とパフォーマンスを監視できます。これには、イベントのアラートの設定とシステムヘルスアラートの通知の管理が含まれます。参照 https://docs.netapp.com/us-en/ontap/event-performance-monitoring/index.html["イベント、パフォーマンス、健全性の監視"^]詳細情報
+
+
+
+== 関連情報
+
+* link:../faq-ontap-afx.html["AFX ストレージ システムに関する FAQ"]
+* link:../administer/additional-ontap-cluster.html["AFX クラスターの追加管理"]
+

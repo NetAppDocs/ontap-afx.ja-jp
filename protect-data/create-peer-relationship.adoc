@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: protect-data/create-peer-relationship.html 
+keywords: afx, afx system, peering, peer relationship 
+summary: ピア関係は、クラスタとストレージ仮想マシン（VM）が安全にデータを交換できるようにするネットワーク接続を定義します。異なるクラスター上のストレージ VM 間にピア関係を作成し、 SnapMirrorを使用してデータ保護と災害復旧を有効にすることができます。 
+---
+= AFXストレージシステムでクラスタ間SVMピア関係を作成する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ピア関係は、クラスタとストレージ仮想マシン（VM）が安全にデータを交換できるようにするネットワーク接続を定義します。異なるクラスター上のストレージ VM 間にピア関係を作成し、 SnapMirrorを使用してデータ保護と災害復旧を有効にすることができます。
+
+.開始する前に
+ストレージ VM ピア関係を作成する前に、ローカル クラスターとリモート クラスター間にクラスター ピア関係を確立しておく必要があります。link:snapshot-replication.html#step-1-create-a-cluster-peer-relationship["クラスタ ピア関係の作成"]まだ行っていない場合は、行ってください。
+
+.手順
+. システム マネージャーで、*保護 > 概要* を選択します。
+. *ストレージ VM ピア* の下で *ストレージ VM ピアの追加* を選択します。
+. ローカル クラスター上のストレージ VM を選択し、次にリモート クラスター上のストレージ VM を選択します。
+. *ストレージ VM ピアの追加*を選択します。
+
+
+.関連情報
+* https://docs.netapp.com/us-en/ontap/peering/peering-basics-concept.html["仲間関係についてもっと学ぶ"^] 。
+

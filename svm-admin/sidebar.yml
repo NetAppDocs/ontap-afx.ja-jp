@@ -1,0 +1,44 @@
+---
+section: svm-admin
+title: ストレージVMとデータの管理
+entries:
+- title: データを管理する
+  entries:
+  - title: データ管理の準備
+    url: "/manage-data/prepare-manage-data.html"
+  - title: ボリュームを作成して構成する
+    url: "/manage-data/create-configure-volume.html"
+  - title: ボリュームを管理する
+    url: "/manage-data/manage-volumes.html"
+  - title: バケットを作成して設定する
+    url: "/manage-data/create-configure-bucket.html"
+  - title: バケットを管理する
+    url: "/manage-data/manage-buckets.html"
+  - title: ストレージの監視とトラブルシューティング
+    url: "/manage-data/monitor-debug-storage.html"
+- title: データの保護
+  entries:
+  - title: データ保護の準備
+    url: "/protect-data/prepare-protect-data.html"
+  - title: 一貫性グループを作成する
+    url: "/protect-data/create-consistency-group.html"
+  - title: 一貫性グループの管理
+    url: "/protect-data/manage-consistency-groups.html"
+  - title: スナップショットを作成する
+    url: "/protect-data/create-snapshot.html"
+  - title: スナップショットを管理する
+    url: "/protect-data/manage-snapshots.html"
+  - title: SVMピア関係を作成する
+    url: "/protect-data/create-peer-relationship.html"
+  - title: スナップショットレプリケーションの設定と管理
+    url: "/protect-data/snapshot-replication.html"
+  - title: ポリシーとスケジュールを管理する
+    url: "/protect-data/policies-schedules.html"
+- title: 安全なデータ
+  entries:
+  - title: データの保護を準備する
+    url: "/secure-data/prepare-secure-data.html"
+  - title: 保存データを暗号化する
+    url: "/secure-data/encrypt-data-at-rest.html"
+- title: 追加投与
+  url: "/administer/additional-ontap-svm.html"

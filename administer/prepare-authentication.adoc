@@ -1,0 +1,67 @@
+---
+sidebar: sidebar 
+permalink: administer/prepare-authentication.html 
+keywords: afx, afx cluster, authentication 
+summary: ユーザー アカウントとロールを定義するには、AFX システムで使用される認証および承認サービスを準備する必要があります。 
+---
+= AFXストレージシステム認証サービスの準備
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFX システムで使用される認証および承認サービスを、ユーザー アカウントとロールの定義に準備する必要があります。
+
+
+
+== LDAPの設定
+
+認証情報を中央の場所で管理するように、Lightweight Directory Access Protocol (LDAP) サーバーを構成できます。
+
+.開始する前に
+証明書署名要求を生成し、CA 署名付きサーバーデジタル証明書を追加する必要があります。
+
+.手順
+. システム マネージャーで、[クラスター] を選択し、[設定] を選択します。
+. 選択image:icon_gear_white_bg.png["青い機械歯車の輪郭"]*LDAP* の横にあります。
+. 選択image:icon_add.gif["白い背景に青い追加"]LDAP サーバーの名前または IP アドレスを入力します。
+. スキーマ、ベース DN、ポート、バインディングなどの必要な構成情報を提供します。
+. *保存*を選択します。
+
+
+
+
+== SAML 認証の設定
+
+セキュリティアサーションマークアップ言語 (SAML) 認証を使用すると、LDAP などの他のプロトコルを使用するプロバイダーではなく、安全な ID プロバイダー (IdP) によってユーザーを認証できるようになります。
+
+.開始する前に
+* リモート認証に使用する予定の ID プロバイダーを構成する必要があります。構成の詳細については、プロバイダーのドキュメントを参照してください。
+* アイデンティティプロバイダーの URI が必要です。
+
+
+.手順
+. システム マネージャーで、[クラスター] を選択し、[設定] を選択します。
+. 選択image:icon_gear_white_bg.png["機械歯車の青い輪郭"]*セキュリティ*の下の*SAML認証*の横にあります。
+. *SAML 認証を有効にする*を選択します。
+. *IdP URL* と *ホスト システム* の IP アドレスを入力し、*保存* を選択します。
++
+確認画面にメタデータ情報が表示され、クリップボードに自動的にコピーされます。
+
+. 指定した IdP システムに移動し、クリップボードからメタデータをコピーしてシステム メタデータを更新します。
+. システム マネージャーの確認ウィンドウに戻り、*ホスト URI またはメタデータを使用して IdP を構成しました*を選択します。
+. SAML ベースの認証を有効にするには、[ログアウト] を選択します。
++
+IdPシステムの認証画面が表示されます。
+
+
+
+
+
+== 関連情報
+
+* link:../administer/manage-users-roles.html["AFX クラスターのユーザーとロールを管理する"]
+* https://docs.netapp.com/us-en/ontap/system-admin/configure-saml-authentication-task.html["リモートONTAPユーザーの SAML 認証を構成する"^]
+* https://docs.netapp.com/us-en/ontap/authentication-access-control/index.html["認証とアクセス制御"^]
+

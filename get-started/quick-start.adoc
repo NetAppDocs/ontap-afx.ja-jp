@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: get-started/quick-start.html 
+keywords: afx, afx system, quick start 
+summary: AFX システムを最初に起動して実行するには、ハードウェア コンポーネントをインストールし、クラスターをセットアップして、クラスターと SVM を管理する準備をする必要があります。 
+---
+= AFXストレージシステムのセットアップのクイックスタート
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFX システムを最初に起動して実行するには、ハードウェア コンポーネントをインストールし、クラスターをセットアップして、クラスターと SVM を管理する準備をする必要があります。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"]ハードウェアのインストールとセットアップ
+[role="quick-margin-para"]
+link:../install-setup/install-setup-workflow.html["インストール"]AFX ストレージ システムをインストールし、クラスターのセットアップを準備します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2"]クラスターを設定する
+[role="quick-margin-para"]
+簡単で迅速な手順に従ってlink:../install-setup/cluster-setup.html["設定"]System Manager を使用してONTAPクラスタを管理します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三つ"]クラスターの管理を準備する
+[role="quick-margin-para"]
+AFXを本番環境に導入する前に、link:../get-started/prepare-cluster-admin.html["準備する"]ストレージ仮想マシン (SVM)、ユーザー、ロール、管理インターフェイスなどの管理構造を理解することで、安全で効率的かつ効果的なクラスター管理を実現します。

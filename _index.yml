@@ -1,0 +1,67 @@
+---
+indexpage:
+  title: AFXのドキュメント
+  summary: NetApp ONTAP AFX ストレージ システムは、高性能 NAS および S3 のお客様の固有のニーズに重点を置いた、分散型のハードウェアおよびソフトウェア
+    ソリューションです。パフォーマンスとスケーラビリティは、AI および ML ワークロードの要件を満たすように特別に設計されています。  AFX は簡素化されたユーザー
+    エクスペリエンスを提供するため、ストレージの専門家と非専門家の両方が管理できます。
+  keywords: afx, afx system, afx docs
+  lead: NetApp AFX ストレージ システムは、高性能 NAS および S3 顧客の固有のニーズに重点を置いた、分散型のハードウェアおよびソフトウェア
+    ソリューションです。パフォーマンスとスケーラビリティは、AI および ML ワークロードの要件を満たすように特別に設計されています。  AFX は簡素化されたユーザー
+    エクスペリエンスを提供するため、ストレージの専門家と非専門家の両方が管理できます。
+  tiles:
+  - title: 始めましょう
+    links:
+    - title: AFXの詳細
+      url: "/get-started/ontap-afx-storage.html"
+    - title: クイック スタート
+      url: "/get-started/quick-start.html"
+    - title: AFXハードウェアをインストールする
+      url: "/install-setup/install-setup-workflow.html"
+    - title: AFXクラスターをセットアップする
+      url: "/install-setup/cluster-setup.html"
+  - title: クラスタの管理
+    links:
+    - title: AFX投与の準備
+      url: "/get-started/prepare-cluster-admin.html"
+    - title: ストレージVMの管理
+      url: "/administer/display-svms.html"
+    - title: クラスターのアップグレードとメンテナンス
+      url: "/administer/expand-cluster.html"
+    - title: 追加投与
+      url: "/administer/additional-ontap-cluster.html"
+  - title: データとアクセスを管理する
+    links:
+    - title: データ管理の準備
+      url: "/manage-data/prepare-manage-data.html"
+    - title: ボリュームを作成して構成する
+      url: "/manage-data/create-configure-volume.html"
+    - title: バケットを作成して設定する
+      url: "/manage-data/create-configure-bucket.html"
+  - title: データの保護
+    links:
+    - title: データ保護の準備
+      url: "/protect-data/prepare-protect-data.html"
+    - title: スナップショットを作成する
+      url: "/protect-data/create-snapshot.html"
+  - title: 安全なデータ
+    links:
+    - title: データ保護の準備
+      url: "/secure-data/prepare-secure-data.html"
+    - title: 保存データを暗号化する
+      url: "/secure-data/encrypt-data-at-rest.html"
+  - title: REST API
+    links:
+    - title: REST APIについて学ぶ
+      url: "/rest/learn-rest-api.html"
+    - title: 最初のAPI呼び出し
+      url: "/rest/first-call.html"
+    - title: REST APIリファレンス
+      url: "/rest/api-reference.html"
+  - title: 追加情報へのアクセス
+    links:
+    - title: AFXシステムに関するFAQ
+      url: "/faq-ontap-afx.html"
+    - title: 他のONTAPシステムのドキュメント
+      url: https://docs.netapp.com/us-en/ontap-family/
+    - title: その他のリソース
+      url: "/learn-more/additional-resources.html"

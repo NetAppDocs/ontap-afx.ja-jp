@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: manage-data/monitor-debug-storage.html 
+keywords: afx, afx system, monitor, troubleshoot, debug 
+summary:  
+---
+= AFX ストレージ システムの監視とトラブルシューティング
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFX システムには、各クラスターが管理するストレージを監視するためのいくつかのオプションが含まれています。
+
+
+
+== NASクライアントを表示する
+
+現在 AFX クラスターに接続されている NFS および SMB/CIFS クライアントのリストを表示できます。
+
+.手順
+. システム マネージャーのナビゲーション ペインで [*クライアント*] を選択します。
+. 必要に応じて、*NFS* または *SMB/CIFS* タブを選択します。
+. 表示をカスタマイズし、必要に応じてクライアント情報を検索およびダウンロードします。
+
+
+
+
+== 関連情報
+
+* link:../manage-data/prepare-manage-data.html["AFXデータを管理する準備"]
+

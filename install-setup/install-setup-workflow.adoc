@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: install-setup/install-setup-workflow.html 
+keywords: afx, afx 1k, install, setup, workflow 
+summary: AFX 1K ストレージ システムのインストールとセットアップを開始し、 ONTAP環境に導入します。 
+---
+= AFX 1K ストレージ システムのインストールとセットアップのワークフロー
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFX 1K ストレージ システムをインストールして構成するには、ハードウェア要件を確認し、サイトを準備し、スイッチをインストールし、ハードウェア コンポーネントをインストールしてケーブル接続し、システムの電源をオンにし、 ONTAP AFX クラスターをセットアップします。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"]link:install-setup-requirements.html["ハードウェアのインストール要件を確認する"]
+[role="quick-margin-para"]
+AFX 1K ストレージ システムをインストールするためのハードウェア要件を確認します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2"]link:prepare-hardware.html["AFX 1Kストレージシステムのインストール準備"]
+[role="quick-margin-para"]
+設置場所を準備し、環境および電気要件を確認し、十分なラック スペースを確保し、機器を開梱し、梱包明細書の内容を確認し、サポートのためにハードウェアを登録して、AFX 1K ストレージ システムのインストールを準備します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三つ"]link:install-switches.html["AFX 1Kストレージシステムのスイッチをインストールします"]
+[role="quick-margin-para"]
+Cisco Nexus 9332D-GX2B または 9364D-GX2A スイッチをキャビネットまたはラックに設置します。  Cisco Nexus 9364D-GX2A スイッチを使用する場合は、パススルー パネル キットをインストールします。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4"]link:deploy-hardware.html["AFX 1Kストレージシステムのハードウェアをインストールする"]
+[role="quick-margin-para"]
+ストレージ システムと棚用のレール キットを取り付けます。ストレージ システムをキャビネットまたは通信ラックに固定します。次に、設置したレールに棚をスライドさせます。最後に、ケーブル配線を整理するために、ケーブル管理デバイスをストレージ システムの背面に取り付けます。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:cable-hardware.html["AFX 1Kストレージシステムのコントローラーとシェルフをケーブル接続します"]
+[role="quick-margin-para"]
+ハードウェアをケーブル接続するには、まずストレージ コントローラ ノードをネットワークに接続し、次にコントローラ ノードとストレージ シェルフをクラスター スイッチに接続します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"]link:power-on-configure-switch.html["AFX 1Kストレージシステムの電源をオンにしてスイッチを構成します"]
+[role="quick-margin-para"]
+ハードウェアにケーブルを接続し、電源を入れて、AFX 1K ストレージ システムのスイッチを構成します。  Cisco Nexus 9332D-GX2B および 9364D-GX2A スイッチの設定手順を確認します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["セブン"]link:power-on-hardware.html["AFX 1Kストレージシステムの電源をオンにします"]
+[role="quick-margin-para"]
+セットアップ内の各シェルフを明確に識別するために、コントローラー ノードの電源をオンにする前に、各ストレージ シェルフの電源をオンにして一意のシェルフ ID を割り当てます。

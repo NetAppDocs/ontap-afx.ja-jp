@@ -1,0 +1,10 @@
+---
+section: rest
+title: REST APIを使用する
+entries:
+- title: REST APIについて学ぶ
+  url: "/rest/learn-rest-api.html"
+- title: 最初のREST API呼び出し
+  url: "/rest/first-call.html"
+- title: REST APIリファレンス
+  url: "/rest/api-reference.html"

@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: install-setup/power-on-configure-switch.html 
+keywords: afx, afx 1k, cable controllers, Cisco Nexus 9332D-GX2B, Cisco Nexus 9364D-GX2A, switches, switch, power on, configure switches, 
+summary: AFX 1K ストレージ システムの電源をオンにしてスイッチを構成する方法について説明します。 
+---
+= AFX 1Kストレージシステムの電源をオンにしてスイッチを構成します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFX 1K ストレージ システムにケーブルを接続した後、 Cisco Nexus 9332D-GX2B または 9364D-GX2A スイッチの電源をオンにして設定する必要があります。
+
+.手順
+. スイッチの電源コードを電源に差し込みます。
+. 各スイッチの電源を入れます。
+. AFX 1K ストレージ システムをサポートするようにスイッチを構成します。
++
+** Cisco Nexus 9332D-GX2Bスイッチについては、クラスタおよびストレージスイッチのドキュメントを参照してください。link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9332d-gx2b/configure-software-overview-9332d-cluster.html["Cisco Nexus 9332D-GX2Bスイッチの設定"^] 。
+** Cisco Nexus 9364D-GX2Aスイッチについては、クラスタおよびストレージスイッチのドキュメントを参照してください。link:https://docs.netapp.com/us-en/ontap-systems-switches/switch-cisco-9364d-gx2a/configure-software-overview-9364d-cluster.html["Cisco Nexus 9364D-GX2Aスイッチの設定"^] 。
+
+
+
+
+.次の手順
+AFX 1Kストレージシステムのスイッチを設定したら、link:power-on-hardware.html["AFX 1Kストレージシステムの電源をオンにする"] 。

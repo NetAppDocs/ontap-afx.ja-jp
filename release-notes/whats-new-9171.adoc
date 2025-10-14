@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: release-notes/whats-new-9171.html 
+keywords: 'afx, release notes, what"s new, 9.17.1' 
+summary: AFX ストレージ システムで利用できるONTAP 9.17.1 に含まれる新機能について説明します。 
+---
+= AFXストレージシステム向けONTAP 9.17.1の新機能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFX ストレージ システムで利用できるONTAP 9.17.1 に含まれる新機能について説明します。
+
+
+
+== プラットフォーム
+
+[cols="2,4"]
+|===
+| 更新 | 説明 
+
+
+| プラットフォーム  a| 
+次のNetApp AFX ストレージ システム コンポーネントは、関連するサポート テクノロジとともに利用できます。このプラットフォームを組み合わせることで、高性能 NAS および S3 の顧客のニーズに特化した、簡素化されたエクスペリエンスを生み出す統合ハードウェアおよびソフトウェア ソリューションが実現します。
+
+* AFX 1Kコントローラー
+* NX224 棚
+* Cisco Nexus 9332D-GX2B および Nexus 9364D-GX2A スイッチ
+
+
+|===
+.関連情報
+* https://docs.netapp.com/us-en/ontap/release-notes/index.html["ONTAP 9リリース ハイライト"^]
+
