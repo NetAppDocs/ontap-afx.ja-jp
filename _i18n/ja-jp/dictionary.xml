@@ -47,7 +47,6 @@
   <block id="057b0a61093f8c5a3fd2cb091c2487ed" category="section-title">ONTAP NASストレージ管理</block>
   <block id="9a7a0f1104963c42c2710b02915c3716" category="inline-link">NASストレージの管理</block>
   <block id="96d4d0a4d3683684386667f3537301b0" category="paragraph">ネットワーク接続ストレージ (NAS) は、ネットワーク内の複数のクライアントがアクセスできる専用のファイル ストレージを提供します。 ONTAP は複数の NAS プロトコルをサポートしています。参照<block ref="5a12468a094b7ac3a6242787d7d649a9" category="inline-link-rx"></block>詳細についてはこちらをご覧ください。</block>
-  <block id="2f6306c1dbddc5160b5cb0ca2b5c9ac5" category="section-title">ONTAP FlexCacheボリューム</block>
   <block id="4e59e775225da37265a8902119d82992" category="inline-link">ONTAP FlexCacheボリュームについて学ぶ</block>
   <block id="779755990ca58135bf4cfa4707ddbd6c" category="paragraph">FlexCacheは、 ONTAP のリモート キャッシュ機能です。データがクライアントに近づくため、アクセス パフォーマンスが向上し、コストが削減されます。最初に元のファイル システムからメタデータのみをコピーするFlexCacheボリュームを作成すると、ファイルの配布が簡素化され、WAN トラフィックが削減されます。参照<block ref="8586d1d402de18023c61e6177e30172a" category="inline-link-rx"></block>詳細についてはこちらをご覧ください。</block>
   <block id="be11a39b915644a1e65c81e32c070b68" category="section-title">ONTAP FlexGroupボリューム</block>
@@ -558,7 +557,6 @@
   <block id="0fd83bea6e8889a6410f4ad7c356b1c6" category="paragraph">分散ストレージに関連する 2 番目の概念は、集約と RAID 管理が管理可能なエンティティとして削除されることです。 AFX 内のストレージ抽象化レイヤーは、物理ディスクや RAID グループなどのストレージの低レベルの側面を自動的に構成および管理します。これにより、AFX 管理者はボリュームとバケットに基づいた高レベルのストレージ構成に集中できるようになります。</block>
   <block id="67a915151759ecc737f698391f7cfd08" category="section-title">相互運用性</block>
   <block id="8fbc7f1351a3e90b34e2d50e0c07adcf" category="paragraph-title">同じONTAPクラスタ内で AFX システム ノードとAFF、 ASA、またはFASシステム ノードを混在させることはできますか?</block>
-  <block id="490ad830d699742950ceeaf58c8e893c" category="paragraph">いいえ。ONTAPのパーソナリティはそれぞれ異なります。たとえば、同じクラスタ内で AFX ノードと Unified ONTAPノードを混在させることはできません。</block>
   <block id="6855bc632a4fb3c6b7b6e30b99fd4b1c" category="paragraph-title">SnapMirrorまたはFlexCacheに AFX システムで Unified ONTAP (FAS、 AFF、 ASA ) を実行するシステムを使用する場合、必要なONTAPのバージョンは何ですか?</block>
   <block id="b3c2db23091a0f69d5a98f7aa85c5999" category="inline-link">TR-4743</block>
   <block id="e41e8ba406c753a1f299483cef4ae186" category="paragraph">AFX のSnapMirrorバージョン ルールは、Unified ONTAPと同じです。つまり、Unified ONTAPからレプリケートするには、ソース システムがサポートされているバージョン範囲内にある必要があります。  AFX からレプリケートするには、Unified ONTAPシステムがONTAP 9.16.1 以降 (Advanced Capacity Balancing 機能がサポートされている最も古いリリース) である必要があります。  FlexCacheの場合、ソースシステムと宛先システムに同じルールが適用されます。<block ref="21d9cc15452a0fa353089141a3f02dce" category="inline-link-rx"></block> 。</block>
@@ -576,15 +574,10 @@
   <block id="652c6ccc124f6a3b6160cc1d33fdf829" category="paragraph">いいえ。AFX のデータ プロトコルは、 AFFおよびFASシステムと同じように動作します。</block>
   <block id="ba49ccff7b34f35787d4c3a5a03c27ab" category="paragraph-title">AFX では Advanced Disk Partitioning (ADP) が使用されていますか?</block>
   <block id="2e71120f5cf48a4101afcce566d9eb76" category="paragraph">いいえ。ADP は AFX では使用されません。  AFX にはルート アグリゲートが存在しないため、ディスク領域効率を最大化するために ADP 機能は必要ありません。</block>
-  <block id="96daca265fc7c3ad4031d8a0f60de302" category="paragraph-title">AFX ストレージ システムのバックエンド ネットワークに異なるタイプのスイッチを使用できますか?</block>
-  <block id="c72efc6aac77bfb00478e553ab39b09e" category="paragraph">いいえ。バックエンド ネットワークでは、AFX ストレージ プラットフォーム用に特別に承認され、提供されているスイッチのみがサポートされます。</block>
   <block id="5f23273522ab6b5896afbea443e4b0e5" category="paragraph-title">AFX クラスター内のストレージはどのように構成されていますか?</block>
   <block id="d37066fb090f24f4a9c3a6f25f61165b" category="paragraph">AFX クラスターに接続されているすべてのディスクとストレージ シェルフは、ストレージ可用性ゾーン (SAZ) の一部です。各 AFX クラスターは 1 つの SAZ のみをサポートし、AFX クラスター間で共有することはできません ( SnapMirrorレプリケーションとFlexCache操作を除く)。</block>
   <block id="515a19ff656ef4e9a76499b11053c88b" category="paragraph">各ノードは SAZ 内のすべてのストレージを可視化できます。ストレージ シェルフがクラスターに追加されると、 ONTAPによってディスクが自動的に追加されます。</block>
-  <block id="bcb2406e546535bc5fbcf8b07e9027a3" category="paragraph-title">AFX と比較して、Unified ONTAPでのボリューム移動操作はどのように機能しますか?</block>
-  <block id="32b3ece0de9314e482a31fd5700a67ec" category="paragraph">Unified ONTAPを使用すると、クラスタ内の 1 つのノードまたはアグリゲートから別のノードまたはアグリゲートにボリュームを無停止で再配置できます。これは、 SnapMirrorテクノロジーを使用したバックグラウンド コピー操作を使用して実行され、新しい場所に新しい宛先ボリュームが作成されます。ボリュームのサイズとクラスター リソースの使用率に応じて、ボリュームの移動が完了するまでにかかる時間は異なります。</block>
   <block id="25241163c37737db44029ed2218be089" category="paragraph">AFX では集計はありません。すべてのストレージは、クラスター内のすべてのノードからアクセスできる単一のストレージ可用性ゾーン内に含まれます。その結果、ボリュームの移動では実際にデータをコピーする必要がなくなります。代わりに、すべてのボリュームの移動は、ノード間のポインタの更新によって実行されます。これはゼロ コピー ボリューム移動 (ZCVM) と呼ばれ、実際にデータがコピーまたは移動されないため瞬時に実行されます。これは基本的に、 SnapMirrorコピーなしの Unified ONTAPで使用されるボリューム移動プロセスと同じです。</block>
-  <block id="4c304f523f7e6755249f3a56088bb451" category="paragraph">初期リリースでは、ボリュームはストレージ フェイルオーバーのシナリオと、クラスターにノードが追加または削除された場合にのみ移動することに注意してください。これらの移動はONTAPを通じてのみ制御されます。</block>
   <block id="504c7335601a5530da6d79c69af25d23" category="paragraph-title">AFX は SAZ 全体のデータの配置場所をどのように決定するのでしょうか?</block>
   <block id="0dffaaac24629ec57e41901c2c49b5e9" category="paragraph">AFX には、システムとユーザー オブジェクトの不均衡に対応する Automated Topology Management (ATM) と呼ばれる機能が含まれています。 ATM の主な目的は、AFX クラスター全体のボリュームのバランスを取ることです。不均衡が検出されると、アクティブ ノード全体にデータを均等に分散するための内部ジョブがトリガーされます。データは、オブジェクト メタデータのコピーと更新のみを必要とする ZCVM を使用して再割り当てされます。</block>
   <block id="1bce74755c5e5305616eddc17873d185" category="summary">NetApp AFX システムは、 AFFおよびFASストレージ上で実行されるONTAPパーソナリティ (Unified ONTAPと呼ばれる) とは異なる、カスタマイズされたONTAPパーソナリティを実行します。 AFX システムとFASシステムおよびAFFシステムとの類似点と相違点を認識しておく必要があります。これは貴重な視点を提供し、環境に AFX を展開するときに役立ちます。</block>
@@ -1224,11 +1217,8 @@
   <block id="419c1482f6cc63984c67f7fdaf13bd01" category="list-text"><block ref="419c1482f6cc63984c67f7fdaf13bd01" category="inline-link-rx"></block></block>
   <block id="3a77755c4eaf7897cda1f7db8e722428" category="inline-link">ONTAP自動化</block>
   <block id="486f6a4f906831713aed8c2567b3d906" category="list-text"><block ref="486f6a4f906831713aed8c2567b3d906" category="inline-link-rx"></block></block>
-  <block id="39b7c7792d43f9ad6b45d8bf594c6d5f" category="inline-link">ONTAPファミリー</block>
-  <block id="a583b1996b4842ce79d2bb2448839e4f" category="list-text"><block ref="a583b1996b4842ce79d2bb2448839e4f" category="inline-link-rx"></block></block>
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="section-title">NetAppサポート</block>
   <block id="668e2078ef1b1722c77cdb5c523a4463" category="inline-link">NetAppのナレッジ ベース</block>
-  <block id="47fcd25afe772010f3d079e237ae3a90" category="list-text"><block ref="47fcd25afe772010f3d079e237ae3a90" category="inline-link-rx"></block></block>
   <block id="95ef25aa47e9457c9ecb60dba8cacdf3" category="doc">AFXストレージシステムに関する法的通知</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法的通知から、著作権情報、商標、特許などを確認できます。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">著作権</block>
@@ -1312,22 +1302,12 @@
   <block id="31c437cd0133ff745a1e93507c2eb20b" category="list-text">ONTAPのクォータは、ユーザー、グループ、または qtree が使用できるストレージ容量またはファイル数に設定される制限です。クォータは、ストレージ システム内のリソースの使用を管理および制御するために使用され、単一のユーザーまたはアプリケーションが過剰な量のリソースを消費できないようにします。</block>
   <block id="f850d5f072b99065b8b14f209d28b6f2" category="section-title">データ移行オプション</block>
   <block id="0f0a1f25f9c98706310856dd6e959d85" category="paragraph">データ移行にはいくつかのオプションがあります。重点は、外部データを AFX クラスターに移行することにあります。</block>
-  <block id="2da5c6848fa97e6d57edd0fd7cc501e6" category="section-title">Unified ONTAPからのデータ移行</block>
-  <block id="09c3f872052627145e5ce120455694b0" category="paragraph">次のテクノロジーを使用して、Unified ONTAPから AFX への完全に統合された移行パスが利用できます。</block>
   <block id="794cb725c5631ad99b5b7c000307f0df" category="list-text">SnapMirror</block>
   <block id="7dd44faf90251db698eeb99b51efee2a" category="list-text">SVM移行</block>
   <block id="7e4716fcadce4a1adb7676534312a764" category="list-text">SVM DR</block>
-  <block id="5db926e7c011195bfaa831fe0aabc00c" category="paragraph">さらに、 FlexCacheボリュームは、AFX と Unified ONTAPの間でどちらの方向にも接続できます。</block>
   <block id="586423b900754a96436e39f12ad34de7" category="section-title">ONTAP以外のソースからのデータの移行</block>
-  <block id="21689beccd9247a465d647f5db5a3661" category="paragraph">ONTAP以外のシステムからのデータ移行は、ファイル レベルのコピー操作を使用して実行できます。  XCP や CloudSync などの高速コピー ユーティリティのほか、RoboCopy (SMB 用) や rsync (NFS 用) などの標準ユーティリティや、DataDobi などのサードパーティ ツールも使用できます。</block>
   <block id="9686c7656f6866ab27df53aba66aa5c4" category="section-title">移行の制限</block>
-  <block id="1825404caf9bf08322edc7f1e8fe7d2b" category="paragraph">既存の Unified ONTAPシステムは、データ ボリュームに LUN または NVMe 名前空間が含まれていない場合、AFX にレプリケートできます。 Unified ONTAPシステムに複製する場合、Unified ONTAPシステムでサポートされる最小バージョンは 9.16.1 です。これは、高度な容量バランシングをサポートする最初の Unified ONTAPリリースです。</block>
-  <block id="25b6da96a8a760952124cb78cea3667f" category="section-title">NFSトランキングのAFXサポート</block>
-  <block id="4cee11533f48877b71ac4114308fddc5" category="paragraph">NFS トランキングは、NFS v4.1 クライアントが NFS サーバー上の異なる LIF への複数の接続を開くことを可能にするテクノロジーです。これにより、データ転送速度が向上し、複数のパスを通じて復元力が高まります。トランキングは、トランキング対応クライアントにFlexVolボリュームをエクスポートする場合に役立ちます。</block>
-  <block id="708b9f56042f6f92040c66e027f3d1e6" category="paragraph">トランキングを有効にするには、NFS 用に SVM を設定し、NFSv4.1 を有効にする必要があります。また、構成の変更後にはすべての NFSv4.x クライアントを再マウントする必要があり、混乱が生じる可能性があります。</block>
   <block id="9ee9c2969db991ddef64d7ae817e6a57" category="section-title">ファイルシステム分析</block>
-  <block id="13d14f6d3eb21b302a07eca445ed601a" category="paragraph">ファイル システム分析 (FSA) は、 FlexGroupまたはFlexVolボリューム内のファイル使用状況とストレージ容量の傾向をリアルタイムで表示するONTAPの機能です。</block>
-  <block id="0d0e1ac7c6d2254324f44048d3433b8b" category="paragraph">FSA は、ストレージの使用率と最適化の機会に関する洞察を提供することで、外部ツールの必要性を排除します。  FSA は、SVM、ボリューム、ディレクトリ、ファイル レベルなど、ボリュームのファイル システム階層のさまざまなレベルで詳細なビューを提供します。</block>
   <block id="b58d0f6a7ebb3c87391c546808fd9aad" category="section-title">ストレージの概要を表示する</block>
   <block id="3aff0a3af97eea91975da75fea7d544b" category="paragraph">AFX データの管理を開始するには、ストレージの概要を表示する必要があります。</block>
   <block id="8f05b5c10e45f62d76648a8e56cf1f2a" category="paragraph">AFX クラスターに定義されているすべてのボリュームとバケットにアクセスできます。これらはそれぞれデータ コンテナーと見なされます。</block>
@@ -1610,7 +1590,6 @@
   <block id="e04c15856f0ea4ee0be8fd6e3957b0b0" category="list-text">暗号化とは、適切な認証なしには簡単に読み取ることができない安全な形式にデータを変換するプロセスです。 ONTAP は、保存中のデータを保護するために、ソフトウェア ベースとハードウェア ベースの両方の暗号化テクノロジを提供します。これにより、ストレージ メディアが再利用、返却、紛失、盗難された場合でも、読み取ることができなくなります。これらの暗号化ソリューションは、外部のキー管理サーバーまたはONTAPが提供するオンボード キー マネージャーを使用して管理できます。</block>
   <block id="1dd2239be8a1348b44deadbaab8103bb" category="list-text">デジタル証明書とPKI</block>
   <block id="059460d88580ecd8442df8002819bed2" category="list-text">デジタル証明書は、公開鍵の所有権を証明するために使用される電子文書です。公開キーと関連する秘密キーは、通常、TLS や IPsec などの大規模なセキュリティ フレームワークの一部として ID を確立するなど、さまざまな方法で使用できます。これらのキーと、それをサポートするプロトコルおよびフォーマット標準は、公開キー インフラストラクチャ (PKI) の基礎を形成します。</block>
-  <block id="cd2b16eefece89a607eb8deec53f101b" category="doc">AFXストレージシステムへのランサムウェア攻撃から保護する</block>
   <block id="699abf1f897b13a155ff2ccb3ae3fb4c" category="sidebar">NetApp AFX ストレージ システムは、高性能 NAS および S3 顧客の固有のニーズに重点を置いた、分散型のハードウェアおよびソフトウェア ソリューションです。パフォーマンスとスケーラビリティは、AI および ML ワークロードの要件を満たすように特別に設計されています。  AFX は簡素化されたユーザー エクスペリエンスを提供するため、ストレージの専門家と非専門家の両方が管理できます。</block>
   <block id="67e3534cd0feec346d52509c43cc0189" category="sidebar">AFXのドキュメント</block>
   <block id="5f5ce9070c0881e38b8b17b23b3ece81" category="sidebar">NetApp ONTAP AFX ストレージ システムは、高性能 NAS および S3 のお客様の固有のニーズに重点を置いた、分散型のハードウェアおよびソフトウェア ソリューションです。パフォーマンスとスケーラビリティは、AI および ML ワークロードの要件を満たすように特別に設計されています。  AFX は簡素化されたユーザー エクスペリエンスを提供するため、ストレージの専門家と非専門家の両方が管理できます。</block>
@@ -1698,4 +1677,30 @@
   <block id="d763fb8938024cd88263074e25273371" category="sidebar">スナップショットレプリケーションの設定と管理</block>
   <block id="0482c0783bfb2959339ab71fc6aa2511" category="sidebar">ポリシーとスケジュールを管理する</block>
   <block id="97c10fb55bed7fe33c55683647d9105a" category="sidebar">データの保護を準備する</block>
+  <block id="8423e0b0f9e240bb2fb2285caef15ef6" category="section-title">ONTAP FlexCacheボリューム</block>
+  <block id="93dbc5e0658220e9d45165593a50018b" category="paragraph">いいえ。同じクラスタ内で異なるONTAPパーソナリティを実行するシステム ノードを混在させることはできません。たとえば、同じクラスタ内で AFX ノード (AFX ONTAPパーソナリティを実行) とAFFまたはFASノード (Unified ONTAPパーソナリティを実行) を混在させることはできません。</block>
+  <block id="51164cc9a2dc5e5fd1bc8b7caf4ff2de" category="paragraph-title">AFX システムのバックエンド クラスター ネットワークでは、任意のタイプのスイッチを使用できますか?</block>
+  <block id="3cb557749455bb6c14d62ef66bdf31f6" category="paragraph">いいえ。クラスター ネットワークでは、AFX ストレージ プラットフォーム用に特別に承認され、提供されているスイッチのみがサポートされます。また、これらのバックエンド スイッチは AFX クラスター操作専用です。クライアント アクセス操作 (NFS、SMB、S3 を使用) は、フロントエンド クライアント データ ネットワーク経由でのみ実行する必要があります。</block>
+  <block id="9cdb0f273ab22003628192e697981917" category="paragraph-title">クラスター スイッチはどのように構成されていますか?</block>
+  <block id="105f13233e6f74d02fd41159a532f770" category="paragraph">クラスタ ネットワーク スイッチは、 NetAppが提供する構成ファイルを使用して構成されます。構成ファイルへの変更はサポートされていません。</block>
+  <block id="ad5b5485d7c558ed08465ac5fa9579b3" category="paragraph-title">AFX では、ボリューム移動操作はAFFまたはFASシステムと比べてどのように異なりますか?</block>
+  <block id="c5767895814e2f8cb34c84245552ba84" category="paragraph">Unified ONTAPパーソナリティを実行するAFFおよびFASシステムでは、クラスタ内の 1 つのノードまたはアグリゲートから別のノードまたはアグリゲートにボリュームを無停止で再配置できます。これは、 SnapMirrorテクノロジーを使用したバックグラウンド コピー操作を使用して実行され、新しい場所に新しい宛先ボリュームが作成されます。ボリュームのサイズとクラスター リソースの使用率に応じて、ボリュームの移動が完了するまでにかかる時間は異なります。</block>
+  <block id="604d13ebe56ee6f22f1a3cf482e9cba8" category="paragraph">AFX の初期リリースでは、ボリュームはストレージ フェイルオーバーのシナリオと、クラスターにノードが追加または削除された場合にのみ移動します。これらの移動はONTAPを通じてのみ制御されます。</block>
+  <block id="0a33bb860367c3285ff09c33b79eef88" category="list-text"><block ref="0a33bb860367c3285ff09c33b79eef88" category="inline-link-rx"></block></block>
+  <block id="2042512ad460fc59bd9840e2dbf6204c" category="list-text">NFSトランキング</block>
+  <block id="8eac7569fe98a77b56bea69f883ebcb6" category="list-text">NFS トランキングは、NFS v4.1 クライアントが NFS サーバー上の異なる LIF への複数の接続を開くことを可能にするテクノロジーです。これにより、データ転送速度が向上し、トランキング対応クライアントにFlexVolボリュームをエクスポートするときに複数のパスを通じて復元力が提供されます。</block>
+  <block id="b76f98fdaf313a65cf2c6f59a3752a76" category="paragraph">トランキングを有効にするには、NFS 用に SVM を設定し、NFSv4.1 を有効にする必要があります。また、構成の変更後にはすべての NFSv4.x クライアントを再マウントする必要があり、混乱が生じる可能性があります。NFS トランキングのサポートおよび構成手順は、すべてのONTAPシステムで同じです。詳細はこちら<block ref="3bbd72ecc33379409e84301ec3f716f9" category="inline-link-rx"></block></block>
+  <block id="31a905eba0332220f52d70c6b0e96375" category="list-text">ファイル システム分析 (FSA) は、 FlexGroupまたはFlexVolボリューム内のファイル使用状況とストレージ容量の傾向をリアルタイムで表示するONTAP機能です。ストレージの使用率と最適化の機会に関する洞察を提供することで、外部ツールの必要性を排除します。FSA は、SVM、ボリューム、ディレクトリ、ファイル レベルなど、ボリュームのファイル システム階層のさまざまなレベルで詳細なビューを提供します。</block>
+  <block id="5daeb7d02f0c8f2c5f519d60becbcc5d" category="section-title">AFFまたはFASシステムからのデータの移行</block>
+  <block id="dce8a1fa8e4a094ef871a7103f3f1f14" category="paragraph">次のテクノロジーを使用することで、 AFFまたはFASシステム (Unified ONTAPパーソナリティを実行) から AFX への完全に統合された移行パスが利用できます。</block>
+  <block id="d1d87d5c226a16c3537cdaf52219e6f9" category="paragraph">さらに、 FlexCacheボリュームは、AFX システムとAFFまたはFASシステムの間でどちらの方向にも接続できます。</block>
+  <block id="a7ac1d2e69b9bbb9a2accb2ec30a1d69" category="inline-link">XCP</block>
+  <block id="a1ffadf93063cf27ac6a6513b066437f" category="paragraph">ONTAP以外のシステムからのデータ移行は、ファイル レベルのコピー操作を使用して実行できます。高速コピーユーティリティ<block ref="2e068de43ed51d2c33a896a672bd332b" category="inline-link-rx"></block>RoboCopy (SMB 用) や rsync (NFS 用) などの標準ユーティリティや、DataDobi などのサードパーティ ツールも使用できます。</block>
+  <block id="d04306e92cf7956801c3a9ab37e4dd4b" category="paragraph">ソース データ ボリュームに LUN または NVMe 名前空間が含まれていない場合は、 AFFまたはFASシステムから AFX にデータを複製できます。AFX からAFFまたはFASシステムにレプリケートする場合、 AFFまたはFASシステムでサポートされる最小のONTAPバージョンは 9.16.1 です。これは、高度な容量バランシングをサポートする最初のONTAPリリースです。</block>
+  <block id="03c39d763ca15978d9ef16c2ba5fe98a" category="inline-link">データ保護とディザスタ リカバリ</block>
+  <block id="9e873281484e8b5b9a062501ed2ec409" category="admonition">AFFおよびFASシステムで利用可能な概念や管理手順の多くはAFXストレージシステムと同じであるため、Unified ONTAPのドキュメントで<block ref="dbe2ffaa0f590f79d1f22685959df345" category="inline-link-rx"></block>役に立つかもしれません。</block>
+  <block id="32a2e65f7d567a43c4e8522fcb11fd35" category="section-title">AFXデータ保護の制限</block>
+  <block id="a5c027a54a434f7725d8ad7b173208cd" category="paragraph">AFX ストレージ システムによって適用されるONTAPデータ保護の制限と制約事項を認識しておく必要があります。</block>
+  <block id="ea39e5b3dcce663e71e4c4855aff145f" category="paragraph-title">SnapMirror同期（SM-S）</block>
+  <block id="763091f517e8df088fc850122ac6b19c" category="paragraph">SM-S を使用する場合、スケール制限があります。単一の AFX システム クラスター全体で最大 400 のリレーションシップを設定できます。</block>
 </blocks>

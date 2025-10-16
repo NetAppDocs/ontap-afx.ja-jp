@@ -20,7 +20,6 @@ AFX の管理とサポートに役立つ追加のリソースがあり、 ONTAP�
 * https://docs.netapp.com/us-en/ontap/["ユニファイドONTAP"^]
 * https://docs.netapp.com/us-en/asa-r2/["ASA r2"^]
 * https://docs.netapp.com/us-en/ontap-automation/["ONTAP自動化"^]
-* https://docs.netapp.com/us-en/ontap-family["ONTAPファミリー"^]
 
 
 
@@ -28,5 +27,5 @@ AFX の管理とサポートに役立つ追加のリソースがあり、 ONTAP�
 == NetAppサポート
 
 * https://mysupport.netapp.com/["NetAppサポート サイト"^]
-* https://kb.netapp.com/["NetAppのナレッジ ベース"]
+* https://kb.netapp.com/["NetAppのナレッジ ベース"^]
 
