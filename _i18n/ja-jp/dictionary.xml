@@ -539,12 +539,8 @@
   <block id="d9e933a0183aa036605a2650b119960c" category="paragraph">ONTAP は、包括的な機能セットと幅広いストレージ要件への適応性で知られる、堅牢で多用途なストレージ プラットフォームです。この柔軟性により、多様なワークロードを抱える組織にとって最適な選択肢となりますが、お客様によっては、特定の環境のニーズに合わせて最適化された、よりカスタマイズされたストレージ ソリューションからメリットを得られる場合もあります。</block>
   <block id="6823723f3d129ef57f6bcfbcd86bd04e" category="paragraph">これらの特殊なニーズに対応するために、一部のNetAppストレージ システムでは、それぞれ独自の顧客要件をサポートするように設計された機能セットを含む、異なるONTAPパーソナリティを提供しています。  ONTAPパーソナリティは通常、ハードウェアとソフトウェアの機能を組み合わせたもので、対象となるユースケースに最適化されたエクスペリエンスを提供する目的で構築されています。  NetApp は、次の 3 つのONTAPパーソナリティを提供します。</block>
   <block id="b33eab3f59e19afa3da64a7838372c21" category="list-text">ユニファイドONTAP</block>
-  <block id="0ad35f334baf990d3a31bf6cfa0709f5" category="list-text">Unified ONTAPパーソナリティは、NAS、SAN、S3 プロトコルをサポートし、最大限の柔軟性を実現する幅広いデータ管理機能を提供します。これはNetApp の主力製品であり、 AFFおよびFASシステムのほか、 ONTAP SelectやCloud Volumes ONTAPなどの仮想化展開でも利用できます。</block>
-  <block id="e9d7397e9772df2e11071d57657f4b22" category="list-text">AFX</block>
-  <block id="adf18a62ba91568ae4c17ed21c595973" category="list-text">AFX ONTAPパーソナリティは、AI/ML アプリケーションを含む高性能 NAS および S3 ワークロードの厳しい要件を満たすように設計された分散型ソリューションを提供します。  AFX システムは、スケーラブルで高スループットのファイルおよびオブジェクト ストレージを必要とする顧客向けに特殊な機能を提供します。</block>
   <block id="df5b8332c344a8d1a2ca6124ea06defe" category="list-text">ASA r2</block>
   <block id="fde1abb5537b55c34521d414267b3f70" category="inline-link">ASA r2 システム</block>
-  <block id="fc33e2bbed08316e89f0df10590d22cc" category="list-text">ASA r2 ONTAPパーソナリティは、SAN のみの環境向けに特別に設計された分散型ソリューションを提供します。<block ref="e4ca437dd887d2a61be13c7ee5ecdac0" category="inline-link-rx"></block>  ブロック ワークロードのストレージ エクスペリエンスを合理化し、SAN 顧客向けに最適化された簡素化された管理とパフォーマンスを提供します。</block>
   <block id="6d1fe0d9c2d18d3c107ffcb493bdacf4" category="paragraph">NetApp は、これらの明確なONTAP特性を提供することで、組織が運用要件とアプリケーション ワークロードに適合したストレージ ソリューションを選択できるようにします。</block>
   <block id="255bf722ae2f40f567ba6f42a03ffeee" category="paragraph-title">NetAppストレージ システムのONTAPパーソナリティを変更できますか?</block>
   <block id="6adee2606f39ed8126ea7419135e040d" category="paragraph">いいえ。ONTAPONTAPシステムのパーソナリティは不変であり、変更することはできません。たとえば、 FASまたはAFFストレージ システム (Unified ONTAPパーソナリティを実行) を AFX ストレージ システムに変換またはアップグレードすることはできません。</block>
@@ -686,11 +682,8 @@
   <block id="ea7c1af5f0c16b4f7fadf9fe7aa9bd4b" category="section-title">ONTAP HAペアの操作</block>
   <block id="44abd47dc22d8944944122617fadf4fe" category="paragraph">Unified ONTAPと同様に、AFX クラスタ ノードは、フォールト トレランスと無停止運用を実現するために高可用性 (HA) ペアで構成されます。 HA ペアリングにより、ストレージ フェイルオーバーなどのノード障害が発生した場合でも、ストレージ操作をオンラインのまま維持できるようになります。各ノードは別のノードと提携して 1 つのペアを形成します。これは通常、2 つのノードのNVRAMモジュール間の直接接続を使用して行われます。</block>
   <block id="f1fda245e68667d714e981e6aef06611" category="paragraph">AFX では、バックエンド クラスター スイッチに新しい HA VLAN が追加され、 NVRAMモジュールが HA パートナー ノード間で接続された状態を維持できるようになります。  HA ペアは AFX システムでも引き続き使用されますが、パートナー ノードを直接接続する必要はなくなりました。</block>
-  <block id="67c232c91fe284ec9b1946d4112dfec0" category="section-title">AFXシステムの展開制限</block>
-  <block id="9f663c4191836dca7619153a5977feb9" category="paragraph">クラスターを構成および使用するときに、AFX によって適用される最小値や最大値などのいくつかの制限があります。これらの制限は、次のようないくつかの異なるカテゴリに分類されます。</block>
   <block id="4f153ef27e03f77db56acbf6b56a9003" category="list-text">クラスターあたりのコントローラーノード</block>
   <block id="e9f7ded0687b255de1c10debe9fb0f7d" category="list-text">各 AFX クラスターには少なくとも 4 つのノードが必要です。ノードの最大数は、 ONTAPリリースによって異なります。</block>
-  <block id="ec2bdf0a3ea1b056843de1d3ae912a78" category="list-text">これは、クラスターのストレージ可用性ゾーン (SAZ) 内のすべての SSD ディスクの合計容量です。最大ストレージ容量は、 ONTAPリリースによって異なります。クラスターの機能を判断するには、相互運用性マトリックス ツール (IMT) で入手可能な情報を確認する必要があります。</block>
   <block id="20940568e8a8df65f4ded7552f91cb5a" category="section-title">AFXシステムの健全性を確認する</block>
   <block id="32b20b465c25cf57c303655ae17c2681" category="paragraph">AFX 管理タスクを実行する前に、クラスターの正常性を確認する必要があります。</block>
   <block id="9d7934850e239388cf4ca1ba33e75b38" category="admonition">運用上またはパフォーマンス上の問題が疑われる場合など、いつでも AFX クラスターの健全性を確認できます。</block>
@@ -1542,7 +1535,6 @@
   <block id="99ec9f1726a6519eae656fd574344d13" category="list-text"><block ref="99ec9f1726a6519eae656fd574344d13" category="inline-link-rx"></block></block>
   <block id="1b145f28c9e1e4044efc92e3e1567780" category="summary">簡単な curl コマンドを発行して、AFX REST API の使用を開始し、その可用性を確認できます。</block>
   <block id="82c5461d1a57f884eb846ca365801e17" category="doc">最初のAFXストレージシステムREST API呼び出し</block>
-  <block id="2adee5bb9e9abee9178f660513c83f69" category="paragraph">AFX は、3 つの異なるONTAPパーソナリティの 1 つです。  REST API の呼び出しを使用して、応答に含まれる 2 つのフィールドに基づいてクラスタのONTAPパーソナリティを判別できます。</block>
   <block id="7013ac323311e3dab810263b1d637a84" category="paragraph">ローカル ワークステーションで curl ユーティリティが使用できることに加えて、次のものも必要になります。</block>
   <block id="e57ddd021ae925c610e301862e495d93" category="list-text">AFX システム クラスタ管理 LIF の IP アドレスまたは FQDN</block>
   <block id="6c62a36f8e262347f2ba79452265a020" category="list-text">ONTAP REST APIにアクセスする権限を持つアカウントのONTAP認証情報</block>
@@ -1703,4 +1695,16 @@
   <block id="a5c027a54a434f7725d8ad7b173208cd" category="paragraph">AFX ストレージ システムによって適用されるONTAPデータ保護の制限と制約事項を認識しておく必要があります。</block>
   <block id="ea39e5b3dcce663e71e4c4855aff145f" category="paragraph-title">SnapMirror同期（SM-S）</block>
   <block id="763091f517e8df088fc850122ac6b19c" category="paragraph">SM-S を使用する場合、スケール制限があります。単一の AFX システム クラスター全体で最大 400 のリレーションシップを設定できます。</block>
+  <block id="b38e285f6cc8e00ab41aae31ee5de40a" category="list-text">*Unified ONTAP* - Unified ONTAPパーソナリティは、NAS、SAN、S3 プロトコルをサポートする幅広いデータ管理機能を提供し、最大限の柔軟性を実現します。これはNetApp の主力製品であり、 AFFおよびFASシステムのほか、 ONTAP SelectやCloud Volumes ONTAPなどの仮想化展開でも利用できます。</block>
+  <block id="41935759e3103eaecb4e639fabcfeaf8" category="list-text">*AFX* - AFX ONTAPパーソナリティは、AI/ML アプリケーションを含む高性能 NAS および S3 ワークロードの厳しい要件を満たすように設計された分散型ソリューションを提供します。AFX システムは、スケーラブルで高スループットのファイルおよびオブジェクト ストレージを必要とする顧客向けに特殊な機能を提供します。</block>
+  <block id="4a4f6533cdc5a6d5e2e86605c2f59747" category="list-text">* ASA r2* - ASA r2 ONTAPパーソナリティは、SAN のみの環境向けに特別に設計された分散型ソリューションを提供します。<block ref="e4ca437dd887d2a61be13c7ee5ecdac0" category="inline-link-rx"></block>  ブロック ワークロードのストレージ エクスペリエンスを合理化し、SAN 顧客向けに最適化された簡素化された管理とパフォーマンスを提供します。</block>
+  <block id="523837832bb488119118889ecba260ea" category="section-title">AFX クラスターの展開の制限</block>
+  <block id="6a304cee8eaf01d4c0221bb8185c36ae" category="paragraph">クラスターを構成および使用するときに、AFX によって適用される最小値や最大値などのいくつかの制限があります。これらの制限は、次のようないくつかのカテゴリに分類されます。</block>
+  <block id="fb2af5c08b54884bae80e5f29c0d24f3" category="list-text">これは、クラスターのストレージ可用性ゾーン (SAZ) 内のすべての SSD ディスクの合計容量です。最大ストレージ容量は、 ONTAPリリースによって異なります。</block>
+  <block id="04f1bd4b5783cf5250b6f11f5f3c45bd" category="paragraph">クラスタの機能を確認するには、 NetApp Hardware Universeおよび Interoperability Matrix Tool で入手可能な情報を確認する必要があります。</block>
+  <block id="4c1c93397a0ad82f0b80502a6c7c0799" category="list-text"><block ref="4c1c93397a0ad82f0b80502a6c7c0799" category="inline-link-rx"></block></block>
+  <block id="f6735f5b05187d612456240f1b4e15a9" category="list-text"><block ref="f6735f5b05187d612456240f1b4e15a9" category="inline-link-rx"></block></block>
+  <block id="158b0cd8e98337e4dafd6291bed45568" category="inline-link">相互運用性マトリックスツールの概要</block>
+  <block id="c9f4862e07def71045419c1015337766" category="list-text"><block ref="c9f4862e07def71045419c1015337766" category="inline-link-rx"></block></block>
+  <block id="b6b9f4e0ea5360bfc7fbf3d03fb49e3e" category="paragraph">AFX は、 NetAppが提供する 3 つのONTAPパーソナリティの 1 つです。  REST API 呼び出しを発行して、 ONTAPクラスタの特性を判別できます。  System Manager または CLI を使用してONTAPパーソナリティを決定することもできます。詳細については、FAQ ページを参照してください。</block>
 </blocks>

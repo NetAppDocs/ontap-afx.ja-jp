@@ -111,13 +111,15 @@ AFX では、バックエンド クラスター スイッチに新しい HA VLAN
 
 
 
-== AFXシステムの展開制限
+== AFX クラスターの展開の制限
 
-クラスターを構成および使用するときに、AFX によって適用される最小値や最大値などのいくつかの制限があります。これらの制限は、次のようないくつかの異なるカテゴリに分類されます。
+クラスターを構成および使用するときに、AFX によって適用される最小値や最大値などのいくつかの制限があります。これらの制限は、次のようないくつかのカテゴリに分類されます。
 
 クラスターあたりのコントローラーノード:: 各 AFX クラスターには少なくとも 4 つのノードが必要です。ノードの最大数は、 ONTAPリリースによって異なります。
-ストレージ容量:: これは、クラスターのストレージ可用性ゾーン (SAZ) 内のすべての SSD ディスクの合計容量です。最大ストレージ容量は、 ONTAPリリースによって異なります。クラスターの機能を判断するには、相互運用性マトリックス ツール (IMT) で入手可能な情報を確認する必要があります。
+ストレージ容量:: これは、クラスターのストレージ可用性ゾーン (SAZ) 内のすべての SSD ディスクの合計容量です。最大ストレージ容量は、 ONTAPリリースによって異なります。
 
+
+クラスタの機能を確認するには、 NetApp Hardware Universeおよび Interoperability Matrix Tool で入手可能な情報を確認する必要があります。
 
 
 
@@ -190,5 +192,8 @@ link:../manage-data/prepare-manage-data.html["準備"]データの割り当て�
 * https://docs.netapp.com/us-en/ontap/concepts/introducing-ontap-interfaces-concept.html["ONTAPのユーザ インターフェイス"^]
 * https://docs.netapp.com/us-en/ontap/system-admin/set-privilege-level-task.html["ONTAP CLIで権限レベルを設定する"^]
 * https://docs.netapp.com/us-en/ontap/system-admin/index.html["ONTAP CLI を使用したクラスタ管理について学習します"^]
+* https://hwu.netapp.com/["NetApp Hardware Universe"^]
+* https://imt.netapp.com/["NetApp Interoperability Matrix Tool"^]
+* https://docs.netapp.com/us-en/interoperability-matrix-tool/["相互運用性マトリックスツールの概要"^]
 * link:../faq-ontap-afx.html["AFX ストレージ システムに関する FAQ"]
 
