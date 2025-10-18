@@ -553,7 +553,6 @@
   <block id="0fd83bea6e8889a6410f4ad7c356b1c6" category="paragraph">分散ストレージに関連する 2 番目の概念は、集約と RAID 管理が管理可能なエンティティとして削除されることです。 AFX 内のストレージ抽象化レイヤーは、物理ディスクや RAID グループなどのストレージの低レベルの側面を自動的に構成および管理します。これにより、AFX 管理者はボリュームとバケットに基づいた高レベルのストレージ構成に集中できるようになります。</block>
   <block id="67a915151759ecc737f698391f7cfd08" category="section-title">相互運用性</block>
   <block id="8fbc7f1351a3e90b34e2d50e0c07adcf" category="paragraph-title">同じONTAPクラスタ内で AFX システム ノードとAFF、 ASA、またはFASシステム ノードを混在させることはできますか?</block>
-  <block id="6855bc632a4fb3c6b7b6e30b99fd4b1c" category="paragraph-title">SnapMirrorまたはFlexCacheに AFX システムで Unified ONTAP (FAS、 AFF、 ASA ) を実行するシステムを使用する場合、必要なONTAPのバージョンは何ですか?</block>
   <block id="b3c2db23091a0f69d5a98f7aa85c5999" category="inline-link">TR-4743</block>
   <block id="e41e8ba406c753a1f299483cef4ae186" category="paragraph">AFX のSnapMirrorバージョン ルールは、Unified ONTAPと同じです。つまり、Unified ONTAPからレプリケートするには、ソース システムがサポートされているバージョン範囲内にある必要があります。  AFX からレプリケートするには、Unified ONTAPシステムがONTAP 9.16.1 以降 (Advanced Capacity Balancing 機能がサポートされている最も古いリリース) である必要があります。  FlexCacheの場合、ソースシステムと宛先システムに同じルールが適用されます。<block ref="21d9cc15452a0fa353089141a3f02dce" category="inline-link-rx"></block> 。</block>
   <block id="ed403710028c21becee46d02ed8f44c0" category="paragraph">FlexGroupボリュームのサポートにはいくつかの違いがあります。  AFX 上のFlexGroupボリュームは、Writeback モードを使用するFlexCacheボリュームの元のボリュームになることはできません。</block>
@@ -1707,4 +1706,9 @@
   <block id="158b0cd8e98337e4dafd6291bed45568" category="inline-link">相互運用性マトリックスツールの概要</block>
   <block id="c9f4862e07def71045419c1015337766" category="list-text"><block ref="c9f4862e07def71045419c1015337766" category="inline-link-rx"></block></block>
   <block id="b6b9f4e0ea5360bfc7fbf3d03fb49e3e" category="paragraph">AFX は、 NetAppが提供する 3 つのONTAPパーソナリティの 1 つです。  REST API 呼び出しを発行して、 ONTAPクラスタの特性を判別できます。  System Manager または CLI を使用してONTAPパーソナリティを決定することもできます。詳細については、FAQ ページを参照してください。</block>
+  <block id="43d14ed81363c455618b5103ece599d4" category="paragraph-title">AFX ストレージ システムはいつ利用可能になりましたか? AFX でサポートされている最も古いONTAPバージョンは何ですか?</block>
+  <block id="7f24225fb2bbf5b324522918a991d678" category="paragraph">AFX ストレージ システムは、2025 年 10 月のNetApp Insightカンファレンスで発表されました。AFX はONTAP 9.17.1 以降のリリースをサポートしています。詳細については、 NetApp の営業担当者にお問い合わせください。</block>
+  <block id="3c9f430479263b3b25ec8e84988d27be" category="paragraph-title">FlexCache をAFX システム クラスターで使用できますか?</block>
+  <block id="d53231824f8827127654628ac3883d6c" category="paragraph">○AFX ストレージ システムは、Unified ONTAPパーソナリティを実行するAFFまたはFASシステムとの間のFlexCache をサポートします。唯一の制限は、ライトバック モードのFlexCache がAFX ではサポートされないことです。</block>
+  <block id="f580013220a8ab44a2f9b864e7f6425a" category="paragraph-title">AFFまたはFASシステム (Unified ONTAPパーソナリティを実行) をSnapMirrorまたはFlexCacheの AFX システムと併用する場合、必要なONTAPのバージョンは何ですか?</block>
 </blocks>

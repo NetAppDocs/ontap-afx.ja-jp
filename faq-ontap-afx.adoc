@@ -38,6 +38,9 @@ NetApp は、これらの明確なONTAP特性を提供することで、組織�
 .さまざまなONTAPパーソナリティの System Manager インターフェイスはすべて非常によく似ています。特定のシステムのパーソナリティをどのように判断すればよいでしょうか?
 System Manager の左側のナビゲーション ペインで *Cluster* を選択し、次に *Overview* を選択します。ページにパーソナリティが表示されます。代わりに、CLI でコマンド「system node show」を発行することもできます。  REST APIを使用してONTAPクラスタのパーソナリティを確認することもできます。link:./rest/first-call.html["最初のAFXシステムREST API呼び出し"]詳細については。
 
+.AFX ストレージ システムはいつ利用可能になりましたか? AFX でサポートされている最も古いONTAPバージョンは何ですか?
+AFX ストレージ システムは、2025 年 10 月のNetApp Insightカンファレンスで発表されました。AFX はONTAP 9.17.1 以降のリリースをサポートしています。詳細については、 NetApp の営業担当者にお問い合わせください。
+
 .AFX ストレージ システムのコンテキストにおける「分散」とはどういう意味ですか?
 「分解」という用語は、文脈に応じて、AFX では関連性のある 2 つの異なる意味を持つことがあります。
 
@@ -52,7 +55,10 @@ System Manager の左側のナビゲーション ペインで *Cluster* を選�
 .同じONTAPクラスタ内で AFX システム ノードとAFF、 ASA、またはFASシステム ノードを混在させることはできますか?
 いいえ。同じクラスタ内で異なるONTAPパーソナリティを実行するシステム ノードを混在させることはできません。たとえば、同じクラスタ内で AFX ノード (AFX ONTAPパーソナリティを実行) とAFFまたはFASノード (Unified ONTAPパーソナリティを実行) を混在させることはできません。
 
-.SnapMirrorまたはFlexCacheに AFX システムで Unified ONTAP (FAS、 AFF、 ASA ) を実行するシステムを使用する場合、必要なONTAPのバージョンは何ですか?
+.FlexCache をAFX システム クラスターで使用できますか?
+○AFX ストレージ システムは、Unified ONTAPパーソナリティを実行するAFFまたはFASシステムとの間のFlexCache をサポートします。唯一の制限は、ライトバック モードのFlexCache がAFX ではサポートされないことです。
+
+.AFFまたはFASシステム (Unified ONTAPパーソナリティを実行) をSnapMirrorまたはFlexCacheの AFX システムと併用する場合、必要なONTAPのバージョンは何ですか?
 AFX のSnapMirrorバージョン ルールは、Unified ONTAPと同じです。つまり、Unified ONTAPからレプリケートするには、ソース システムがサポートされているバージョン範囲内にある必要があります。  AFX からレプリケートするには、Unified ONTAPシステムがONTAP 9.16.1 以降 (Advanced Capacity Balancing 機能がサポートされている最も古いリリース) である必要があります。  FlexCacheの場合、ソースシステムと宛先システムに同じルールが適用されます。 https://www.netapp.com/pdf.html?item=/media/7336-tr4743.pdf["TR-4743"^] 。
 
 FlexGroupボリュームのサポートにはいくつかの違いがあります。  AFX 上のFlexGroupボリュームは、Writeback モードを使用するFlexCacheボリュームの元のボリュームになることはできません。
