@@ -19,13 +19,11 @@ AFX を運用環境に展開する前に、管理構造と構成オプション�
 
 ストレージ仮想マシン (SVM) は、 ONTAPクラスタ内の分離されたサーバーまたはテナント環境です。接続されたクライアントにデータを提供するように SVM を設定できます。  AFX SVM の機能と特性を理解しておく必要があります。
 
-
-NOTE: AFX クラスターをセットアップして最初にデプロイすると、1 つのデータ SVM が作成されます。必要に応じて追加のデータ SVM を作成できます。
-
-行政管理:: データ SVM を使用すると、データとアプリケーションの分離を確立し、強制することができます。これは、大規模な組織に多くの異なるグループがある場合に役立ちます。管理制御を SVM に委任して、データ アクセス、セキュリティ、保護に関連するポリシーを確立できます。
+SVMの種類:: AFX システム クラスターは、いくつかの異なるタイプの SVM をホストします。  *データ SVM* はクライアントにデータを提供するために使用され、AFX 管理者が直接アクセスして構成できる唯一のタイプです。 AFX クラスターをセットアップして最初にデプロイすると、デフォルトで 1 つのデータ SVM が作成されますが、必要に応じて追加のデータ SVM を作成できます。このドキュメントで SVM を参照する場合、特に明記しない限り、データ SVM を意味します。
+行政管理:: SVM を使用すると、データとアプリケーションの分離を確立し、強制することができます。これは、大規模な組織に多くの異なるグループがある場合に役立ちます。管理制御を SVM に委任して、データ アクセス、セキュリティ、保護に関連するポリシーを確立できます。
 アカウントとRBACロール:: AFX には、クラスター レベルと SVM レベルの 2 つの認証および承認レベルがあります。クラスター アカウントに加えて、各 SVM には独自のユーザーとロールのセットが存在します。ほとんどの場合、クラスター レベルのアカウントを使用すれば十分です。ただし、環境によっては、より制限の厳しい SVM アカウントとロールも構成して使用する必要がある場合もあります。見るlink:../administer/additional-ontap-svm.html["追加のAFX SVM管理"]詳細についてはこちらをご覧ください。
 SVMスコープのリソース:: AFX リソースと構成可能なエンティティは、クラスターまたは特定の SVM に関連付けられます。  SVM スコープを持つリソースは多数あり、ボリュームやバケットだけでなく、SVM ユーザー アカウントや RBAC ロールも含まれます。
-専用ネットワークインターフェース:: 各 SVM には専用のネットワーク インターフェイス セットがあります。たとえば、管理用とクライアント データ アクセス用の別々の LIF が SVM に割り当てられます。
+専用ネットワークインターフェース:: 各 SVM には専用のネットワーク インターフェイス セットがあります。たとえば、管理用とクライアント アクセス用の別々の LIF が SVM に割り当てられます。
 
 
 
@@ -36,8 +34,8 @@ AFX を使用して実行するONTAP管理タスクは、通常、2 つの異な
 
 これらのレベルは、管理タスクがどのように編成され、割り当てられるかを説明するものであり、必ずしも関連するセキュリティがどのように構成されるかを説明するものではないことに注意することが重要です。たとえば、クラスタ レベルの管理を実行するにはクラスタ管理者アカウントが必要ですが、SVM 管理にも使用できます。
 
-クラスタ管理者:: クラスター管理者は、すべてのデータ SVM を含む AFX クラスターを完全に制御できます。 AFX クラスター管理レベルには、クラスター管理者が実行できるタスクのみが含まれ、SVM 固有の管理タスクは含まれません。見るlink:../administer/view-dashboard.html["クラスターを管理する"]詳細についてはこちらをご覧ください。
-SVM管理者:: SVM 管理者ロールは特定のデータ SVM を制御するため、クラスタ管理者に比べて制限が厳しくなります。 SVM 管理には、ボリュームの作成など、SVM スコープを持つオブジェクトおよびリソースを使用したタスクの実行が含まれます。見るlink:../manage-data/prepare-manage-data.html["ストレージVMとデータの管理"]詳細についてはこちらをご覧ください。
+クラスタ管理者:: クラスター管理者は、すべての SVM を含む AFX クラスターを完全に制御できます。AFX クラスター管理レベルには、クラスター管理者が実行できるタスクのみが含まれ、SVM 固有の管理タスクは含まれません。見るlink:../administer/view-dashboard.html["クラスターを管理する"]詳細についてはこちらをご覧ください。
+SVM管理者:: SVM 管理者ロールは特定の SVM を制御するため、クラスタ管理者に比べて制限が厳しくなります。SVM 管理には、ボリュームの作成など、SVM スコープを持つオブジェクトおよびリソースを使用したタスクの実行が含まれます。見るlink:../manage-data/prepare-manage-data.html["ストレージVMとデータの管理"]詳細についてはこちらをご覧ください。
 
 
 
@@ -119,7 +117,7 @@ AFX では、バックエンド クラスター スイッチに新しい HA VLAN
 ストレージ容量:: これは、クラスターのストレージ可用性ゾーン (SAZ) 内のすべての SSD ディスクの合計容量です。最大ストレージ容量は、 ONTAPリリースによって異なります。
 
 
-クラスタの機能を確認するには、 NetApp Hardware Universeおよび Interoperability Matrix Tool で入手可能な情報を確認する必要があります。
+AFX クラスターの機能を判断するには、 NetApp Hardware Universeおよび Interoperability Matrix Tool で入手可能な情報を確認する必要があります。
 
 
 
@@ -165,15 +163,15 @@ link:../administer/view-insights.html["Insightsを使用してAFXクラスター
 
 
 
-== データ SVM の作成と使用のクイック スタート
+== SVM の作成と使用のクイック スタート
 
 AFX クラスターをインストールしてセットアップしたら、ほとんどの AFX 展開に典型的な管理タスクの実行を開始できます。クライアントとデータを共有し始めるために必要な大まかな手順は次のとおりです。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"]利用可能なデータSVMを表示する
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"]利用可能なSVMを表示する
 [role="quick-margin-para"]
-link:../administer/display-svms.html["表示"]データ SVM のリストを確認し、使用できるものがあるかどうかを判断します。
+link:../administer/display-svms.html["表示"]SVM のリストを確認し、使用できるものがあるかどうかを判断します。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2"]オプションでデータSVMを作成する
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2"]オプションでSVMを作成する
 [role="quick-margin-para"]
 link:../administer/create-svm.html["作成"]既存の SVM が利用できない場合は、SVM を使用してアプリケーションのワークロードとデータを分離して保護します。
 
@@ -192,6 +190,7 @@ link:../manage-data/prepare-manage-data.html["準備"]データの割り当て�
 * https://docs.netapp.com/us-en/ontap/concepts/introducing-ontap-interfaces-concept.html["ONTAPのユーザ インターフェイス"^]
 * https://docs.netapp.com/us-en/ontap/system-admin/set-privilege-level-task.html["ONTAP CLIで権限レベルを設定する"^]
 * https://docs.netapp.com/us-en/ontap/system-admin/index.html["ONTAP CLI を使用したクラスタ管理について学習します"^]
+* https://docs.netapp.com/us-en/ontap/system-admin/types-svms-concept.html["ONTAPクラスタ内のSVMの種類"^]
 * https://hwu.netapp.com/["NetApp Hardware Universe"^]
 * https://imt.netapp.com/["NetApp Interoperability Matrix Tool"^]
 * https://docs.netapp.com/us-en/interoperability-matrix-tool/["相互運用性マトリックスツールの概要"^]

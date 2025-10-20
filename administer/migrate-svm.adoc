@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: administer/migrate-svm.html 
 keywords: afx, afx system, svm, migrate svm 
-summary: データ SVM を 1 つのONTAPクラスタから別の ONTAP クラスタに移行できます。  AFX を使用した SVM の移行は、Unified ONTAPの場合と同じように動作しますが、相互運用性に関する考慮事項がいくつかあります。  SVM 移行の実行の詳細については、Unified ONTAP のドキュメントを参照してください。 
+summary: SVM を 1 つのONTAPクラスタから別の ONTAP クラスタに移行できます。AFX を使用した SVM の移行は、Unified ONTAPの場合と同じように動作しますが、相互運用性に関する考慮事項がいくつかあります。SVM 移行の実行の詳細については、Unified ONTAP のドキュメントを参照してください。 
 ---
 = AFXストレージシステムSVMの移行
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: データ SVM を 1 つのONTAPクラスタから別の ONTAP クラス
 
 
 [role="lead"]
-データ SVM を 1 つのONTAPクラスタから別の ONTAP クラスタに移行できます。  AFX を使用した SVM の移行は、Unified ONTAPの場合と同じように動作しますが、相互運用性に関する考慮事項がいくつかあります。  SVM 移行の実行の詳細については、提供されている Unified ONTAP のドキュメントを参照してください。
+SVM を 1 つのONTAPクラスタから別の ONTAP クラスタに移行できます。AFX を使用した SVM の移行は、Unified ONTAPの場合と同じように動作しますが、相互運用性に関する考慮事項がいくつかあります。SVM 移行の実行の詳細については、提供されている Unified ONTAP のドキュメントを参照してください。
 
 
 

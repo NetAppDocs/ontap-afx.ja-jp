@@ -24,9 +24,8 @@ AFX の管理とサポートに役立つ追加のリソースがあり、 ONTAP�
 
 
 
-== NetAppマーケティングおよびサポート
+== NetAppサポート
 
-* https://www.netapp.com/afx/["NetApp AFX"^]
 * https://mysupport.netapp.com/["NetAppサポート サイト"^]
 * https://hwu.netapp.com/["NetApp Hardware Universe"^]
 * https://imt.netapp.com/["NetApp Interoperability Matrix Tool"^]

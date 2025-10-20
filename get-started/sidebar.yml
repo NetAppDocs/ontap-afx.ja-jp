@@ -6,8 +6,6 @@ entries:
   entries:
   - title: NetApp AFXについて学ぶ
     url: "/get-started/ontap-afx-storage.html"
-  - title: システム特性
-    url: "/get-started/system-design.html"
   - title: アーキテクチャの詳細
     url: "/get-started/software-architecture.html"
   - title: AFXとAFFおよびFASを比較する

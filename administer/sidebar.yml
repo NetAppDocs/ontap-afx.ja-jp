@@ -30,9 +30,9 @@ entries:
   entries:
   - title: SVMを表示する
     url: "/administer/display-svms.html"
-  - title: データSVMを作成する
+  - title: SVMの作成
     url: "/administer/create-svm.html"
-  - title: データSVMを構成する
+  - title: SVMを構成する
     url: "/administer/configure-svm.html"
   - title: SVMの移行
     url: "/administer/migrate-svm.html"
