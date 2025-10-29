@@ -356,8 +356,6 @@
   <block id="d1c1098f48087357ac90227a16c8ce05" category="section-title">相互運用性の考慮事項</block>
   <block id="003431cd9bfaf71ce41b593a52eef029" category="paragraph">SVM の移行を計画して実行する前に、機能や制限などの相互運用性に関する考慮事項を認識しておく必要があります。</block>
   <block id="2a3b399798aa16ecfbc1425cc560bfad" category="section-title">ユースケース</block>
-  <block id="aec776d00ac0b2ac01caca7839a38a2e" category="paragraph">クラスタ管理者は、SVM をソース クラスタから宛先クラスタに再配置できます。これは、容量管理と負荷分散の一環として、または機器のアップグレードやデータ センターの統合を可能にするために実行できます。</block>
-  <block id="70358fd17892e7eef43751c5c6946eb0" category="paragraph">また、AFX ストレージ システムは Unified ONTAPからのインプレース アップグレードをサポートしていないため、SVM の移行は重要なユース ケースとなります。アプリケーション ワークロードを、Unified ONTAP9 クラスターから AFX クラスターに中断なく移動できます。さらに、SVM は、AFX クラスターから Unified ONTAPクラスターへ、また AFX クラスター間での移行など、他の方法でも移行できます。</block>
   <block id="768b0db9b2b3020606a863a7304f2bb6" category="section-title">バージョンの相互運用性</block>
   <block id="4c07b9a244d0b610dffd3f95dfe2141c" category="paragraph">次の表は、ソース クラスタと宛先クラスタのONTAPパーソナリティとリリースに基づいて許可される SVM 移行を示しています。</block>
   <block id="02674a4ef33e11c879283629996c8ff8" category="cell">送受信方向</block>
@@ -373,7 +371,6 @@
   <block id="9f6385211c0120de98d15e76448a065c" category="list-text">FabricPool （複合アグリゲート上に存在するボリューム）</block>
   <block id="74a419556785700d1cff50e71e2c6f66" category="list-text">シックプロビジョニングボリューム</block>
   <block id="be1b9ef68f31ecee991e2282c1f24f0f" category="section-title">ボリュームプロビジョニング</block>
-  <block id="03ee3c2dee1a91ecfb0e9091c6ad64ae" category="paragraph">AFX ボリュームは、クラスターのストレージ可用性ゾーン (SAZ) 全体にわたって配置のバランスをとるためにプロビジョニングされます。</block>
   <block id="7420b76eb6276efbe1211f3a42108fa9" category="list-text">スペース保証</block>
   <block id="e42ca8050871a475bf759240b1011c5e" category="list-text">AFX はシックプロビジョニングをサポートしていません。移行対象の SVM 内のいずれかのボリュームがシック プロビジョニングされている場合、事前チェックを使用して移行を失敗させます。</block>
   <block id="d7f2615c71a1567cc13cf3a7f7de0aea" category="list-text">暗号化</block>
@@ -1685,7 +1682,6 @@
   <block id="228a97428b2aeec69210739af416feeb" category="summary">SVM を作成した後、要件とクライアントのニーズに基づいて構成を更新できます。</block>
   <block id="c1eb2ef19412fc8a729ccabaa304e64b" category="paragraph">特定の SVM のランディング ページのタブに反映されているように、SVM 構成へのアクセス パスは 4 つあります。これらには次のものが含まれます。</block>
   <block id="feb5d82aa83ef8e2c0f2897980886042" category="summary">SVM を 1 つのONTAPクラスタから別の ONTAP クラスタに移行できます。AFX を使用した SVM の移行は、Unified ONTAPの場合と同じように動作しますが、相互運用性に関する考慮事項がいくつかあります。SVM 移行の実行の詳細については、Unified ONTAP のドキュメントを参照してください。</block>
-  <block id="de588dc77b66037715d1febfdf7f9ae7" category="paragraph">SVM を 1 つのONTAPクラスタから別の ONTAP クラスタに移行できます。AFX を使用した SVM の移行は、Unified ONTAPの場合と同じように動作しますが、相互運用性に関する考慮事項がいくつかあります。SVM 移行の実行の詳細については、提供されている Unified ONTAP のドキュメントを参照してください。</block>
   <block id="4c2e600ea7c53e0c32af10f2e4850cd6" category="paragraph-title">AFX ストレージ システムのバックエンド クラスター ネットワークでは、任意のタイプのスイッチを使用できますか?</block>
   <block id="42ed7ea439950fed1039106f87d3419f" category="admonition">AFX ドキュメントには、 ONTAPパーソナリティに関係なく同じように動作する機能の詳細については、Unified ONTAPドキュメント サイトのさまざまなトピックへのリンクが含まれています。追加コンテンツでは、AFX ストレージ システムの管理に役立つ詳細な情報が提供されます。</block>
   <block id="765b47efc6becfafc2dfb93543aab395" category="list-text">高度な容量バランス調整機能は、<block ref="7617fb157efcfcd230d531be7d153280" prefix=" " category="inline-code"></block> CLI パラメータは、すべてのFlexGroupボリュームに対してデフォルトで有効になっています。</block>
@@ -1716,4 +1712,12 @@
   <block id="679eb87712080343e0bc37dbc08451df" category="paragraph">ボリュームを作成するときは、最小限の構成詳細を指定する必要があります。追加の詳細は、作成中または作成後にボリュームを編集することによって提供できます。追加の SVM を作成した場合は、ボリュームの SVM を選択する必要があります。</block>
   <block id="93b1520005778e826c33efa7132d61c9" category="sidebar">SVMの作成</block>
   <block id="b4f82cc57b777a6dc79376d19998c912" category="sidebar">SVMを構成する</block>
+  <block id="23dd8e2a3266c643a92829254de9f453" category="paragraph">SVM を 1 つのONTAPクラスタから別の ONTAP クラスタに移行できます。AFX を使用した SVM の移行は、Unified ONTAPの場合と同じように動作しますが、相互運用性に関する考慮事項と制限がいくつかあります。SVM 移行の実行の詳細については、Unified ONTAP のドキュメントを参照してください。</block>
+  <block id="d3600eb6973aa12c110f41460c893d41" category="paragraph">クラスタ管理者は、SVM をソース クラスタから宛先クラスタに再配置できます。これは、容量管理と負荷分散の一環として、または機器のアップグレードやデータ センターの統合を可能にするために実行できます。AFX ストレージ システムは Unified ONTAPからのインプレース アップグレードをサポートしていないため、SVM の移行は重要なユース ケースとなります。</block>
+  <block id="d6f4865759aeafd0faf5d3cbce10e548" category="paragraph">アプリケーション ワークロードを、Unified ONTAPクラスターから AFX クラスターに中断なく移動できます。さらに、SVM は、AFX クラスターから Unified ONTAPクラスターへ、また AFX クラスター間での移行など、他の方法でも移行できます。</block>
+  <block id="367fd97b2408a2862e7a2b7bc0f52d14" category="paragraph">ボリュームは、AFX クラスターのストレージ可用性ゾーン (SAZ) 全体にわたって配置のバランスをとるようにプロビジョニングされます。</block>
+  <block id="d66c3d45d2bb8165afc4400849d5ef66" category="section-title">追加の制限</block>
+  <block id="110352dfc6688e1ab1d9271ac5a2552b" category="paragraph">SVM を移行する前に考慮する必要がある追加の制限があります。</block>
+  <block id="937992c5285f166aa01c3633fc6cb85b" category="list-text">AFX ストレージ システムはNetApp MetroClusterをサポートしていません。これにより、SVM の移行時に制限が生じます。 MetroCluster を使用するように設定されているAFFまたはFASシステム（または Unified ONTAPパーソナリティを実行している任意のNetAppシステム）との間で AFX SVM を移行することはできません。これらの移行シナリオはサポートされていませんが、AFX 事前チェックによって明示的にブロックされることもないため、試行しないように注意する必要があります。</block>
+  <block id="372a3016fd08d93f2bfe7c10abae9936" category="list-text"><block ref="372a3016fd08d93f2bfe7c10abae9936" category="inline-link-macro-rx"></block></block>
 </blocks>
