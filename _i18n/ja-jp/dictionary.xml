@@ -1601,7 +1601,6 @@
   <block id="cc00ecc8807926c957b868c222de58f6" category="sidebar">クラスターを拡張</block>
   <block id="d04e5f519989e5f2ca95f9541ffe17a0" category="sidebar">ONTAPのアップグレード</block>
   <block id="00a69742e414f1b267e0cae78e185336" category="sidebar">ファームウェアの更新</block>
-  <block id="88fff44862def4168ac79c5db562ef39" category="sidebar">ハードウェアのメンテナンス</block>
   <block id="3e3ccd70e170fe5490433b8d5cf56bf3" category="sidebar">AFXシステムについて学ぶ</block>
   <block id="dbe4d9ee9509101eab810b6d20824b87" category="sidebar">NetApp AFXについて学ぶ</block>
   <block id="ee3eaeb6a7cd31167c2dd23547b16511" category="sidebar">アーキテクチャの詳細</block>
@@ -1720,4 +1719,5 @@
   <block id="110352dfc6688e1ab1d9271ac5a2552b" category="paragraph">SVM を移行する前に考慮する必要がある追加の制限があります。</block>
   <block id="937992c5285f166aa01c3633fc6cb85b" category="list-text">AFX ストレージ システムはNetApp MetroClusterをサポートしていません。これにより、SVM の移行時に制限が生じます。 MetroCluster を使用するように設定されているAFFまたはFASシステム（または Unified ONTAPパーソナリティを実行している任意のNetAppシステム）との間で AFX SVM を移行することはできません。これらの移行シナリオはサポートされていませんが、AFX 事前チェックによって明示的にブロックされることもないため、試行しないように注意する必要があります。</block>
   <block id="372a3016fd08d93f2bfe7c10abae9936" category="list-text"><block ref="372a3016fd08d93f2bfe7c10abae9936" category="inline-link-macro-rx"></block></block>
+  <block id="f090951c6f34b76fa7499153d4fd51be" category="sidebar">ハードウェアのメンテナンス</block>
 </blocks>

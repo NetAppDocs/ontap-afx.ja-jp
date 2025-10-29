@@ -50,7 +50,5 @@ entries:
     url: "/administer/upgrade-ontap.html"
   - title: ファームウェアの更新
     url: "/administer/update-firmware.html"
-  - title: ハードウェアのメンテナンス
-    url: "/administer/maintain-hardware.html"
 - title: 追加投与
   url: "/administer/additional-ontap-cluster.html"
