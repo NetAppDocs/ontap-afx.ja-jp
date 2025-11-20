@@ -14,7 +14,7 @@ summary: AFX データを管理する前に、基本的な概念と機能につ�
 AFX データを管理する前に、基本的な概念と機能について理解しておく必要があります。
 
 
-TIP: AFFおよびFASシステムで使用できる概念や管理手順の多くは AFX ストレージ システムと同じであるため、Unified ONTAP のドキュメントを確認すると役立ちます。
+TIP: AFFおよびFASシステムで使用できる概念や管理手順の多くは AFX ストレージ システムと同じであるため、Unified ONTAP のドキュメントを確認すると役立ちます。リンクを参照してください <<関連情報>> 詳細についてはこちらをご覧ください。
 
 
 
@@ -89,6 +89,7 @@ AFX クラスターに定義されているすべてのボリュームとバケ�
 
 == 関連情報
 
+* https://docs.netapp.com/us-en/ontap/concept_nas_file_system_analytics_overview.html["ONTAPファイル システム分析について学ぶ"^]
 * link:../administer/additional-ontap-svm.html["追加のAFX SVM管理"]
 * link:../get-started/prepare-cluster-admin.html["AFX システムの管理を準備する"]
 * link:../administer/migrate-svm.html["AFX システム SVM を移行する"]
