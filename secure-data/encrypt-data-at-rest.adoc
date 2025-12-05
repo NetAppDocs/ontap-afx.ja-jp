@@ -46,3 +46,7 @@ AFX オンボード キー マネージャーまたは外部キー マネージ�
 . ソフトウェア暗号化を有効にするには、「*二重層暗号化*」を選択します。
 . *保存*を選択します。
 
+
+.関連情報
+* https://docs.netapp.com/us-en/ontap/concepts/encryption-concept.html["暗号化"^]
+

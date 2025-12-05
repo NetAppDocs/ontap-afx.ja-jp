@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: secure-data/secure-ip-connections.html 
+keywords: netapp afx, afx, ip security, ipsec, secure data, data security, encryption, data-in-flight, secure connections, hardware offload 
+summary: 'IP セキュリティ (IPsec) は、ネットワーク エンドポイント間を流れるトラフィックに対して IP レベルでデータの暗号化、整合性、および認証を提供するインターネット プロトコル標準です。  IPsec を使用すると、AFX クラスターとクライアント間のフロントエンド ネットワークのセキュリティを強化できます。' 
+---
+= AFXストレージシステム上の安全なIP接続
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+IP セキュリティ (IPsec) は、ネットワーク エンドポイント間を流れるトラフィックに対して IP レベルでデータの暗号化、整合性、および認証を提供するインターネット プロトコル標準です。  IPsec を使用すると、AFX クラスターとクライアント間のフロントエンド ネットワークのセキュリティを強化できます。
+
+
+
+== AFX システムでの IPsec の構成
+
+AFX ストレージ システムの IPsec 構成手順は、ハードウェア オフロード機能で使用されるサポートされているネットワーク インターフェイス コントローラ (NIC) カードを除き、 AFFおよびFASシステムと同じです。参照 https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html["ONTAPネットワークのIPセキュリティを設定するための準備"^]詳細についてはこちらをご覧ください。
+
+
+
+== ハードウェアオフロード機能
+
+暗号化や整合性チェックなどの IPsec 暗号化操作のいくつかは、AFX システムでサポートされている NIC カードにオフロードできます。これにより、IPsec によって保護されたネットワーク トラフィックのパフォーマンスとスループットが大幅に向上します。
+
+
+NOTE: ONTAP 9.18.1 以降では、IPsec ハードウェア オフロード機能が拡張され、IPv6 トラフィックがサポートされるようになりました。
+
+ONTAP 9.17.1 以降の AFX ストレージ システムの IPsec ハードウェア オフロード機能では、次の NIC カードがサポートされています。
+
+* X50130B (2p、40G/100G イーサネット コントローラ)
+* X50131B (2p、40G/100G/200G/400G イーサネット コントローラ)
+
+
+参照 https://hwu.netapp.com/["NetApp Hardware Universe"^]AFX システムで実行されているONTAPリリースでサポートされているカードの詳細については、 を参照してください。
+
+
+
+== 関連情報
+
+* https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html["ONTAPネットワークのIPセキュリティを設定するための準備"^]
+* https://hwu.netapp.com/["NetApp Hardware Universe"^]
+

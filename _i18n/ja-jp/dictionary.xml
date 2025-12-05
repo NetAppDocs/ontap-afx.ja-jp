@@ -1210,7 +1210,6 @@
   <block id="5546f6d8bc3d0dd5a40c20c4d749d48e" category="list-text"><block ref="5546f6d8bc3d0dd5a40c20c4d749d48e" category="inline-link-macro-rx"></block></block>
   <block id="264c7a25568ab93610cc395140359eb4" category="summary">AFX データを管理する前に、基本的な概念と機能について理解しておく必要があります。</block>
   <block id="bfd961e2a1e35548010fea792ecda5e4" category="doc">AFXストレージシステムのデータ管理の準備</block>
-  <block id="0a73e1b98f2c30e86e79b4143a8c5993" category="admonition">AFFおよびFASシステムで使用できる概念や管理手順の多くは AFX ストレージ システムと同じであるため、Unified ONTAP のドキュメントを確認すると役立ちます。</block>
   <block id="4e5fb30db16cab1af452750211083830" category="section-title">用語とオプション</block>
   <block id="91818c76048499823f8f320043c66890" category="paragraph">AFX ストレージに関連して、知っておくべき用語がいくつかあります。</block>
   <block id="045efe415c2e22ca0585f899f658f875" category="list-text">フレックスボリューム</block>
@@ -1512,10 +1511,7 @@
   <block id="9297a6c5e1e2ce6644265b71048498d4" category="doc">AFXストレージシステムのデータを保護する準備</block>
   <block id="fd0b40056f2f1d2d8b24894a14c29204" category="paragraph">AFX データ セキュリティに関連して、知っておくべき用語がいくつかあります。</block>
   <block id="232a2b16a1710c0ed1d16548ba8bb8f1" category="list-text">ランサムウェア</block>
-  <block id="8e5c56447afc009e4174cf344c14b105" category="list-text">ランサムウェアは、ファイルを暗号化してユーザーがアクセスできないようにする悪意のあるソフトウェアです。通常、データを復号化するには何らかの支払いが要求されます。  NetApp ONTAP は、Autonomous Ransomware Protection (ARP) などの機能を通じてランサムウェアから保護するソリューションを提供します。</block>
-  <block id="e04c15856f0ea4ee0be8fd6e3957b0b0" category="list-text">暗号化とは、適切な認証なしには簡単に読み取ることができない安全な形式にデータを変換するプロセスです。 ONTAP は、保存中のデータを保護するために、ソフトウェア ベースとハードウェア ベースの両方の暗号化テクノロジを提供します。これにより、ストレージ メディアが再利用、返却、紛失、盗難された場合でも、読み取ることができなくなります。これらの暗号化ソリューションは、外部のキー管理サーバーまたはONTAPが提供するオンボード キー マネージャーを使用して管理できます。</block>
   <block id="1dd2239be8a1348b44deadbaab8103bb" category="list-text">デジタル証明書とPKI</block>
-  <block id="059460d88580ecd8442df8002819bed2" category="list-text">デジタル証明書は、公開鍵の所有権を証明するために使用される電子文書です。公開キーと関連する秘密キーは、通常、TLS や IPsec などの大規模なセキュリティ フレームワークの一部として ID を確立するなど、さまざまな方法で使用できます。これらのキーと、それをサポートするプロトコルおよびフォーマット標準は、公開キー インフラストラクチャ (PKI) の基礎を形成します。</block>
   <block id="699abf1f897b13a155ff2ccb3ae3fb4c" category="sidebar">NetApp AFX ストレージ システムは、高性能 NAS および S3 顧客の固有のニーズに重点を置いた、分散型のハードウェアおよびソフトウェア ソリューションです。パフォーマンスとスケーラビリティは、AI および ML ワークロードの要件を満たすように特別に設計されています。  AFX は簡素化されたユーザー エクスペリエンスを提供するため、ストレージの専門家と非専門家の両方が管理できます。</block>
   <block id="67e3534cd0feec346d52509c43cc0189" category="sidebar">AFXのドキュメント</block>
   <block id="5f5ce9070c0881e38b8b17b23b3ece81" category="sidebar">NetApp ONTAP AFX ストレージ システムは、高性能 NAS および S3 のお客様の固有のニーズに重点を置いた、分散型のハードウェアおよびソフトウェア ソリューションです。パフォーマンスとスケーラビリティは、AI および ML ワークロードの要件を満たすように特別に設計されています。  AFX は簡素化されたユーザー エクスペリエンスを提供するため、ストレージの専門家と非専門家の両方が管理できます。</block>
@@ -1748,4 +1744,26 @@
   <block id="4793cb6d96d5d4cc5414378f2e112491" category="inline-link">ONTAP FPolicyソリューションについて学ぶ</block>
   <block id="2eeb3252b3af5fe61779a84830d2e434" category="paragraph">FPolicy は、ストレージ仮想マシン (SVM) 上のファイル アクセス イベントを監視および管理するために使用されるファイル アクセス通知フレームワークです。  FPolicy を使用すると、定義した基準に基づいて、監視するファイル操作、およびオプションでブロックするファイル操作を定義するポリシーを作成できます。 FPolicy は、セキュリティ監査、コンプライアンス、データ ガバナンスによく使用されます。参照<block ref="ebf1bc585900d5a5c7e4dd72e223b4f2" category="inline-link-rx"></block>詳細についてはこちらをご覧ください。</block>
   <block id="148f6424d726591d91b9421c2ce15592" category="paragraph">クラスターの健全性とパフォーマンスを監視できます。これには、イベントのアラートの設定とシステムヘルスアラートの通知の管理が含まれます。参照<block ref="a6cdc1834b78b8b89ee92bbe49904c07" category="inline-link-rx"></block>詳細についてはこちらをご覧ください。</block>
+  <block id="e37cca0fa7c8107fb5020cf4582f3929" category="inline-link">ONTAPでCA署名サーバ証明書を生成してインストールする</block>
+  <block id="231f720f91efedbb9764ddf8fda35120" category="list-text"><block ref="231f720f91efedbb9764ddf8fda35120" category="inline-link-rx"></block></block>
+  <block id="f24bbb5da9459bbeeaa879e76bdb2ef5" category="list-text"><block ref="f24bbb5da9459bbeeaa879e76bdb2ef5" category="inline-link-rx"></block></block>
+  <block id="31e5accb4e8aaf28149365ab0968edb0" category="list-text">ランサムウェアは、ファイルを暗号化してユーザーがアクセスできないようにする悪意のあるソフトウェアです。通常、データを復号化するには何らかの支払いが要求されます。  ONTAP は、Autonomous Ransomware Protection (ARP) などの機能を通じて、ランサムウェアから保護するソリューションを提供します。</block>
+  <block id="86921103071233483e469eaa840b0e55" category="list-text">暗号化とは、適切な認証なしには簡単に読み取ることができない安全な形式にデータを変換するプロセスです。ONTAP は、保存中のデータを保護するために、ソフトウェア ベースとハードウェア ベースの両方の暗号化テクノロジを提供します。これにより、ストレージ メディアが再利用、返却、紛失、盗難された場合でも、読み取ることができなくなります。これらの暗号化ソリューションは、外部のキー管理サーバーまたはONTAPが提供するオンボード キー マネージャーを使用して管理できます。参照<block ref="c93bd16a781b45e60a7d7d16eedf487d" category="inline-link-macro-rx"></block>詳細についてはこちらをご覧ください。</block>
+  <block id="420d6d4489a72885833a9c3cef85fb57" category="list-text">デジタル証明書は、公開鍵の所有権を証明するために使用される電子文書です。公開キーと関連する秘密キーは、通常、TLS や IPsec などの大規模なセキュリティ フレームワークの一部として ID を確立するなど、さまざまな方法で使用できます。これらのキーと、それをサポートするプロトコルおよびフォーマット標準は、公開キー インフラストラクチャ (PKI) の基礎を形成します。参照<block ref="e4dcc7e3ac3e4848bf64003b8c2cdc66" category="inline-link-macro-rx"></block>詳細についてはこちらをご覧ください。</block>
+  <block id="04c053beb02ce1214b9f43301cc9ee58" category="list-text">インターネットプロトコルセキュリティ</block>
+  <block id="4504e962308541316b8f741529026c50" category="inline-link-macro">AFXストレージシステム上の安全なIP接続</block>
+  <block id="b434862bc36c3dfc5a3f669575381d37" category="list-text">IPsec は、IP レベルでネットワーク エンドポイント間を流れるトラフィックに対して、転送中のデータの暗号化、整合性、および認証を提供するインターネット標準です。  NFS や SMB などの上位レベルのプロトコルを含む、 ONTAPとクライアント間のすべての IP トラフィックを保護します。 IPsec は、データに対する悪意のあるリプレイ攻撃や中間者攻撃から保護します。参照<block ref="fefb8a20b2037a3c6c06f48d1c1a3c61" category="inline-link-macro-rx"></block>詳細についてはこちらをご覧ください。</block>
+  <block id="4f6a6f917a61b67c18bc3831abc050e2" category="summary">IP セキュリティ (IPsec) は、ネットワーク エンドポイント間を流れるトラフィックに対して IP レベルでデータの暗号化、整合性、および認証を提供するインターネット プロトコル標準です。  IPsec を使用すると、AFX クラスターとクライアント間のフロントエンド ネットワークのセキュリティを強化できます。</block>
+  <block id="ff3b00711e5ec535f68b25c53f6c52ea" category="section-title">AFX システムでの IPsec の構成</block>
+  <block id="b73a4478ceeb8906001c1f76559a3230" category="inline-link">ONTAPネットワークのIPセキュリティを設定するための準備</block>
+  <block id="0877f2530b01c998dd67177f7f07a423" category="paragraph">AFX ストレージ システムの IPsec 構成手順は、ハードウェア オフロード機能で使用されるサポートされているネットワーク インターフェイス コントローラ (NIC) カードを除き、 AFFおよびFASシステムと同じです。参照<block ref="e979fc5d5ca6bb587b0b1477a0dab95e" category="inline-link-rx"></block>詳細についてはこちらをご覧ください。</block>
+  <block id="ff24c22105541820490a27b55da3fb5d" category="section-title">ハードウェアオフロード機能</block>
+  <block id="5920fa28152f424e58623c8cd561ce4f" category="paragraph">暗号化や整合性チェックなどの IPsec 暗号化操作のいくつかは、AFX システムでサポートされている NIC カードにオフロードできます。これにより、IPsec によって保護されたネットワーク トラフィックのパフォーマンスとスループットが大幅に向上します。</block>
+  <block id="d2c8b86e2d63347fd5a4b610c1648c10" category="admonition">ONTAP 9.18.1 以降では、IPsec ハードウェア オフロード機能が拡張され、IPv6 トラフィックがサポートされるようになりました。</block>
+  <block id="a9c93ccddc8c2c53048396fb5013e027" category="paragraph">ONTAP 9.17.1 以降の AFX ストレージ システムの IPsec ハードウェア オフロード機能では、次の NIC カードがサポートされています。</block>
+  <block id="f520fb7c95dbe4015bfbc9b0987d59a1" category="list-text">X50130B (2p、40G/100G イーサネット コントローラ)</block>
+  <block id="9c77196713db9b360b550aa3217d507f" category="list-text">X50131B (2p、40G/100G/200G/400G イーサネット コントローラ)</block>
+  <block id="9b3ab302175091da61fb00078bbdf676" category="paragraph">参照<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>AFX システムで実行されているONTAPリリースでサポートされているカードの詳細については、 を参照してください。</block>
+  <block id="d41e75fa1b06d9a7c925a3f985c520e5" category="list-text"><block ref="d41e75fa1b06d9a7c925a3f985c520e5" category="inline-link-rx"></block></block>
+  <block id="0a0e33e3bee1123a43e4178aad30ed45" category="sidebar">安全なIP接続</block>
 </blocks>

@@ -40,5 +40,7 @@ entries:
     url: "/secure-data/prepare-secure-data.html"
   - title: 保存データを暗号化する
     url: "/secure-data/encrypt-data-at-rest.html"
+  - title: 安全なIP接続
+    url: "/secure-data/secure-ip-connections.html"
 - title: 追加投与
   url: "/administer/additional-ontap-svm.html"
