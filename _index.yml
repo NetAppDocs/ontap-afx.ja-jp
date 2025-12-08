@@ -27,6 +27,8 @@ indexpage:
       url: "/administer/display-svms.html"
     - title: クラスターのアップグレードとメンテナンス
       url: "/administer/expand-cluster.html"
+    - title: 制限を元に戻す
+      url: "/administer/revert-ontap.html"
     - title: 追加投与
       url: "/administer/additional-ontap-cluster.html"
   - title: データとアクセスを管理する

@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: administer/revert-ontap.html 
+keywords: afx, afx system, revert, revert ontap, revert limitation 
+summary: ONTAPクラスターを元に戻すとは、すべてのノードを以前のメジャーONTAPリリースに移動するプロセスです。 
+---
+= ONTAP の復帰は AFX ストレージ システムではサポートされません
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAPクラスターを元に戻すとは、すべてのノードを以前のメジャーONTAPリリースに移動するプロセスです。
+
+NetApp AFX ストレージ システムはONTAP の復帰をサポートしていません。AFX を使用して元に戻す操作を試みると、クラスターが不安定になり、データが失われる可能性があります。AFX システムでは元に戻す操作を試みないでください。

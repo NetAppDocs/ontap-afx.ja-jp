@@ -13,6 +13,9 @@ summary: AFX システムでONTAPソフトウェアをアップグレードす�
 [role="lead"]
 AFX システムでONTAPソフトウェアをアップグレードすると、コストの削減、重要なワークロードの高速化、セキュリティの強化、組織で利用可能なデータ保護の範囲の拡大に役立つ新しいONTAP機能と強化された ONTAP 機能を活用できます。
 
+
+CAUTION: AFXストレージシステムはサポートしていません link:../administer/revert-ontap.html["ONTAPのリバート"] 操作。
+
 AFX ストレージ システムのONTAPソフトウェア アップグレードは、他のONTAPシステムのアップグレードと同じプロセスに従います。 Active IQ Digital Advisor （ Digital Advisorとも呼ばれます）の有効なSupportEdge契約をお持ちの場合は、link:https://docs.netapp.com/us-en/ontap/upgrade/create-upgrade-plan.html["アップグレードアドバイザーでアップグレードを準備する"^] 。Upgrade Advisorから提供されるインテリジェンスを活用すれば、クラスタを評価し、使用している構成に固有のアップグレード計画を作成して、不確実性とリスクを最小限に抑えることができます。  Active IQ Digital Advisorの有効なSupportEdge契約をお持ちでない場合は、link:https://docs.netapp.com/us-en/ontap/upgrade/prepare.html["アップグレードアドバイザーなしでアップグレードを準備する"^] 。
 
 アップグレードの準備ができたら、以下の方法でアップグレードを実行することをお勧めします。link:https://docs.netapp.com/us-en/ontap/upgrade/task_upgrade_andu_sm.html["システムマネージャからの自動無停止アップグレード（ANDU）"] 。ANDUでは、ONTAPのハイアベイラビリティ（HA）フェイルオーバー テクノロジを利用して、アップグレード中もクラスタからデータが提供されます。

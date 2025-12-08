@@ -50,5 +50,7 @@ entries:
     url: "/administer/upgrade-ontap.html"
   - title: ファームウェアの更新
     url: "/administer/update-firmware.html"
+  - title: 制限を元に戻す
+    url: "/administer/revert-ontap.html"
 - title: 追加投与
   url: "/administer/additional-ontap-cluster.html"
