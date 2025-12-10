@@ -10,7 +10,7 @@ summary: この FAQ リストには、AFX ストレージ システムに関し�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

@@ -444,7 +444,6 @@
   <block id="c06b2149bbe3e94f6eac8a64039cc025" category="list-text">EULA をお読みください。</block>
   <block id="d6aeb9cf91111f522e0f1901518a3836" category="list-text">推奨される更新の「通知を表示」のデフォルトを受け入れます。オプションで、推奨される更新を *自動的に更新* するか、*自動的に閉じる* かを選択します。</block>
   <block id="17ac6cdd9934a4f4aca00f5228a64555" category="list-text">更新の変更が現在および将来のすべての更新に適用されることを確認する場合に選択します。</block>
-  <block id="09190524572cf4f2b42ddf32f3f54ce7" category="paragraph">推奨される更新は、更新の選択に基づいて、OTAP AFX システムに自動的にダウンロードされ、インストールされます。</block>
   <block id="5de0adb95551ff3c1458ae6247a4959f" category="section-title">自動更新を無効にする</block>
   <block id="6141cdc0ba26479d87d6b8c24af9fc18" category="paragraph">推奨される更新プログラムがインストールされる前に表示する柔軟性が必要な場合は、自動更新を無効にします。自動更新を無効にした場合は、ファームウェアとシステム ファイルの更新を手動で実行する必要があります。</block>
   <block id="9c2cdad0235d8d361f21c8343ef95363" category="list-text">システム マネージャーで、*クラスター &gt; 設定* を選択します。</block>
@@ -1409,8 +1408,6 @@
   <block id="ce587252d09bb3dfb2d53f154ba81d93" category="section-title">ステップ3: レプリケーション関係を作成する</block>
   <block id="c8733c85583475859780bc7c89c97d92" category="paragraph">スナップショット レプリケーション関係により、AFX システムとリモート ロケーション間の接続が確立され、整合性グループをリモート クラスターにレプリケートできるようになります。複製された整合性グループは、災害復旧やデータ移行に使用できます。</block>
   <block id="c5d439ea8d2444de271a6842180ae515" category="paragraph">ランサムウェア攻撃から保護するために、レプリケーション関係を設定するときに、宛先スナップショットをロックすることを選択できます。ロックされたスナップショットは、誤ってまたは悪意を持って削除されることはありません。ボリュームがランサムウェア攻撃によって侵害された場合、ロックされたスナップショットを使用してデータを回復できます。</block>
-  <block id="bf5d4ab274f571d57107a348e35cb081" category="inline-link-macro">スナップショットコンプライアンスクロックを初期化する</block>
-  <block id="a2070fe1416691eeb91c53762fd2a74c" category="paragraph">保存先のスナップショットをロックしたい場合は、<block ref="27d9d0ff36409c51abdcd0a6f30da304" category="inline-link-macro-rx"></block>レプリケーション関係を作成する前に。</block>
   <block id="f07148b3f2fd0f0a23b807626916df29" category="paragraph">ロックされた宛先スナップショットの有無にかかわらず、レプリケーション関係を作成します。</block>
   <block id="b581751404702669bf568b5f9581e76c" category="open-title">ロックされたスナップショット</block>
   <block id="82fd6aa34bfb21de39dd81c963a0a2e8" category="list-text">System Manager で、*保護 &gt; 整合性グループ* を選択します。</block>
@@ -1772,4 +1769,5 @@
   <block id="b34a4582eb04bf97b29749b7a8e1ee38" category="inline-link-macro">ONTAPのリバート</block>
   <block id="dbca7577f0796430f28fd2f1f5805bc9" category="admonition">AFXストレージシステムはサポートしていません <block ref="af98218b92f959dac30e2de6f742409f" category="inline-link-macro-rx"></block> 操作。</block>
   <block id="0f3715b1b8b72110fa162f2666d15f10" category="sidebar">制限を元に戻す</block>
+  <block id="c29e3429d133a5255487ffdb4b3cd5b3" category="paragraph">推奨される更新は、更新の選択に基づいて、ONTAP AFX システムに自動的にダウンロードされ、インストールされます。</block>
 </blocks>

@@ -7,7 +7,7 @@ summary: AFX ストレージ システムでメンテナンス手順を実行す
 = AFXストレージシステムのハードウェアを保守する
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
