@@ -136,7 +136,7 @@ NOTE: ID が点滅するまでに 15 秒以上かかる場合は、棚 ID ボタ
 .. コンソール ケーブルをラップトップに接続し、ストレージ システムに付属のコンソール ケーブルを使用してコントローラーのシリアル コンソール ポートを接続します。
 .. ラップトップを管理サブネット上のスイッチに接続します。
 +
-image::../media/drw_a1k_70-90_console_connection_ieops-1702.svg[コンソール接続]
+image::../media/drw_afx_1k_console_connection_ieops-2708.svg[コンソール接続]
 
 
 

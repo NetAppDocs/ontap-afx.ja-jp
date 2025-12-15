@@ -72,6 +72,10 @@ DNS サーバーと NTP サーバーの詳細を定義します。
 +
 クラスター暗号化の詳細を定義できます。*続行*を選択します。
 
++
+
+NOTE: Windows以外の環境でクラスタを作成する方法については、以下を参照してください。 link:https://docs.netapp.com/us-en/ontap/software_setup/setup-cluster.html["ONTAPクラスタを作成し、ノードを結合する"^]。
+
 
 
 .次の手順
