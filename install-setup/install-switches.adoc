@@ -36,7 +36,7 @@ NetAppパススルー パネル キットには、次のハードウェアが含
 NOTE: ジャンパー コードはパススルー キットには付属していません。スイッチにジャンパー ケーブルが同梱されていない場合は、 NetAppに問い合わせて適切なジャンパー ケーブルを注文してください。
 
 
-NOTE: Cisco 9332D-GX2B および 9364D-GX2A はポート側吸気スイッチです。スイッチのネットワーク ポートはキャビネットの前面を向いて設置する必要があり、排気ファンはキャビネットの背面を向いて設置する必要があります。この構成では、キャビネット前面のネットワーク ポートからキャビネット背面のストレージ ポートまで十分な長さのケーブルを使用する必要があります。  + これらのスイッチの詳細については、 Cisco のWeb サイトをご覧ください。 https://www.cisco.com/c/en/us/td/docs/dcn/hw/nx-os/nexus9000/9332d-gx2b/cisco-nexus-9332d-gx2b-nx-os-mode-switch-hardware-installation-guide.html["Cisco Nexus 9332D-GX2B NX-OS モード スイッチ ハードウェア設置ガイド"^]そして https://www.cisco.com/c/en/us/td/docs/dcn/hw/nx-os/nexus9000/9364d-gx2a/cisco-nexus-9364d-gx2a-nx-os-mode-switch-hardware-installation-guide.html["Cisco Nexus 9364D-GX2A NX-OS モード スイッチ ハードウェア設置ガイド"^]。
+NOTE: スイッチのエアフローがポート側吸気（バーガンディ色のファンと電源ユニット）に設定されている場合、スイッチのネットワークポートはキャビネットの前面を向き、排気ファンはキャビネットの背面を向くように設置する必要があります。この構成では、キャビネット前面のネットワークポートからキャビネット背面のストレージポートまで、十分な長さのケーブルを使用する必要があります。+ これらのスイッチの詳細については、CiscoのWebサイト https://www.cisco.com/c/en/us/td/docs/dcn/hw/nx-os/nexus9000/9332d-gx2b/cisco-nexus-9332d-gx2b-nx-os-mode-switch-hardware-installation-guide.html["Cisco Nexus 9332D-GX2B NX-OS モード スイッチ ハードウェア設置ガイド"^]および https://www.cisco.com/c/en/us/td/docs/dcn/hw/nx-os/nexus9000/9364d-gx2a/cisco-nexus-9364d-gx2a-nx-os-mode-switch-hardware-installation-guide.html["Cisco Nexus 9364D-GX2A NX-OS モード スイッチ ハードウェア設置ガイド"^]をご覧ください。
 
 .手順
 . パススルーブランクパネルを取り付けます。
