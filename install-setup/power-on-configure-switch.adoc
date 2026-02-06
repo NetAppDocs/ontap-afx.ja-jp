@@ -15,6 +15,12 @@ AFX 1K ストレージ システムにケーブルを接続した後、 Cisco Ne
 
 .手順
 . スイッチの電源コードを電源に差し込みます。
+. 2 つのスイッチ間に ISL ケーブルを接続します。
++
+** Cisco Nexus 9332D-GX2B スイッチの場合は、ISL 接続にポート 31/32 を使用します。link:https://www.cisco.com/c/en/us/td/docs/dcn/hw/nx-os/nexus9000/9332d-gx2b/cisco-nexus-9332d-gx2b-nx-os-mode-switch-hardware-installation-guide/m_overview1.html["Cisco Nexus 9332D-GX2B NX-OS モード スイッチ ハードウェア設置ガイド"^]を参照してください。
+** Cisco Nexus 9364D-GX2A スイッチの場合は、ISL 接続にポート 63/64 を使用します。link:https://www.cisco.com/c/en/us/td/docs/dcn/hw/nx-os/nexus9000/9364d-gx2a/cisco-nexus-9364d-gx2a-nx-os-mode-switch-hardware-installation-guide/m_overview1.html["Cisco Nexus 9364D-GX2A NX-OS モード スイッチ ハードウェア設置ガイド"^]を参照してください。
+
+
 . 各スイッチの電源を入れます。
 . AFX 1K ストレージ システムをサポートするようにスイッチを構成します。
 +

@@ -1772,4 +1772,7 @@
   <block id="f6ea197b186340b340ddfd0eb0da559f" category="inline-link-macro">ONTAPクラスタを作成し、ノードを結合する</block>
   <block id="46111b54a1fe09b4b0f338f84ed73d0f" category="admonition">Windows以外の環境でクラスタを作成する方法については、以下を参照してください。 <block ref="084582f867948d8226893522df8bc4b0" category="inline-link-macro-rx"></block>。</block>
   <block id="26790bd35f75a3d2177dc5a2d5e4162f" category="admonition">スイッチのエアフローがポート側吸気（バーガンディ色のファンと電源ユニット）に設定されている場合、スイッチのネットワークポートはキャビネットの前面を向き、排気ファンはキャビネットの背面を向くように設置する必要があります。この構成では、キャビネット前面のネットワークポートからキャビネット背面のストレージポートまで、十分な長さのケーブルを使用する必要があります。+ これらのスイッチの詳細については、CiscoのWebサイト<block ref="41dd90940bbf956b1a1bc9743b5329d8" category="inline-link-rx"></block>および<block ref="0684e00763f44490e4a966ecd9b6db00" category="inline-link-rx"></block>をご覧ください。</block>
+  <block id="5ba4d3956504a570f9a51b322b5f740c" category="list-text">2 つのスイッチ間に ISL ケーブルを接続します。</block>
+  <block id="86411bbf3fc2afbe73de144737c4ff80" category="list-text">Cisco Nexus 9332D-GX2B スイッチの場合は、ISL 接続にポート 31/32 を使用します。<block ref="bab51173328bbc094a925e4a5c7604c6" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="f8979ce4e5d66f41e330415672140ef8" category="list-text">Cisco Nexus 9364D-GX2A スイッチの場合は、ISL 接続にポート 63/64 を使用します。<block ref="d3ef7ae1e3bea631e525704fa9f8906b" category="inline-link-macro-rx"></block>を参照してください。</block>
 </blocks>
