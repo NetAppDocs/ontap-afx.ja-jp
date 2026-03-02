@@ -792,28 +792,18 @@
   <block id="808f3fa88e6266b2beb8f1153dd991ec" category="list-text">次のポートをイーサネット データ ネットワーク スイッチ B に接続します。</block>
   <block id="53c535a8b8a2c8bb670d136b82e73f99" category="list-text">e2b</block>
   <block id="969d430598a257671bdf944480e4d46b" category="list-text">e3b</block>
-  <block id="4015e00b406d10c628519f953d69e086" category="section-title">ステップ3: クラスタとHA接続をケーブル接続する</block>
-  <block id="093fe9dff1e5370d0b97313cefba5acd" category="paragraph">クラスタおよび HA 相互接続ケーブルを使用して、ポート e1a および e7a をスイッチ A に、ポート e1b および e7b をスイッチ B に接続します。e1a/e1b ポートは HA 接続に使用され、e7a/e7b ポートはクラスタ接続に使用されます。</block>
-  <block id="7d1e8fb2f50320f7b5004ba0fd39055b" category="list-text">次のコントローラー ポートをクラスター ネットワーク スイッチ A 上の任意の非 ISL ポートに接続します。</block>
   <block id="595df28a8a4a9361a6231a9d84e8cd08" category="list-text">コントローラA</block>
   <block id="9cb7b36b3f2bccc776862e6f2f494077" category="list-text">e1a</block>
   <block id="a9e70fa35de61f4ac25cc4bcd706a55d" category="list-text">コントローラB</block>
-  <block id="29b62d617481485649ea2d5b54fca512" category="image-alt">クラスタHAケーブル</block>
-  <block id="f1d133e33e29362e931a34312a961d0b" category="image-alt">クラスターネットワークへのクラスター接続のケーブル接続</block>
-  <block id="ac32cb5bd4dc17916ab1ece800d39226" category="list-text">次のコントローラー ポートをクラスター ネットワーク スイッチ B 上の任意の非 ISL ポートに接続します。</block>
   <block id="e737b5ac24a63afc00e81377a906728d" category="list-text">e1b</block>
-  <block id="c61349783073807f1993874d0e3a4a8c" category="section-title">ステップ4: コントローラとスイッチのストレージ接続をケーブルで接続する</block>
   <block id="da160308e3b4b4a80bf1b72b5bdbedb8" category="inline-link">Hardware Universe</block>
-  <block id="7bebd570400c9d8d9796caad43fdcebd" category="paragraph">コントローラのストレージ ポートをスイッチに接続します。スイッチに適切なケーブルとコネクタがあることを確認してください。見る<block ref="16a6d09025d51cb8dd3516798b3fee8a" category="inline-link-rx"></block>詳細についてはこちらをご覧ください。</block>
   <block id="d7434100057b78673eee73421ad29942" category="list-text">次のストレージ ポートをスイッチ A の任意の非 ISL ポートに接続します。</block>
   <block id="405e469b4aa3065616ee04f4a4b2b35e" category="list-text">e10a</block>
   <block id="2772fdc65a945771c18178a5b650c575" category="list-text">e11a</block>
   <block id="b222cca23840b6a495e76b8c300b08f2" category="image-alt">100Gbケーブル</block>
-  <block id="56812cf9e76eb2dfaa41475474798d4b" category="image-alt">ケーブルコントローラストレージをスイッチAに接続します</block>
   <block id="dc1921771bb6c193442045d9a99b8c9d" category="list-text">次のストレージ ポートをスイッチ B の任意の非 ISL ポートに接続します。</block>
   <block id="d5dec99b9c0f6ad0c56335c85d42e40b" category="list-text">e10b</block>
   <block id="6dfe0149eb6951bd7c7e5c94c1713869" category="list-text">e11b</block>
-  <block id="73b33ccdc5c989a11800499004721836" category="image-alt">コントローラストレージをスイッチBにケーブル接続する</block>
   <block id="18154dcfffa2547c8d59ed9df65fb3ac" category="section-title">ステップ5: シェルフとスイッチ間の接続を配線する</block>
   <block id="b1ea5415ee8f031dcace291f9c98e0be" category="paragraph">NX224 ストレージ シェルフをスイッチに接続します。</block>
   <block id="5a684badbec5242d1800f819ca49559e" category="paragraph">ストレージシステムでサポートされるシェルフの最大数とすべてのケーブル接続オプションについては、<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 。</block>
@@ -1776,4 +1766,12 @@
   <block id="f8979ce4e5d66f41e330415672140ef8" category="list-text">Cisco Nexus 9364D-GX2A スイッチの場合は、ISL 接続にポート 63/64 を使用します。<block ref="d3ef7ae1e3bea631e525704fa9f8906b" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="35baa74f76db10604e3f71a16b4078d1" category="paragraph">NetApp AFXは、ハイパフォーマンスNASおよびオブジェクトワークロード向けに最適化されています。このため、AFFおよびFASストレージシステムとの違いがあります。以下の機能はNetApp AFXでは利用できません。リストは主要な機能または機能領域別に整理されています。また、<block ref="e4ac4a7dd877729340e2b0880473ea1b" category="inline-link-macro-rx"></block>に基づいて、お使いのONTAPリリースに対応したAFXのアップデートと変更点も確認する必要があります。</block>
   <block id="86daf5160966102a39f5f3c0390bde11" category="list-text">負荷共有ミラー</block>
+  <block id="8c60e60e96c6540bd35beb72adc17cb0" category="section-title">ステップ3：クラスタ、HA、およびストレージ接続をスイッチAにケーブル接続する</block>
+  <block id="1255d6bb11db98e4f919212687145a90" category="paragraph">4x100GbEブレークアウトケーブルを使用して、コントローラのクラスタ、HA、およびストレージポートをネットワーク スイッチAに接続します。クラスタとHAインターコネクトケーブルで、ポートe1aとe7aをスイッチAに接続します。e1aポートはHA接続に使用され、e7aポートはクラスタ接続に使用されます。ストレージ接続の場合、ポートe10aとe11aをスイッチAに接続します。</block>
+  <block id="245afd341214dde6198c6abfdac71264" category="paragraph">スイッチに適切なケーブルとコネクタがあることを確認してください。<block ref="16a6d09025d51cb8dd3516798b3fee8a" category="inline-link-rx"></block>詳細については、こちらを参照してください。</block>
+  <block id="e42929c9f069074fd111dfa1c107772e" category="list-text">次のコントローラポートを、ネットワーク スイッチAの非ISLポートに接続します。</block>
+  <block id="c1209a2ef5ab3b20312d0aebe91b01d3" category="image-alt">ケーブルコントローラクラスタ</block>
+  <block id="c42589aeb6cdc4aab7c9ee5517ef1f84" category="section-title">ステップ4：クラスタ、HA、およびストレージ接続をSwitch Bにケーブル接続する</block>
+  <block id="14aa705a8a71a02fb1b277002e0c52ed" category="paragraph">4x100GbEブレークアウトケーブルを使用して、コントローラのクラスタ、HA、およびストレージポートをネットワーク スイッチBに接続します。クラスタとHAインターコネクトケーブルで、ポートe1bとe7bをスイッチBに接続します。e1bポートはHA接続に使用され、e7bポートはクラスタ接続に使用されます。ストレージ接続の場合、ポートe10bとe11bをスイッチBに接続します。</block>
+  <block id="8cff5fa6944271f10e636cadf3153077" category="list-text">次のコントローラポートを、ネットワーク スイッチBの非ISLポートに接続します。</block>
 </blocks>
