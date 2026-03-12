@@ -40,3 +40,6 @@ Cisco Nexus 9332D-GX2B または 9364D-GX2A スイッチをキャビネットま
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["セブン"]link:power-on-hardware.html["AFX 1Kストレージシステムの電源をオンにします"]
 [role="quick-margin-para"]
 セットアップ内の各シェルフを明確に識別するために、コントローラー ノードの電源をオンにする前に、各ストレージ シェルフの電源をオンにして一意のシェルフ ID を割り当てます。
+
+
+NOTE: AFX 1KをAI Data Engine（AIDE）と共に導入する場合は、AFXシステムの電源を入れた後にAIDEデータ計算ノードをインストールしてください。詳細についてはlink:https://docs.netapp.com/us-en/ai-data-engine/install-setup/aide-hardware-requirements.html["AIDE データ計算ノードをインストールする"]を参照してください。

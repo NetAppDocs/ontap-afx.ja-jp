@@ -159,4 +159,8 @@ image::../media/drw_affa1k_power_source_icon_ieops-1700.svg[A1K ストレージ 
 
 
 .次の手順
-AFX 1Kストレージシステムの電源を入れたら、link:../install-setup/cluster-setup.html["AFXクラスターをセットアップする"] 。
+AFX 1K ストレージ システムの電源をオンにした後、導入オプションに基づいてセットアップを完了します：
+
+* 専用のAFX 1Kストレージシステムの導入については、link:../install-setup/cluster-setup.html["AFXクラスタをセットアップする"]を参照してください。
+* AFX 1K with AI Data Engine（AIDE）の展開については、link:https://docs.netapp.com/us-en/ai-data-engine/install-setup/aide-hardware-requirements.html["AIDE データ計算ノードをインストールする"]を参照してください。
+
