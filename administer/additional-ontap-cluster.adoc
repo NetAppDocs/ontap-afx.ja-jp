@@ -80,6 +80,7 @@ OAuth 2.0 は、署名されたアクセス トークンを使用して保護さ
 == 関連情報
 
 * link:../faq-ontap-afx.html["AFX ストレージ システムに関する FAQ"]
+* https://kb.netapp.com/nss/Licensing/How_to_download_NLF_licenses_from_the_NetApp_Support_Site["NetApp Support SiteからNLFライセンスをダウンロードする方法"^]
 * https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html["ONTAP OAuth 2.0導入の概要"^]
 * link:../administer/additional-ontap-svm.html["AFX SVMの追加管理"]
 

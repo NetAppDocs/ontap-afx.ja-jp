@@ -10,6 +10,8 @@ entries:
     url: "/get-started/software-architecture.html"
   - title: AFXとAFFおよびFASを比較する
     url: "/get-started/compare-unified-ontap.html"
+  - title: AIDEの詳細
+    url: "/get-started/learn-about-aide.html"
 - title: クイック スタート
   url: "/get-started/quick-start.html"
 - title: AFXシステムをインストールする
