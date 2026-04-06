@@ -764,7 +764,6 @@
   <block id="298a50f0b4f9da25188462848d528731" category="admonition">AFX 1K ストレージ システムへのCisco Nexus 9332D-GX2B および 9364D-GX2A スイッチ構成には、4x100GbE ブレークアウト ケーブル接続が必要です。</block>
   <block id="0b47086f2d53dbb9632d279e9918b4da" category="section-title">ステップ1: コントローラを管理ネットワークに接続する</block>
   <block id="682701dba15c7c4c75458bb51c17becf" category="paragraph">各スイッチの管理ポートをいずれかの管理スイッチ (注文した場合) に接続するか、管理ネットワークに直接接続します。</block>
-  <block id="d48270c5683eeae465518dbbfacf48fe" category="paragraph">スイッチのPSU側にある右上のポートが管理ポートです。スイッチを設置して管理スイッチまたは管理ネットワークに接続したあとに、各スイッチのCAT6ケーブルをパススルー パネルを通して配線する必要があります。</block>
   <block id="c7900e3ee1f4eb935f449465b57ad5c1" category="paragraph">1000BASE-T RJ-45 ケーブルを使用して、各コントローラの管理 (レンチ) ポートを管理ネットワーク スイッチに接続します。</block>
   <block id="1107155d6b0c900a6485f06681854862" category="image-alt">RJ-45ケーブル</block>
   <block id="9c29eb35e98929529d99ca71cd855f4e" category="paragraph">*1000BASE-T RJ-45ケーブル*</block>
@@ -775,28 +774,18 @@
   <block id="8637ca13eb3c1a10bb4383130268c950" category="paragraph">イーサネット モジュール ポートをホスト ネットワークに接続します。</block>
   <block id="7b528e83c1ae7816f8ec31c6295ac578" category="paragraph">この手順は、I/O モジュールの構成によって異なる場合があります。以下に、一般的なホスト ネットワークのケーブル接続の例を示します。見る<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>特定のシステム構成用。</block>
   <block id="effd554ec19ebcab6d3a374ac9b51cd1" category="list-text">次のポートをイーサネット データ ネットワーク スイッチ A に接続します。</block>
-  <block id="a5c5fdf5a84c0bc3e0ec5da0813516da" category="list-text">コントローラA（例）</block>
   <block id="e166f18e211001ff8f47f5d71bd5c254" category="list-text">e2a</block>
   <block id="577e6b9899e57c4e54e43cf79c919f83" category="list-text">e3a</block>
-  <block id="b91a4a6a419923eeb8f97338fc34936b" category="list-text">コントローラーB（例）</block>
   <block id="11db4a2b68c8f1aeb97f773a0dce8ecc" category="paragraph">*100GbEケーブル*</block>
   <block id="c6dd9fad40f1c30f08c8f34623f8ed7d" category="image-alt">100 Gb イーサネットケーブル</block>
   <block id="50f69b736cea52c0f9b7cc77b698390c" category="image-alt">ケーブルからイーサネットネットワークへ</block>
   <block id="808f3fa88e6266b2beb8f1153dd991ec" category="list-text">次のポートをイーサネット データ ネットワーク スイッチ B に接続します。</block>
   <block id="53c535a8b8a2c8bb670d136b82e73f99" category="list-text">e2b</block>
   <block id="969d430598a257671bdf944480e4d46b" category="list-text">e3b</block>
-  <block id="595df28a8a4a9361a6231a9d84e8cd08" category="list-text">コントローラA</block>
   <block id="9cb7b36b3f2bccc776862e6f2f494077" category="list-text">e1a</block>
-  <block id="a9e70fa35de61f4ac25cc4bcd706a55d" category="list-text">コントローラB</block>
   <block id="e737b5ac24a63afc00e81377a906728d" category="list-text">e1b</block>
   <block id="da160308e3b4b4a80bf1b72b5bdbedb8" category="inline-link">Hardware Universe</block>
-  <block id="d7434100057b78673eee73421ad29942" category="list-text">次のストレージ ポートをスイッチ A の任意の非 ISL ポートに接続します。</block>
-  <block id="405e469b4aa3065616ee04f4a4b2b35e" category="list-text">e10a</block>
-  <block id="2772fdc65a945771c18178a5b650c575" category="list-text">e11a</block>
   <block id="b222cca23840b6a495e76b8c300b08f2" category="image-alt">100Gbケーブル</block>
-  <block id="dc1921771bb6c193442045d9a99b8c9d" category="list-text">次のストレージ ポートをスイッチ B の任意の非 ISL ポートに接続します。</block>
-  <block id="d5dec99b9c0f6ad0c56335c85d42e40b" category="list-text">e10b</block>
-  <block id="6dfe0149eb6951bd7c7e5c94c1713869" category="list-text">e11b</block>
   <block id="18154dcfffa2547c8d59ed9df65fb3ac" category="section-title">ステップ5: シェルフとスイッチ間の接続を配線する</block>
   <block id="b1ea5415ee8f031dcace291f9c98e0be" category="paragraph">NX224 ストレージ シェルフをスイッチに接続します。</block>
   <block id="5a684badbec5242d1800f819ca49559e" category="paragraph">ストレージシステムでサポートされるシェルフの最大数とすべてのケーブル接続オプションについては、<block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 。</block>
@@ -1827,4 +1816,11 @@
   <block id="eae4a2342adfae45b252359cd535161d" category="list-text"><block ref="ac735c3e650d75aa2b1309606d309f7d" category="inline-link-rx"></block>の詳細をご覧ください。</block>
   <block id="ec728291e475cad65a149d393bcb1011" category="sidebar">AIDEの詳細</block>
   <block id="a24b3a4fa2af20f41c5f8f436edbe537" category="paragraph"><block ref="a832b8bc8244484582041183718520b7" category="inline-link-macro-rx"></block>そしてオプションで<block ref="50d1466c5b78eabcde8bd2bc00ff3011" category="inline-link-rx"></block>AIDEを初期設定の一部として含める場合。</block>
+  <block id="97b5a2da97dacb4945c7a40a9b91f0ea" category="paragraph">各コントローラの管理（レンチ）ポートをいずれかの管理スイッチに接続するか、管理ネットワークに直接接続してください。</block>
+  <block id="be2a2f351864aca4d396a29665b7c035" category="list-text">コントローラー（例）</block>
+  <block id="9bbf373797bf7cf7ba62c80023682e25" category="list-text">コントローラ</block>
+  <block id="cfcad9c82f72d361c92d725ca0bf3a2b" category="list-text">e10a（Storage）</block>
+  <block id="6f6d8208a6030c9676f47f16bbb4e52d" category="list-text">e11a（ストレージ）</block>
+  <block id="37fea526549e28ae68ef55e55a51f038" category="list-text">e10b（ストレージ）</block>
+  <block id="6d865fdc8b96603a02615c7c46b07937" category="list-text">e11b（ストレージ）</block>
 </blocks>
