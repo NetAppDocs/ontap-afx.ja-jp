@@ -19,7 +19,7 @@ AFXのみをインストールするか、AFXとAI Data Engineを併せてイン
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2"]ハードウェアのインストールとセットアップ
 [role="quick-margin-para"]
-link:../install-setup/install-setup-workflow.html["AFXストレージシステムをインストールする"]そしてオプションで https://docs.netapp.com/us-en/ai-data-engine/install-setup/aide-hardware-requirements.html["AIDE データ コンピューティング ノードをインストールします"]AIDEを初期設定の一部として含める場合。
+link:../install-setup/install-setup-workflow.html["AFXストレージシステムをインストールする"]そしてオプションで https://docs.netapp.com/us-en/ai-data-engine/install-aide-server/aide-mde-server-hardware-requirements.html["AIDEサードパーティサーバーをインストール"]または https://docs.netapp.com/us-en/ai-data-engine/install-dcn/aide-dcn-hardware-requirements.html["AIDE NetAppデータコンピュートノードをインストールする"]AIDE を初期設定の一部として含める場合。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三つ"] クラスタをセットアップする
 [role="quick-margin-para"]

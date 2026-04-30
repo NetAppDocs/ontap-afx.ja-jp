@@ -41,5 +41,12 @@ Cisco Nexus 9332D-GX2B または 9364D-GX2A スイッチをキャビネットま
 [role="quick-margin-para"]
 セットアップ内の各シェルフを明確に識別するために、コントローラー ノードの電源をオンにする前に、各ストレージ シェルフの電源をオンにして一意のシェルフ ID を割り当てます。
 
+[NOTE]
+====
+AFX 1K を AI Data Engine（AIDE）とともにデプロイする場合は、AFX システムのインストールが完了した後に AIDE データコンピュートノードをインストールできます。
 
-NOTE: AFX 1KをAI Data Engine（AIDE）と共に導入する場合は、AFXシステムの電源を入れた後にAIDEデータ計算ノードをインストールしてください。詳細についてはlink:https://docs.netapp.com/us-en/ai-data-engine/install-setup/aide-hardware-requirements.html["AIDE データ計算ノードをインストールする"]を参照してください。
+* サードパーティ製サーバーの導入については、 https://docs.netapp.com/us-en/ai-data-engine/install-aide-server/aide-mde-server-hardware-requirements.html["サードパーティサーバー上のAI Data EngineとAIDEソフトウェアの要件"^]および https://docs.netapp.com/us-en/ai-data-engine/install-setup/install-aide-as-software.html["サードパーティサーバーにAIDEソフトウェアをインストールする"^]を参照してください。
+* NetApp DCN の導入については、 https://docs.netapp.com/us-en/ai-data-engine/install-dcn/aide-dcn-hardware-requirements.html["NetApp 提供のデータコンピュートノード上の AI Data Engine の要件"^]を参照してください。
+
+
+====
