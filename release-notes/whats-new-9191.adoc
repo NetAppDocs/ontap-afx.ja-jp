@@ -1,0 +1,109 @@
+---
+sidebar: sidebar 
+permalink: release-notes/whats-new-9191.html 
+keywords: 'afx, release notes, what"s new, 9.19.1, ai data engine, aide' 
+summary: AFXストレージシステムで利用可能なONTAP 9.19.1に含まれる新機能について説明します。 
+---
+= ONTAP 9.19.1 for AFX ストレージシステムの新機能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFXストレージシステムで利用可能なONTAP 9.19.1に含まれる新機能について説明します。
+
+
+TIP:  https://docs.netapp.com/us-en/ai-data-engine/release-notes/whats-new.html["AI Data Engine"^]の新しく強化されたサポートについて学びましょう。
+
+
+
+== パフォーマンスと拡張性
+
+[cols="2,4"]
+|===
+| 更新 | 説明 
+
+
+| 拡張された AFX クラスタサイズ  a| 
+ONTAP 9.19.1では、AFXクラスタを最大32ノードまで拡張できます。これにより、ワークロードやアプリケーションの増大する需要に合わせて、AFXストレージシステムを拡張することが可能になります。
+
+
+
+| Cross File Sequential Read（CFSR）  a| 
+クロスファイルシーケンシャルリードは、特定のメディアおよびエンターテイメントワークロードにおいて、読み取りパフォーマンスを大幅に向上させることができます。この機能は、連続するビデオフレームをインテリジェントにプリフェッチすることで、ビデオ編集アプリケーションのスループットを劇的に向上させ、レイテンシを低減します。詳細については、link:../administer/additional-ontap-svm.html["AFX ストレージ システム SVM の追加管理"]を参照してください。
+
+
+
+| グローバル重複排除  a| 
+グローバル重複排除により、ONTAPの重複排除による容量削減効果がストレージの可用性ゾーン（SAZ）全体に拡張されます。SAZ内のすべてのボリュームにわたる重複データブロックを排除することで、ストレージ効率を大幅に向上させ、総所有コストを削減できます。この機能はAFXシステムではデフォルトで有効になっており、管理者による設定を必要とせずに透過的に動作します。詳細については、link:../administer/additional-ontap-svm.html["AFX ストレージ システム SVM の追加管理"]を参照してください。
+
+|===
+
+
+== REST API
+
+[cols="2,4"]
+|===
+| 更新 | 説明 
+
+
+| Kubernetesストレージオーケストレーションにおけるバランスのとれた配置機能の強化  a| 
+ONTAP 9.19.1では、 `/storage/volumes` REST APIエンドポイントで現在利用可能な6つのパラメータが `/applications/containers`エンドポイントに追加されます。この機能強化により、Kubernetesストレージオーケストレーション用のNetApp Tridentを使用しているお客様は、ONTAPのネイティブなバランス配置機能を使用してボリュームを作成できます。
+
+|===
+
+
+== セキュリティ
+
+[cols="2,4"]
+|===
+| 更新 | 説明 
+
+
+| 対象となるSnapMirrorプライマリボリュームに対するARP/AIサポート  a| 
+ARP/AIは、AFXシステムとのSnapMirror同期関係にある対象のプライマリボリュームをサポートしています。ARP/AIは、アクティブな読み書き可能なプライマリボリューム上で動作し、プライマリ専用のARPスナップショットを作成し、機械学習ベースのランサムウェア検出を提供します。
+
+
+
+| link:../administer/additional-ontap-cluster.html["TLS ハードウェアオフロードのサポート"]  a| 
+サポートされているイーサネットカードに、クラスタ全体のトランスポート層セキュリティ（TLS）の暗号化と復号化をオフロードできます。これにより CPU 負荷が軽減され、TLS を使用するシステムのパフォーマンスが向上します。
+
+|===
+
+
+== ストレージ リソースの管理
+
+[cols="2,4"]
+|===
+| 更新 | 説明 
+
+
+| link:../administer/monitor-cluster-performance.html["System Manager によるストレージの可用性ゾーン容量の詳細のサポート。"]  a| 
+System Managerでは、スペースしきい値、Snapshotによって消費されるスペース、データ削減など、ストレージの可用性ゾーン容量の詳細を表示できます。また、ONTAPで警告および重大アラートを生成する割合にスペース使用率のしきい値を設定することもできます。
+
+
+
+| link:../administer/additional-ontap-cluster.html["自動QoSスループット上限の増加を制御するデフォルト設定の変更のサポート"]  a| 
+QoSポリシーグループが、短期的なパフォーマンス向上ニーズに応じてQoSスループットの上限を自動的に引き上げる方法を制御するデフォルト設定を変更できます。これらの設定は、ONTAP 9.18.1以前では変更できません。
+
+|===
+
+
+== Upgrade
+
+[cols="2,4"]
+|===
+| 更新 | 説明 
+
+
+| link:../administer/upgrade-ontap.html["自動アップグレード前チェックのレポート機能の強化"]  a| 
+自動アップグレード前チェックを実行する際、エラーと警告は別々に表示されるため、アップグレード前に解決する必要のある問題を簡単に特定できます。
+
+|===
+.関連情報
+* https://docs.netapp.com/us-en/ontap/release-notes/index.html["ONTAP 9リリース ハイライト"^]
+

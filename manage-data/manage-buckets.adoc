@@ -13,5 +13,10 @@ summary: AFX S3 バケットとクライアント アクセスの管理の一環
 [role="lead"]
 AFX S3 バケットとクライアント アクセスの管理の一環として実行できる管理タスクがいくつかあります。 AFX での S3 構成とサポートは、Unified ONTAPで提供されるものと同じです。詳細については、Unified ONTAP のドキュメントを参照してください。
 
+ONTAP の S3 ストレージのサポートに関する最新の変更や更新にも常に注意を払うことが重要です。たとえば、ONTAP 9.19.1 以降では、各 S3 ユーザーに対して 2 つ目のアクセスキーを生成できます。これにより、元のアクセスキーの有効期限が切れた場合でも、S3 リソースへのアクセスを維持できます。条件付き操作（書き込み、コピー、削除）の適用を制御することもできます。
+
 .関連情報
-https://docs.netapp.com/us-en/ontap/s3-config/index.html["ONTAP S3 の構成について学ぶ"^]
+* https://docs.netapp.com/us-en/ontap/s3-config/index.html["ONTAP S3 の構成について学ぶ"^]
+* https://docs.netapp.com/us-en/ontap/s3-config/regenerate-access-keys.html["ONTAP S3キーを再生成し、保持期間を変更する"^]
+* https://docs.netapp.com/us-en/ontap/s3-config/create-modify-bucket-policy-task.html["デフォルトのONTAP S3バケットポリシーにアクセスルールを追加する"^]
+
