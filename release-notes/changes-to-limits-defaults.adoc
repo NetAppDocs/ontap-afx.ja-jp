@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: release-notes/changes-to-limits-defaults.html 
+keywords: release notes, changes, updates, defaults, limits, afx storage system, afx system, afx 
+summary: AFXシステムに影響を与える制限事項とデフォルト値の変更点についてご確認ください。NetAppは、各ONTAPリリースにおける最も重要なデフォルト値と制限事項の変更をお客様にご理解いただけるよう努めています。 
+---
+= AFX システムに影響を与える ONTAP の制限とデフォルトの変更
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFXシステムに影響を与える制限事項とデフォルト値の変更点についてご確認ください。NetAppは、各ONTAPリリースにおける最も重要なデフォルト値と制限事項の変更をお客様にご理解いただけるよう努めています。
+
+
+TIP: AFX クラスターの機能を判断するには、 NetApp Hardware Universeおよび Interoperability Matrix Tool で入手できる詳細情報を確認する必要があります。
+
+
+
+== ONTAPの制限に対する変更
+
+[cols="2,4,4"]
+|===
+| 機能 | 制限の変更点 | リリースで変更 
+
+
+| クラスタあたりのノード数  a| 
+AFXクラスターは最大32ノードまで拡張できます。これにより、ワークロードやアプリケーションの増大する需要に合わせて、AFXストレージシステムを拡張することが可能になります。
+| ONTAP 9.19.1 RC 
+|===
+
+
+== 関連情報
+
+* https://hwu.netapp.com/["NetApp Hardware Universe"^]
+* https://imt.netapp.com/["NetApp Interoperability Matrix Tool"^]
+* https://docs.netapp.com/us-en/interoperability-matrix-tool/["相互運用性マトリックスツールの概要"^]
+

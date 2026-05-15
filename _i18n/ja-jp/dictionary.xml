@@ -1881,9 +1881,6 @@
   <block id="1f237fc34e7dd74398581eefc40958c3" category="admonition"><block ref="50cef57effbd6fcf26f3b3db513271ba" category="inline-link-rx"></block>の新しく強化されたサポートについて学びましょう。</block>
   <block id="10d7bfdf332491f86c54ec3d92031af9" category="summary">AFXストレージシステムで利用可能なONTAP 9.19.1に含まれる新機能について説明します。</block>
   <block id="9ebdbbd8dbfbcf6224092a44e6772af0" category="doc">ONTAP 9.19.1 for AFX ストレージシステムの新機能</block>
-  <block id="a0c84a4c41f756ea7750bb10b0423e11" category="section-title">パフォーマンスと拡張性</block>
-  <block id="0d0331cbf0e501ed4e4912dc043a60c7" category="cell">拡張された AFX クラスタサイズ</block>
-  <block id="25bb096e1dae008973cf4d1cbcb776f6" category="paragraph">ONTAP 9.19.1では、AFXクラスタを最大32ノードまで拡張できます。これにより、ワークロードやアプリケーションの増大する需要に合わせて、AFXストレージシステムを拡張することが可能になります。</block>
   <block id="5713c60dfa0d2bc57e54b11e4a1b6cfe" category="cell">Cross File Sequential Read（CFSR）</block>
   <block id="4c400b26187ab8dd0971020d23077db3" category="paragraph">クロスファイルシーケンシャルリードは、特定のメディアおよびエンターテイメントワークロードにおいて、読み取りパフォーマンスを大幅に向上させることができます。この機能は、連続するビデオフレームをインテリジェントにプリフェッチすることで、ビデオ編集アプリケーションのスループットを劇的に向上させ、レイテンシを低減します。詳細については、<block ref="d20869026a82d2608dc3e8932f1a0bfe" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="9d8ca8942805bbef83b9c607e5358741" category="paragraph">グローバル重複排除により、ONTAPの重複排除による容量削減効果がストレージの可用性ゾーン（SAZ）全体に拡張されます。SAZ内のすべてのボリュームにわたる重複データブロックを排除することで、ストレージ効率を大幅に向上させ、総所有コストを削減できます。この機能はAFXシステムではデフォルトで有効になっており、管理者による設定を必要とせずに透過的に動作します。詳細については、<block ref="d20869026a82d2608dc3e8932f1a0bfe" category="inline-link-macro-rx"></block>を参照してください。</block>
@@ -1906,4 +1903,18 @@
   <block id="368f083985829ad76ae5f8d7530fbd0e" category="cell"><block ref="368f083985829ad76ae5f8d7530fbd0e" category="inline-link-macro-rx"></block></block>
   <block id="2b1cc84feb959647df3e34b19f0fa843" category="paragraph">自動アップグレード前チェックを実行する際、エラーと警告は別々に表示されるため、アップグレード前に解決する必要のある問題を簡単に特定できます。</block>
   <block id="7ceef35284e2093e2f3f2e17a1256628" category="sidebar">ONTAP 9.19.1の新機能</block>
+  <block id="b48fd339e170a9f069029f36a4c5c062" category="inline-link-macro">ONTAPの制限とデフォルトの変更点</block>
+  <block id="86c7db31d90416abec90b535da924b25" category="paragraph">NetApp Hardware Universeおよび相互運用性マトリックスツールで入手可能な詳細を確認して、AFXクラスタの機能を判断する必要があります。また、AFXリリースノートセクションの<block ref="8bef5b3500e1d2396e08db40f86c62db" category="inline-link-macro-rx"></block>も確認してください。</block>
+  <block id="4cc2a31dced9a524a1b76972ce8cabf5" category="summary">AFXシステムに影響を与える制限事項とデフォルト値の変更点についてご確認ください。NetAppは、各ONTAPリリースにおける最も重要なデフォルト値と制限事項の変更をお客様にご理解いただけるよう努めています。</block>
+  <block id="d119e4d4dc8f9b894c96d18128e78e46" category="doc">AFX システムに影響を与える ONTAP の制限とデフォルトの変更</block>
+  <block id="d579ca395df40cbbb953cb531ce23a3d" category="section-title">ONTAPの制限に対する変更</block>
+  <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">機能</block>
+  <block id="4d209cddba5e4e3f517cda6d0180e867" category="cell">制限の変更点</block>
+  <block id="534453c63ab1c5041c53f8bbc059a9b7" category="cell">リリースで変更</block>
+  <block id="8010ab2f71c733c1a8013b31b901be79" category="cell">クラスタあたりのノード数</block>
+  <block id="355836185b6feaed32d56f19e33032eb" category="paragraph">AFXクラスターは最大32ノードまで拡張できます。これにより、ワークロードやアプリケーションの増大する需要に合わせて、AFXストレージシステムを拡張することが可能になります。</block>
+  <block id="5148c61a8c3e3afeb285a73e9241d26c" category="cell">ONTAP 9.19.1 RC</block>
+  <block id="f80f1ede0c7983dcab18fc7104224f56" category="cell">動的ストレージ効率</block>
+  <block id="00e7d9732d9f1a308baa60f42ec78d16" category="paragraph">Dynamic Storage Efficiency は、高いパフォーマンスと最大のスループットを必要とする大規模なワークロード向けに、ストレージ効率化操作（圧縮、重複排除、コンパクション）をインテリジェントに最適化します。大量の書き込み状況を自動的に検知し、ピーク時の負荷によるパフォーマンス低下を防ぐため、インラインおよびバックグラウンドのストレージ効率化プロセスを一時的に停止します。スループットが規定のしきい値を下回ると、ストレージ効率化操作が再開され、手動による介入なしに節約効果が回復されます。この機能は AFX ストレージシステムで利用可能で、デフォルトで有効になっており、設定は不要です。</block>
+  <block id="0b6845dd2391304844b6f9578fd8c865" category="sidebar">ONTAPのデフォルトと制限に対する変更</block>
 </blocks>

@@ -8,3 +8,5 @@ entries:
   url: "/release-notes/whats-new-9181.html"
 - title: ONTAP 9.17.1の新機能
   url: "/release-notes/whats-new-9171.html"
+- title: ONTAPのデフォルトと制限に対する変更
+  url: "/release-notes/changes-to-limits-defaults.html"
