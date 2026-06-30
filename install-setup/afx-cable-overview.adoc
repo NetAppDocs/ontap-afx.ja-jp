@@ -21,7 +21,7 @@ AFX 1K ストレージ システムの初期構成では、デュアル スイ�
 
 追加のコントローラー ノードとディスク シェルフにより、初期の AFX 1K ストレージ システム構成が拡張されます。拡張された AFX 1K 構成は、以下に示すスキーマと同じスイッチベースのケーブル接続方法に従います。
 
-image:../media/drw_afx_cable_overview_half_node_ieops-2358.svg["AFK 1K ストレージシステムのケーブル接続例"]
+image:../media/drw_afx_cable_overview_half_node_ieops-2358.svg["AFX 1K ストレージシステムのケーブル配線例、幅=1000px"]
 
 
 

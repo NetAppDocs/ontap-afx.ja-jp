@@ -51,9 +51,9 @@ TIP: 確認すべきはlink:../faq-ontap-afx.html["AFX ストレージ システ
 
 AFX クラスターでは次のハードウェア コンポーネントが使用されます。
 
-* AFX 1Kコントローラー
+* AFX 1Kまたは2Kコントローラー
 * NX224 棚
-* Cisco Nexus 9332D-GX2B または Nexus 9364D-GX2A スイッチ
+* Cisco Nexus 9332D-GX2B、Nexus 9364D-GX2A、またはNexus 9808スイッチ
 
 
 

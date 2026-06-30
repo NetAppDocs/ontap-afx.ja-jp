@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: install-afx-2k/install-setup-requirements.html 
+keywords: afx, afx 2k, install, setup, requirements, cautions 
+summary: AFX 2Kストレージコントローラーおよびストレージシェルフに必要な機器と持ち上げ時の注意事項を確認してください。 
+---
+= AFX 2Kストレージシステムのインストール要件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFX 2Kストレージコントローラーとストレージ シェルフに必要な機器と持ち上げ時の注意事項を確認してください。
+
+
+
+== インストールに必要な機器
+
+AFX 2Kストレージシステムをインストールするには、以下の機器と工具が必要です。
+
+* ストレージシステムを構成するためのWebブラウザへのアクセス
+* 静電気放電（ESD）ストラップ
+* 懐中電灯
+* USB/シリアル接続を備えたラップトップまたはコンソール
+* 保管棚のIDを設定するためのペーパークリップまたは先端の細いボールペン
+* No.2プラス ドライバ
+
+
+
+
+== 持ち上げ時の注意事項
+
+AFX ストレージ コントローラーとストレージ シェルフは重量があります。これらの品物を持ち上げたり移動したりするときには注意してください。
+
+
+
+=== ストレージコントローラの重み
+
+AFX 2Kストレージコントローラーを移動または持ち上げる際は、必要な予防措置を講じてください。
+
+AFX 2Kストレージコントローラーの重量は最大64.0 lb（29.03 kg）になる場合があります。ストレージコントローラーを持ち上げるには、2人で作業するか、油圧リフトを使用してください。
+
+.AFX 2Kコントローラーの持ち上げに関する注意事項。
+image::../media/drw_afx_2k_weight_caution_ieops-2938.svg[AFX 2Kコントローラー持ち上げ注意アイコン]
+
+
+
+=== 収納棚の重量
+
+棚を移動したり持ち上げたりするときは、必要な予防措置を講じてください。
+
+.NX224シェルフ
+NX224シェルフの重量は最大60.1 lb（27.3 kg）です。シェルフを持ち上げるには、2人で行うか、油圧リフトを使用してください。シェルフの重量バランスが崩れないように、すべてのコンポーネントをシェルフ内（前面と背面の両方）に収めてください。
+
+.NX224シェルフの持ち上げに関する注意事項。
+image::../media/drw_nx224_lifting_weight_ieops-2437.svg[NX224 NSM100 昇降注意アイコン]
+
+
+
+=== スイッチウェイト
+
+スイッチを移動または持ち上げる際は、必要な予防措置を講じてください。
+
+.Cisco Nexus 9808
+荷降ろしされた Cisco 9808 は最大で link:https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/nexus9800-series-switches-ds.html#Productspecifications["162 lb（73 kg）、フル装備の Cisco 9808 スイッチは最大 766 lb（347 kg）まで対応可能です。"^] の重量があります。スイッチを持ち上げるには、油圧リフトを使用してください。
+
+.荷降ろし済み Cisco Nexus 9808 の持ち上げに関する注意事項。
+image::../media/drw_afx_2k_weight_icon_ieops-2939.svg[Cisco Nexus 9808 持ち上げ注意アイコン]
+
+.フル装備の Cisco Nexus 9808 の持ち上げに関する注意事項。
+image::../media/drw_afx_2k_nexus9808_loaded_weight_caution_ieops-2940.svg[Cisco Nexus 9808 フルロード持ち上げ注意アイコン]
+
+.Cisco Nexus9332D-GX2B
+Cisco 9332D-GX2Bの重量は最大link:https://www.cisco.com/c/en/us/td/docs/dcn/hw/aci/nexus9000/9332d-gx2b/cisco-nexus-9332d-gx2b-aci-mode-switch-hardware-installation-guide/m_n93xxx_system_specs.html["12.7 kg (28.1 lb)"^]です。
+
+.Cisco Nexus 9364D-GX2A
+Cisco Nexus 9364D-GX2A スイッチの重量は最大link:https://www.cisco.com/c/en/us/td/docs/dcn/hw/nx-os/nexus9000/9364d-gx2a/cisco-nexus-9364d-gx2a-nx-os-mode-switch-hardware-installation-guide/m_n93xxx_system_specs.html["58 lb（26.3 kg）"^]になります。スイッチを持ち上げるには、2人で作業するか、油圧リフトを使用してください。
+
+.Cisco Nexus 9364D-GX2A の吊り上げに関する注意事項。
+image::../media/drw_afx_2k_9364d_weight_caution_ieops-2942.svg[Cisco Nexus 9364D-GX2A 持ち上げ注意アイコン]
+
+.関連情報
+* https://library.netapp.com/ecm/ecm_download_file/ECMP12475945["安全情報と規制に関する通知"^]
+
+
+.次の手順
+ハードウェア要件を確認したら、link:prepare-hardware.html["AFX 2K ストレージシステムのインストール準備"]。

@@ -50,3 +50,11 @@ AFX 1K を AI Data Engine（AIDE）とともにデプロイする場合は、AFX
 
 
 ====
+* サードパーティ製サーバーの導入については、 https://docs.netapp.com/us-en/ai-data-engine/install-aide-server/aide-mde-server-hardware-requirements.html["サードパーティサーバー上のAI Data EngineとAIDEソフトウェアの要件"^]および https://docs.netapp.com/us-en/ai-data-engine/install-setup/install-aide-as-software.html["サードパーティサーバーにAIDEソフトウェアをインストールする"^]を参照してください。
+* NetApp DCN の導入については、 https://docs.netapp.com/us-en/ai-data-engine/install-dcn/aide-dcn-hardware-requirements.html["NetApp 提供のデータコンピュートノード上の AI Data Engine の要件"^]を参照してください。
+
+
+[]
+====
+
+====

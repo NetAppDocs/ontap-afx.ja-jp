@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: install-afx-2k/install-setup-workflow.html 
+keywords: afx, afx 2k, install, setup, workflow 
+summary: AFX 2K ストレージシステムのインストールとセットアップを開始し、ONTAP 環境に導入します。 
+---
+= AFX 2Kストレージシステムのインストールおよびセットアップワークフロー
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFX 2K ストレージ システムをインストールおよび構成するには、ハードウェア要件を確認し、サイトを準備し、スイッチをインストールし、ハードウェア コンポーネントをインストールしてケーブルを接続し、システムに電源を投入し、ONTAP AFX クラスターをセットアップします。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"]link:../install-setup/install-setup-requirements.html["ハードウェアのインストール要件を確認する"]
+[role="quick-margin-para"]
+AFX 2Kストレージシステムをインストールするためのハードウェア要件を確認してください。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2"]link:../install-setup/prepare-hardware.html["AFX 2Kストレージシステムのインストール準備"]
+[role="quick-margin-para"]
+AFX 2Kストレージシステムの設置準備として、設置場所の準備、環境および電気に関する要件の確認、十分なラック スペースの確保、機器の開梱、梱包明細書との照合、およびサポートのためのハードウェア登録を行ってください。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三つ"]link:install-switches.html["AFX 2Kストレージシステム用のスイッチを取り付ける"]
+[role="quick-margin-para"]
+Cisco Nexus 9808、9332D-GX2B、または 9364D-GX2A スイッチをキャビネットまたはラックに設置します。Cisco Nexus 9364D-GX2A スイッチを使用する場合は、パススルーパネルキットを取り付けます。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4"]link:deploy-hardware.html["AFX 2Kストレージシステムのハードウェアをインストールする"]
+[role="quick-margin-para"]
+ストレージ システムと棚用のレール キットを取り付けます。ストレージ システムをキャビネットまたは通信ラックに固定します。次に、設置したレールに棚をスライドさせます。最後に、ケーブル配線を整理するために、ケーブル管理デバイスをストレージ システムの背面に取り付けます。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:cable-hardware.html["AFX 2Kストレージシステムのコントローラーとシェルフをケーブル接続する"]
+[role="quick-margin-para"]
+ハードウェアをケーブル接続するには、まずストレージ コントローラ ノードをネットワークに接続し、次にコントローラ ノードとストレージ シェルフをクラスター スイッチに接続します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"]link:power-on-configure-switch.html["AFX 2Kストレージシステムのスイッチの電源をオンにして設定します"]
+[role="quick-margin-para"]
+AFX 2Kストレージシステムの電源をオンにし、スイッチを設定してください。Cisco Nexus 9808、9332D-GX2B、および9364D-GX2Aスイッチの設定手順を確認してください。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["セブン"]link:power-on-hardware.html["AFX 2K ストレージシステムの電源を入れる"]
+[role="quick-margin-para"]
+セットアップ内の各シェルフを明確に識別するために、コントローラー ノードの電源をオンにする前に、各ストレージ シェルフの電源をオンにして一意のシェルフ ID を割り当てます。

@@ -15,8 +15,10 @@ indexpage:
       url: "/get-started/ontap-afx-storage.html"
     - title: クイック スタート
       url: "/get-started/quick-start.html"
-    - title: AFXハードウェアをインストールする
+    - title: AFX 1Kハードウェアのインストール
       url: "/install-setup/install-setup-workflow.html"
+    - title: AFX 2K ハードウェアのインストール
+      url: "/install-afx-2k/install-setup-workflow.html"
     - title: AFXクラスターをセットアップする
       url: "/install-setup/cluster-setup.html"
   - title: クラスタの管理
