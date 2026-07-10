@@ -13,18 +13,14 @@ summary: AFX システムを最初に起動して実行するには、ハード�
 [role="lead"]
 AFX システムを最初に起動して実行するには、ハードウェア コンポーネントをインストールし、クラスタをセットアップして、クラスタと SVM を管理する準備をする必要があります。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"] AI Data Engine（AIDE）も AFX と一緒にインストールされますか？
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"]ハードウェアのインストールとセットアップ
 [role="quick-margin-para"]
-AFXのみをインストールするか、AFXとAI Data Engineを併せてインストールするかを決める必要があります。 https://docs.netapp.com/us-en/ontap-afx/get-started/learn-about-aide.html#installation-options["AIDE インストール オプション"]を確認して、お客様のニーズに最適なものを判断してください。
+link:../install-setup/install-setup-workflow.html["AFX 1K"]またはlink:../install-afx-2k/install-setup-workflow.html["AFX 2K"]ストレージシステムをインストールします。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2"]ハードウェアのインストールとセットアップ
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2"] クラスタをセットアップする
 [role="quick-margin-para"]
-link:../install-setup/install-setup-workflow.html["AFX 1K"]またはlink:../install-afx-2k/install-setup-workflow.html["AFX 2K"]ストレージシステムをインストールします。オプションで、AFX 1K の初期設定の一部として AIDE を含める場合は、 https://docs.netapp.com/us-en/ai-data-engine/install-aide-server/aide-mde-server-hardware-requirements.html["AIDEサードパーティサーバーをインストール"]または https://docs.netapp.com/us-en/ai-data-engine/install-dcn/aide-dcn-hardware-requirements.html["AIDE NetAppデータコンピュートノードをインストールする"]できます。
+System Manager を使用して ONTAP クラスタをlink:../install-setup/cluster-setup.html["設定"]簡単で迅速なプロセスに従ってください。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三つ"] クラスタをセットアップする
-[role="quick-margin-para"]
-System Manager を使用して ONTAP クラスタをlink:../install-setup/cluster-setup.html["設定"]簡単で迅速なプロセスに従ってください。AFX とともにデータ コンピュート ノードで AIDE もインストールする場合は、追加の必要な設定について https://docs.netapp.com/us-en/ai-data-engine/install-setup/cluster-setup-afx.html["新しいAFXクラスタでAIDEを設定"^]を確認してください。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4"] クラスタの管理を準備する
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三つ"] クラスタの管理を準備する
 [role="quick-margin-para"]
 AFXを本番環境に導入する前に、link:../get-started/prepare-cluster-admin.html["準備する"]ストレージ仮想マシン (SVM)、ユーザー、ロール、管理インターフェイスなどの管理構造を理解することで、安全で効率的かつ効果的なクラスター管理を実現します。

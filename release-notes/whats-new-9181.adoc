@@ -17,9 +17,6 @@ summary: AFX ストレージ システムで利用できるONTAP 9.18.1 に含�
 AFX ストレージ システムで利用できるONTAP 9.18.1 に含まれる新機能について説明します。
 
 
-TIP:  https://docs.netapp.com/us-en/ai-data-engine/release-notes/whats-new.html["AI Data Engine"^]の新しく強化されたサポートについて学びましょう。
-
-
 
 [[storage-resource-management-enhancements]]
 == ストレージ リソース管理の機能拡張

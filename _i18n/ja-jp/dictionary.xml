@@ -1723,40 +1723,9 @@
   <block id="7485a9a2ae4ee9755a52213e23e1172c" category="inline-link">NetApp Support SiteからNLFライセンスをダウンロードする方法</block>
   <block id="0d31e45cb458235b1c184c1176df0af6" category="list-text"><block ref="0d31e45cb458235b1c184c1176df0af6" category="inline-link-rx"></block></block>
   <block id="d0e68fc1dba1032a2fa3af9f7e71bfc4" category="list-text">Grafana Harvest バージョン 25.08.1 より前</block>
-  <block id="f4400f8e3998b00dc936390760dfa0b2" category="summary">NetApp AI Data Engine（AIDE）は、AFXクラスタに接続されたデータコンピューティングノード上で実行される、ストレージ統合AIデータサービスです。オプションでAIDEをAFXクラスタにインストールして統合することで、ONTAPのすべてのメリットを維持しながら、AIおよびMLワークロード向けの専用GPUアクセラレーションデータ処理を提供し、AFXを拡張できます。</block>
-  <block id="a488cbabbe8d00d891faddf3e2aaedec" category="doc">NetApp AI Data Engineについて学ぶ</block>
-  <block id="fd73f0069f1d3fe412b6cc9624e9d727" category="section-title">AIDEの概要</block>
-  <block id="6bcc7c95100882ca261552d0ffd8f1b6" category="paragraph">AIDEは、AIおよびMLワークロードのデータの準備と管理を高速化および簡素化するように設計されたシステムです。これは個別にインストールされ、AFXストレージ システム クラスターと緊密に統合されます。AIDEは、ハイパフォーマンスでスケーラブルなAFXストレージ基盤を活用しながら、AIデータ処理、ガバナンス、ワークフロー自動化に特化したサービスを追加します。</block>
-  <block id="37b3dc451b95ca444c011393639868c7" category="paragraph">AIDE のコアとなる強みは、大規模に分散されたデータセット全体のメタデータの管理を一元化および自動化する機能です。ONTAP ボリューム内のデータに基づいてメタデータ ストアを継続的にカタログ化して更新するように設定できるため、ユーザーはガバナンス ポリシーを効率的に検索、分類、適用できるようになります。内部処理パイプラインは、セマンティック検索および取得タスクに必要なベクトル埋め込みの作成を含む、AI 対応データセットを生成します。</block>
-  <block id="e4a694a3dc8671d50ac2711d735738d2" category="paragraph">セキュリティとガバナンスも設計の中心となります。AIDEは、認証、新しいRBACロールによるアクセス制御、データ分類、機密情報を保護するためのポリシーベースの適用を提供します。自動編集、マスキング、監査ログなどの機能は、適用される規制要件を満たし、AIライフサイクル全体を通じて重要なデータを保護するのに役立ちます。</block>
-  <block id="a4a07490b53ede56eedd6615965e9098" category="paragraph">AIDE は、迅速なデータ検出、キュレーション、ワークフロー管理のためのツールを提供することで、データ エンジニアとデータ サイエンティストを支援します。専用の AIDE コンソールと強化された AFX REST API により、ユーザーは、キュレーションされたデータ コレクションを作成し、ベクトル検索を実行し、外部の AI および GenAI アプリケーションと統合することができます。AIDE は、必要な手作業を削減し、チームがデータから洞察を抽出することに集中できるようにします。</block>
-  <block id="ea206a7167c7e693d778525a7c87c869" category="section-title">インストール オプション</block>
-  <block id="a4fe9c37a470f8ecf5564e8a245e6426" category="paragraph">AIDE を AFX ストレージ クラスターにインストールして統合するには、2 つのオプションがあります。</block>
-  <block id="e47448b4066bbe2bcd70858f5bace656" category="section-title">AFXとAIDEを一緒にセットアップする</block>
-  <block id="76114086772ee7fa8f48ad37d5d95dcb" category="paragraph">AFXストレージシステムとAIDEを同時に導入することで、統一され合理化されたインストール プロセスを提供し、即時の統合と最適な構成を保証します。このターンキーアプローチは、オンボーディングを簡素化し、互換性を保証し、完全に機能するAI データ プラットフォームを迅速に活用できるようにします。これは、価値実現までの時間を短縮したい新規導入に最適です。</block>
-  <block id="a94dcc736627933f5609e28e7ef85321" category="section-title">既存のAFXクラスターとAIDEを統合する</block>
-  <block id="08b9205a85210f5785e7bf74bc45457c" category="paragraph">すでにAFXストレージクラスタがインストールされ、運用されている場合は、AIDEをいつでも追加してデータへのアクセスと価値を高めることができます。AIDEは既存のAFXストレージ環境へのアドオンとして展開され、確立されたクラスタストレージ ネットワークに接続し、業務を中断することなく運用できます。統合プロセスは利用可能なONTAPボリュームを自動的に検出し、メタデータを同期します。データ処理ワークフローは、既存のストレージ基盤を維持しながら、AI自動化、ガバナンス、キュレーションツールによって強化されます。</block>
-  <block id="75d38d77f71f859f0e6bfa05a8868b12" category="inline-link">AI Data Engineの詳細</block>
-  <block id="14905966d4697587a926c48b4f3b6868" category="list-text"><block ref="14905966d4697587a926c48b4f3b6868" category="inline-link-rx"></block></block>
-  <block id="dcaec67f8b6685884b28ce763c3b6b20" category="inline-link">NetApp AI Data Engineに関するFAQ</block>
-  <block id="19d7d8892fce8fa9173b4cd097aeae29" category="list-text"><block ref="19d7d8892fce8fa9173b4cd097aeae29" category="inline-link-rx"></block></block>
-  <block id="9781d9b60a3156749ead991d1b8f8476" category="inline-link">ONTAP AIDEクラスタをセットアップする</block>
-  <block id="72c3ab9fda47d2c464e4e6035e5ee7d5" category="list-text"><block ref="72c3ab9fda47d2c464e4e6035e5ee7d5" category="inline-link-rx"></block></block>
-  <block id="2f05d6cddb39e99b401c758387957ed6" category="inline-link">NetApp AI Data Engine</block>
-  <block id="97bf7903281438713379444f1d00bdfe" category="list-text"><block ref="97bf7903281438713379444f1d00bdfe" category="inline-link-rx"></block></block>
   <block id="cb2003e71a82c4946bc9b91168398431" category="summary">AFX システムを最初に起動して実行するには、ハードウェア コンポーネントをインストールし、クラスターをセットアップして、クラスタと SVM を管理する準備をする必要があります。</block>
   <block id="14c19ed730096036466b6f8aa6689f4e" category="paragraph">AFX システムを最初に起動して実行するには、ハードウェア コンポーネントをインストールし、クラスタをセットアップして、クラスタと SVM を管理する準備をする必要があります。</block>
-  <block id="08c7f01b69af18ad32a13c64bc8b43d1" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> AI Data Engine（AIDE）も AFX と一緒にインストールされますか？</block>
-  <block id="5089e4b50d1f4e886a231cd5c043ad9d" category="inline-link">AIDE インストール オプション</block>
-  <block id="d3d9eaa68fa2acc25f51847944519bc7" category="paragraph">AFXのみをインストールするか、AFXとAI Data Engineを併せてインストールするかを決める必要があります。<block ref="b158da038797eb3a533563ed16d340e2" category="inline-link-rx"></block>を確認して、お客様のニーズに最適なものを判断してください。</block>
-  <block id="99882077cc5150985de38b05fe43c5bf" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>ハードウェアのインストールとセットアップ</block>
-  <block id="8a28e13725679cf81ae7a97f135f3151" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> クラスタをセットアップする</block>
-  <block id="67cf641733ab3c2361c8f1f769a0874b" category="inline-link">新しいAFXクラスタでAIDEを設定</block>
-  <block id="35a50ba3ebcc67e69ce937368b540ae9" category="paragraph">System Manager を使用して ONTAP クラスタを<block ref="5f55a5e0ef0b631e2040a3d854a6456f" category="inline-link-macro-rx"></block>簡単で迅速なプロセスに従ってください。AFX とともにデータ コンピュート ノードで AIDE もインストールする場合は、追加の必要な設定について<block ref="ea340cdc1a42614e036446f1b104ebdd" category="inline-link-rx"></block>を確認してください。</block>
-  <block id="927e370f9384cda0a4f5d88224cb1fdb" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> クラスタの管理を準備する</block>
-  <block id="40b9c78d4cb87fc896b9f0629f52df42" category="summary">AFXハードウェアのインストールが完了したら、ONTAPクラスタのセットアップを完了できます。このプロセスには、順番に実行する必要がある関連する構成フェーズが含まれます。この一環として、オプションでAI Data Engine（AIDE）を実行するデータ コンピューティング ノード（DCN）を追加できます。これにより、AFXストレージ クラスタとDCNクラスタが、同じONTAPコントロール プレーンを通じて管理される単一のシステムとして動作できるようになります。</block>
   <block id="437d7eedd2da2ae1c1685c0d0c80c679" category="section-title">AFXストレージシステムのセットアップの準備</block>
-  <block id="f41ed4469bd565e9483931052957aea1" category="paragraph">ONTAPクラスターを設定する前に、コアAFX要件と追加のAIDEに関する考慮事項を確認して、セットアップ プロセスを正常に完了するために必要なすべての情報とリソースが揃っていることを確認する必要があります。</block>
   <block id="9d88ee465b7f03fb4741ec9544797f42" category="section-title">コアAFX要件</block>
   <block id="c2eb7333972f3fa93553cd7a06df958c" category="paragraph">AFX クラスターをセットアップする際には、考慮すべきコア要件がいくつかあります。</block>
   <block id="2381aa60d42fb06772fbc2c2f051f150" category="paragraph-title">ハードウェアのインストール</block>
@@ -1765,12 +1734,8 @@
   <block id="bbadb22f847f13b3fb765b4ca3e45a35" category="paragraph">次の IP アドレス構成が必要です：</block>
   <block id="754aeda810cf43298af8b5d9682a3ff0" category="paragraph-title">追加のネットワーク構成</block>
   <block id="3716d7de1273609f72cac60d3ce80a8b" category="paragraph">次の関連するネットワーク情報も必要になります：</block>
-  <block id="6f17f12812465b184f0ec95def3e37b7" category="section-title">追加のAIDE考慮事項</block>
   <block id="51a1e9578b7b51efdaedcad5b2df0d09" category="list-text">AFX クラスターとコントローラー ノードの IP アドレスを設定します。</block>
   <block id="b8bd3c09a7652f21306db623894a4a8e" category="list-text">DNS や NIS などのネットワーク サービスを構成します。*続行*を選択します。</block>
-  <block id="b0124f2be19a540828d3e1c546d45955" category="inline-link">AI Data Engineのセットアップ</block>
-  <block id="e656cce89d1f00ff5696185aaf4f7d5d" category="list-text"><block ref="e656cce89d1f00ff5696185aaf4f7d5d" category="inline-link-macro-rx"></block></block>
-  <block id="ec728291e475cad65a149d393bcb1011" category="sidebar">AIDEの詳細</block>
   <block id="97b5a2da97dacb4945c7a40a9b91f0ea" category="paragraph">各コントローラの管理（レンチ）ポートをいずれかの管理スイッチに接続するか、管理ネットワークに直接接続してください。</block>
   <block id="be2a2f351864aca4d396a29665b7c035" category="list-text">コントローラー（例）</block>
   <block id="9bbf373797bf7cf7ba62c80023682e25" category="list-text">コントローラ</block>
@@ -1778,18 +1743,6 @@
   <block id="6f6d8208a6030c9676f47f16bbb4e52d" category="list-text">e11a（ストレージ）</block>
   <block id="37fea526549e28ae68ef55e55a51f038" category="list-text">e10b（ストレージ）</block>
   <block id="6d865fdc8b96603a02615c7c46b07937" category="list-text">e11b（ストレージ）</block>
-  <block id="2f89616ef718a1cdf501f4048f79f110" category="paragraph">NetApp AI Data Engine（AIDE）は、AFXクラスタに接続されたコンピューティングノード上で動作する、ストレージ統合型AIデータサービスです。オプションで、次の2つの導入モデルのいずれかを使用して、AIDEをAFXクラスタにインストールして統合できます：NetApp提供のデータコンピューティングノード（DCN）、またはサードパーティサーバー上のAIDEソフトウェア。NetApp DCN導入では完全なAIDE機能が提供されますが、サードパーティサーバー導入はメタデータに重点を置いています。</block>
-  <block id="26bf1fb96884a6d564b885faac9346fe" category="inline-link">AIDEサードパーティサーバーをインストール</block>
-  <block id="0feacb0d94d23bf1fee14eae79e870cd" category="inline-link">AIDE NetAppデータコンピュートノードをインストールする</block>
-  <block id="bd9ad7be68120900030f68ff19b5b1e4" category="paragraph">AFXを初めてインストールおよびセットアップする際に、オプションでNetApp AI Data Engine（AIDE）を含めることができます。AIDEは2つのデプロイメントモデルをサポートしています：サードパーティサーバー上のAIDEソフトウェアまたはNetApp提供のデータコンピュートノード（DCN）。AIDEのセットアップを計画している場合は、まずデプロイメントモデルの前提条件を完了してください：</block>
-  <block id="bf53bb5aa0413b6868cea02f2c24f170" category="inline-link">サードパーティのサーバー上のAI Data Engineのハードウェアインストール</block>
-  <block id="1f9fa35f3b88c59775937f1382277c15" category="inline-link">サードパーティサーバーにAIDEソフトウェアをインストールする</block>
-  <block id="2531713737eb86bda494a4c431d75639" category="list-text">サードパーティ製サーバーの展開については、<block ref="d5b26b1f5ada71a4220042a5d6aef0e3" category="inline-link-rx"></block>を完了してから、<block ref="77329e7d1925c704e553ae44f4833aec" category="inline-link-rx"></block>を実行してください。</block>
-  <block id="cd260db427b0e8de4b6152a0d113773b" category="inline-link">NetApp提供のデータコンピュートノードへのAI Data Engineのハードウェアインストール</block>
-  <block id="d641ea3e8a3406887e82efb694adcee3" category="list-text">NetApp DCN 展開の場合は、完了してください<block ref="c15fb65309a0948930bd70e0eed618f3" category="inline-link-rx"></block>。</block>
-  <block id="671c5433927bc9dfd6b61da2ab79dd6d" category="list-text">計算ノードのアドレスおよび関連するネットワーク構成を取得します。</block>
-  <block id="4ba7d969d3c09dfd698e8db23d272f9e" category="list-text">AFXストレージシステムでAI Data Engineをインストールする場合は、3つの計算ノードのIPアドレスを指定してください。</block>
-  <block id="9f492f03b9dc61bbcd50dd10c6f65d02" category="list-text">AFXクラスタのセットアップの一環としてAIDEを含めた場合は、追加のAIDE設定手順を完了してください。認証設定はすべてのAIDEデプロイメントに適用されます。ライセンス版AIDE機能を使用するNetApp DCNデプロイメントにはライセンスが必要です。サードパーティサーバーのデプロイメントはメタデータに焦点を当てており、AIDEライセンスは必要ありません。詳細については、<block ref="bd3118f2bb5e86ecaca641a7e2c5d81b" category="inline-link-rx"></block>を参照してください。</block>
   <block id="9446a98ad14416153cc4d45ab8b531bf" category="section-title">Performance</block>
   <block id="345b766b796f651335c71b9f6b81cfdc" category="paragraph">一般的な ONTAP 機能を使用して、AFX ストレージ システム クラスタのパフォーマンスを最適化します。</block>
   <block id="61dd3b29ebbda633eaa5595a4948d71f" category="section-title">QoS スループット上限の自動増加を制御するデフォルト設定を変更します</block>
@@ -1852,8 +1805,6 @@
   <block id="da33e3b3b6f0f55817eb5e53583085c6" category="list-text"><block ref="da33e3b3b6f0f55817eb5e53583085c6" category="inline-link-rx"></block></block>
   <block id="1338d36244d668a642dfc6cca5a1c144" category="inline-link">デフォルトのONTAP S3バケットポリシーにアクセスルールを追加する</block>
   <block id="64f4444ba55f9951fddb7993dc2eb691" category="list-text"><block ref="64f4444ba55f9951fddb7993dc2eb691" category="inline-link-rx"></block></block>
-  <block id="424a10335c5c90e5b96111de1934acec" category="inline-link">AI Data Engine</block>
-  <block id="1f237fc34e7dd74398581eefc40958c3" category="admonition"><block ref="50cef57effbd6fcf26f3b3db513271ba" category="inline-link-rx"></block>の新しく強化されたサポートについて学びましょう。</block>
   <block id="10d7bfdf332491f86c54ec3d92031af9" category="summary">AFXストレージシステムで利用可能なONTAP 9.19.1に含まれる新機能について説明します。</block>
   <block id="9ebdbbd8dbfbcf6224092a44e6772af0" category="doc">ONTAP 9.19.1 for AFX ストレージシステムの新機能</block>
   <block id="5713c60dfa0d2bc57e54b11e4a1b6cfe" category="cell">Cross File Sequential Read（CFSR）</block>
@@ -1895,7 +1846,6 @@
   <block id="ade0334803648df75c59492f5cdc9515" category="list-text">AFX 1Kまたは2Kコントローラー</block>
   <block id="d93573d87e2303f62f258396da54c30a" category="list-text">Cisco Nexus 9332D-GX2B、Nexus 9364D-GX2A、またはNexus 9808スイッチ</block>
   <block id="23b43ede4557b73e6fa354124a73ba91" category="inline-link-macro">AFX 2K</block>
-  <block id="67f77e2b70d6947cf982bd2da150677a" category="paragraph"><block ref="7348958905d0d24441b4869883313dcd" category="inline-link-macro-rx"></block>または<block ref="024ba43ec37d7ed62c4f2aab58b974f1" category="inline-link-macro-rx"></block>ストレージシステムをインストールします。オプションで、AFX 1K の初期設定の一部として AIDE を含める場合は、<block ref="55438a0ee0065472ca14633bb4190e20" category="inline-link-rx"></block>または<block ref="2e7d33dc5887b0da93aae67b0f923c5c" category="inline-link-rx"></block>できます。</block>
   <block id="8d7460cb352c0a6b105cf65e1fa10c31" category="doc">AFX 2Kストレージシステムでサポートされている構成</block>
   <block id="1a99ce1ec4ed0985ca29a2e328f9e4c9" category="paragraph">AFX 2K ストレージシステムでサポートされているハードウェアコンポーネントとケーブル接続オプションについて説明します。これには、適切なシステム設定に必要な互換性のあるストレージ ディスク シェルフ、ネットワーク スイッチ、ケーブルの種類などが含まれます。</block>
   <block id="0c6e41fac4d1679f2837b31810ad5736" category="section-title">サポートされているAFX 2Kケーブル構成</block>
@@ -2093,4 +2043,11 @@
   <block id="2a4823fb79409c272c92a0b82e9c3667" category="paragraph">AFX 2Kストレージシステムの電源を入れた後、<block ref="2072e5ec3241d0a9ac16c974239f2f84" category="inline-link-macro-rx"></block>。</block>
   <block id="cb030b87229281c1b5ed398ba50abebb" category="list-text">「今すぐ登録」を選択して、アカウントを作成してください。</block>
   <block id="28a41904da7057df6bc7ab97f4b94424" category="paragraph">AFX 1Kストレージシステムの電源を入れた後、<block ref="2072e5ec3241d0a9ac16c974239f2f84" category="inline-link-macro-rx"></block>。</block>
+  <block id="40a0d9b63d17cd9ee40121b195ad7812" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>ハードウェアのインストールとセットアップ</block>
+  <block id="7619fdb18ed4ee8dce6d3d8eb7e96e30" category="paragraph"><block ref="7348958905d0d24441b4869883313dcd" category="inline-link-macro-rx"></block>または<block ref="024ba43ec37d7ed62c4f2aab58b974f1" category="inline-link-macro-rx"></block>ストレージシステムをインストールします。</block>
+  <block id="d950f0cc340509cac6299d8daed8cf0a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> クラスタをセットアップする</block>
+  <block id="952715d9fa928d1059a800473c5469c0" category="paragraph">System Manager を使用して ONTAP クラスタを<block ref="5f55a5e0ef0b631e2040a3d854a6456f" category="inline-link-macro-rx"></block>簡単で迅速なプロセスに従ってください。</block>
+  <block id="373a0502633d2333dd8b952009c2d1ad" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> クラスタの管理を準備する</block>
+  <block id="b6bc9b43cb446eaa57e2615dc37d813a" category="summary">AFXハードウェアのインストールが完了したら、ONTAPクラスタのセットアップを完了できます。このプロセスには、順番に実行する必要がある関連する構成フェーズが含まれます。</block>
+  <block id="79977d403c6d53cd9f671794eeca0ed7" category="paragraph">ONTAP クラスターをセットアップする前に、AFX のコア要件を確認し、セットアッププロセスを正常に完了するために必要なすべての情報とリソースが揃っていることを確認してください。</block>
 </blocks>

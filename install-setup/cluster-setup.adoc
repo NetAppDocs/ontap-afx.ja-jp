@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: install-setup/cluster-setup.html 
 keywords: afx, afx system, cluster setup, setup 
-summary: AFXハードウェアのインストールが完了したら、ONTAPクラスタのセットアップを完了できます。このプロセスには、順番に実行する必要がある関連する構成フェーズが含まれます。この一環として、オプションでAI Data Engine（AIDE）を実行するデータ コンピューティング ノード（DCN）を追加できます。これにより、AFXストレージ クラスタとDCNクラスタが、同じONTAPコントロール プレーンを通じて管理される単一のシステムとして動作できるようになります。 
+summary: AFXハードウェアのインストールが完了したら、ONTAPクラスタのセットアップを完了できます。このプロセスには、順番に実行する必要がある関連する構成フェーズが含まれます。 
 ---
 = AFXストレージシステムのONTAPクラスタをセットアップする
 :allow-uri-read: 
@@ -11,14 +11,14 @@ summary: AFXハードウェアのインストールが完了したら、ONTAPク
 
 
 [role="lead"]
-AFXハードウェアのインストールが完了したら、ONTAPクラスタのセットアップを完了できます。このプロセスには、順番に実行する必要がある関連する構成フェーズが含まれます。この一環として、オプションでAI Data Engine（AIDE）を実行するデータ コンピューティング ノード（DCN）を追加できます。これにより、AFXストレージ クラスタとDCNクラスタが、同じONTAPコントロール プレーンを通じて管理される単一のシステムとして動作できるようになります。
+AFXハードウェアのインストールが完了したら、ONTAPクラスタのセットアップを完了できます。このプロセスには、順番に実行する必要がある関連する構成フェーズが含まれます。
 
 
 
 [[prepare-to-set-up-an-afx-storage-system]]
 == AFXストレージシステムのセットアップの準備
 
-ONTAPクラスターを設定する前に、コアAFX要件と追加のAIDEに関する考慮事項を確認して、セットアップ プロセスを正常に完了するために必要なすべての情報とリソースが揃っていることを確認する必要があります。
+ONTAP クラスターをセットアップする前に、AFX のコア要件を確認し、セットアッププロセスを正常に完了するために必要なすべての情報とリソースが揃っていることを確認してください。
 
 
 
@@ -55,18 +55,6 @@ AFX システムのハードウェアのインストールが完了している�
 
 
 
-[[additional-aide-considerations]]
-=== 追加のAIDE考慮事項
-
-AFXを初めてインストールおよびセットアップする際に、オプションでNetApp AI Data Engine（AIDE）を含めることができます。AIDEは2つのデプロイメントモデルをサポートしています：サードパーティサーバー上のAIDEソフトウェアまたはNetApp提供のデータコンピュートノード（DCN）。AIDEのセットアップを計画している場合は、まずデプロイメントモデルの前提条件を完了してください：
-
-* サードパーティ製サーバーの展開については、 https://docs.netapp.com/us-en/ai-data-engine/install-aide-server/aide-mde-server-hardware-requirements.html["サードパーティのサーバー上のAI Data Engineのハードウェアインストール"^]を完了してから、 https://docs.netapp.com/us-en/ai-data-engine/install-setup/install-aide-as-software.html["サードパーティサーバーにAIDEソフトウェアをインストールする"^]を実行してください。
-* NetApp DCN 展開の場合は、完了してください https://docs.netapp.com/us-en/ai-data-engine/install-dcn/aide-dcn-hardware-requirements.html["NetApp提供のデータコンピュートノードへのAI Data Engineのハードウェアインストール"^]。
-* 計算ノードのアドレスおよび関連するネットワーク構成を取得します。
-
-
-
-
 [[perform-initial-cluster-setup]]
 == 初期クラスタ設定を実行する
 
@@ -95,7 +83,6 @@ AFX クラスターには、最初に構成する必要がある 4 つの領域�
 +
 IP アドレスとサブネット マスクを指定します。
 
-. AFXストレージシステムでAI Data Engineをインストールする場合は、3つの計算ノードのIPアドレスを指定してください。
 . DNS や NIS などのネットワーク サービスを構成します。*続行*を選択します。
 +
 DNS サーバーと NTP サーバーの詳細を定義します。
@@ -138,7 +125,6 @@ NOTE: Windows以外の環境でクラスタを作成する方法については�
 
 
 .次の手順
-* AFXクラスタのセットアップの一環としてAIDEを含めた場合は、追加のAIDE設定手順を完了してください。認証設定はすべてのAIDEデプロイメントに適用されます。ライセンス版AIDE機能を使用するNetApp DCNデプロイメントにはライセンスが必要です。サードパーティサーバーのデプロイメントはメタデータに焦点を当てており、AIDEライセンスは必要ありません。詳細については、 https://docs.netapp.com/us-en/ai-data-engine/install-setup/cluster-setup-afx.html["AI Data Engineのセットアップ"^]を参照してください。
 * あなたがすべきlink:../get-started/prepare-cluster-admin.html["AFX投与の準備"]AFX クラスターを本番環境で使用する前に。
 
 
@@ -147,7 +133,6 @@ NOTE: Windows以外の環境でクラスタを作成する方法については�
 [[related-information]]
 == 関連情報
 
-* link:../get-started/learn-about-aide.html["NetApp AI Data Engineについて学ぶ"]
 * link:../administer/configure-svm.html["AFX SVMを構成する"]
 * link:../get-started/prepare-cluster-admin.html["AFX投与の準備"]
 
