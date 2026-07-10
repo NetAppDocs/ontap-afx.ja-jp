@@ -15,6 +15,7 @@ AFX システム上の整合性グループを管理できます。これによ�
 
 
 
+[[add-snapshot-data-protection-to-a-consistency-group]]
 == 整合性グループにスナップショットデータ保護を追加する
 
 整合性グループにスナップショット データ保護を追加すると、事前定義されたスケジュールに基づいて、整合性グループのローカル スナップショットを定期的に取得できるようになります。
@@ -59,6 +60,7 @@ AFX システム上の整合性グループを管理できます。これによ�
 
 
 
+[[related-information]]
 == 関連情報
 
 * https://docs.netapp.com/us-en/ontap/consistency-groups/index.html["ONTAPコンシステンシーグループについて学ぶ"^]

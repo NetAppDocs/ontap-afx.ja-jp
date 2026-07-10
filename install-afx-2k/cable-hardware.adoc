@@ -76,10 +76,19 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg["ケーブルプル�
 +
 シェルフストレージの接続は、スイッチ上の任意の100GbEブレークアウトポートに行うことができます。HA/クラスタ接続は、スイッチ上の任意の400GbEポートに接続できます。すべての「a」コントローラポートはスイッチAに接続され、すべての「b」コントローラポートはスイッチBに接続されます。
 
+* 銅線と光ファイバーのブレークアウト接続（ケーブル）の混用は、NVIDIA C6X-DX および CX7（100GbE）NIC アダプターではサポートされていません。接続には銅線接続か光ファイバー接続のいずれか一方のみを使用し、異なる種類の接続を併用することは避けてください。異なる種類のリンクを混在させると、長期間使用した後にリンクの飽和状態を引き起こす可能性があります。
++
+スイッチの配線を行う前に、接続タイプに合った正しいケーブルが揃っていることを確認してください。
+
++
+
+NOTE: 接続タイプの混合の詳細については、NetApp ナレッジベースの記事 link:https://kb.netapp.com/on-prem/ontap/OHW/OHW-Issues/CHW-3504["ポートに銅線と光ファイバーの混在ブレークアウトケーブルが接続されているCX6-DX NICでCRCリンクエラーが発生する"^] を参照してください。
 
 
 
 
+
+[[step-1-connect-the-controllers-to-the-management-network]]
 == ステップ1: コントローラを管理ネットワークに接続する
 
 各コントローラの管理（レンチ）ポートをいずれかの管理スイッチに接続するか、管理ネットワークに直接接続してください。
@@ -101,6 +110,7 @@ IMPORTANT: 電源コードをまだ差し込まないでください。
 
 
 
+[[step-2-connect-the-controllers-to-the-host-network]]
 == ステップ2: コントローラーをホストネットワークに接続する
 
 イーサネット モジュール ポートをホスト ネットワークに接続します。
@@ -150,6 +160,7 @@ image::../media/drw_afx_2k_host_switch_b_ieops-2865.svg[ケーブルからイー
 
 
 
+[[step-3-cable-the-cluster-and-ha-connections]]
 == ステップ3：クラスターとHA接続をケーブル接続する
 
 クラスターおよびHAインターコネクトケーブルを使用して、ポートe1aとe2aをスイッチAに、e1bとe2bをスイッチBに接続します。e1a/e1bポートはHA接続に使用され、e2a/e2aポートはクラスター接続に使用されます。
@@ -197,6 +208,7 @@ image::../media/drw_afx_2k_cluster_switch_b_ieops-2867.svg[クラスターネッ
 
 
 
+[[step-4-cable-the-controller-to-switch-storage-connections]]
 == ステップ4：コントローラーとスイッチ間のストレージ接続ケーブルを接続する
 
 コントローラーのストレージポートをスイッチに接続します。スイッチに適したケーブルとコネクタが揃っていることを確認してください。詳細については、 https://hwu.netapp.com["Hardware Universe"^]を参照してください。
@@ -245,6 +257,7 @@ image::../media/drw_afx_2k_storage_connection_b_ieops-2870.svg[コントロー�
 
 
 
+[[step-5-cable-the-shelf-to-switch-connections]]
 == ステップ5: シェルフとスイッチ間の接続を配線する
 
 NX224ストレージシェルフをスイッチの100GbEブレークアウトポートに接続します。

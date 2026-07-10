@@ -18,30 +18,35 @@ NOTE: ここで説明するONTAP の機能と管理は、AFX ストレージ シ
 
 
 
+[[storage-management-and-performance]]
 == ストレージ管理とパフォーマンス
 
 AFX 展開で構成および使用できるオプションのストレージ管理およびパフォーマンス機能がいくつかあります。
 
 
 
+[[ontap-nas-storage-management]]
 === ONTAP NASストレージ管理
 
 ネットワーク接続ストレージ（NAS）は、ネットワーク上の複数のクライアントからアクセスできる専用のファイルストレージを提供します。ONTAPは複数のNASプロトコルをサポートしています。 https://docs.netapp.com/us-en/ontap/nas-management/index.html["NASストレージの管理"^]の詳細をご覧ください。
 
 
 
+[[ontap-flexcache-volumes]]
 === ONTAP FlexCacheボリューム
 
 FlexCacheはONTAPリモートキャッシュ機能です。これによりデータがクライアントに近づき、アクセスパフォーマンスが向上し、コストが削減されます。FlexCacheボリュームを作成すると、最初に元のファイルシステムからメタデータのみがコピーされ、ファイルの配布が簡素化され、WANトラフィックが削減されます。詳細については、 https://docs.netapp.com/us-en/ontap/flexcache/index.html["ONTAP FlexCacheボリューム"^]を参照してください。
 
 
 
+[[ontap-flexgroup-volumes]]
 === ONTAP FlexGroupボリューム
 
 FlexGroupボリュームは、トラフィックを自動的かつ透過的に共有する複数のメンバーボリュームで構成されます。FlexGroupボリュームには、高いパフォーマンスや管理の簡素化など、いくつかの利点があります。 https://docs.netapp.com/us-en/ontap/flexgroup/creation-workflow-task.html["FlexGroupボリュームのセットアップ"^]の詳細をご覧ください。
 
 
 
+[[cross-file-sequential-read]]
 === クロスファイルシーケンシャルリード
 
 Cross File Sequential Read（CFSR）は、ONTAP 9.19.1以降のAFXシステムで利用可能な機能で、ビデオ編集および関連アプリケーションのパフォーマンスを向上させます。ビデオフレームを個別の連続ファイルとして保存するワークフロー（通常、各ファイルサイズは50～250MB）の場合、CFSRは連続ファイル名のパターンに基づいて次のファイルをインテリジェントに予測し、プリフェッチします。最大10ファイルまたは500MBのデータをプリフェッチできるため、読み取り遅延が大幅に削減され、4K/8KのRAWビデオを毎秒30フレームでスムーズに再生できます。
@@ -67,30 +72,35 @@ CFSRは、他のONTAPプラットフォーム（FAS、AFF、ASA）やCloud Volum
 
 
 
+[[data-protection]]
 == データ保護
 
 AFX 展開で構成および使用できるオプションのデータ保護機能がいくつかあります。
 
 
 
+[[consistency-groups]]
 === 一貫性グループ
 
 整合性グループは、1つの単位として管理されるボリュームの集まりです。詳細については、 https://docs.netapp.com/us-en/ontap/consistency-groups/index.html["ONTAP整合性グループ"^]を参照してください。
 
 
 
+[[snaplock]]
 === SnapLock
 
 ボリュームレベルでファイルを書き込み専用（WORM）状態に変換することで、ファイルを保護できます。SnapLockは2つのモードをサポートしています。コンプライアンスモードでは、ファイルの保存期間が満了するまでファイルが削除されないことが保証され、政府または業界固有の規制に対応できます。エンタープライズモードでは、特権ユーザーはファイルの保存期間が満了する前にファイルを削除できます。詳細はこちら https://docs.netapp.com/us-en/ontap/snaplock/index.html["ONTAP SnapLock"^]をご覧ください。
 
 
 
+[[storage-efficiency]]
 == Storage Efficiency
 
 ONTAP は、ストレージ使用量を最適化し、コストを削減するのに役立つ、いくつかのストレージ効率化機能を提供します。
 
 
 
+[[global-deduplication]]
 === グローバル重複排除
 
 https://docs.netapp.com/us-en/ontap/concepts/deduplication-concept.html["重複排除"^]は https://docs.netapp.com/us-en/ontap/volumes/deduplication-data-compression-efficiency-concept.html["ONTAPストレージ効率"^]重複するデータブロックを識別して削除することで、物理的なストレージ要件を削減する機能です。従来の重複排除は、ボリュームレベルまたはアグリゲートレベルのいずれかで動作します。この既存の機能は、すべての ONTAP プラットフォームのお客様に大幅なストレージ効率を提供します。
@@ -101,24 +111,28 @@ AFX A1Kシステムでは、グローバル重複排除機能がデフォルト�
 
 
 
+[[security]]
 == セキュリティ
 
 AFX 展開で構成および使用できるオプションのセキュリティ機能がいくつかあります。
 
 
 
+[[fpolicy]]
 === FPolicy
 
 FPolicyは、ストレージ仮想マシン（SVM）上のファイルアクセスイベントを監視および管理するために使用されるファイルアクセス通知フレームワークです。FPolicyを使用すると、定義した基準に基づいて、監視するファイル操作、および必要に応じてブロックするファイル操作を定義するポリシーを作成できます。FPolicyは、セキュリティ監査、コンプライアンス、データ ガバナンスによく使用されます。詳細については https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy ソリューション"^]をご覧ください。
 
 
 
+[[ontap-event-and-performance-monitoring]]
 == ONTAPイベントとパフォーマンスの監視
 
 クラスタの健全性とパフォーマンスを監視できます。これには、イベントのアラートの設定やシステムヘルスアラートの通知の管理が含まれます。 https://docs.netapp.com/us-en/ontap/event-performance-monitoring/index.html["イベント、パフォーマンス、健全性の監視"^]の詳細を確認してください。
 
 
 
+[[related-information]]
 == 関連情報
 
 * link:../faq-ontap-afx.html["AFX ストレージ システムに関する FAQ"]

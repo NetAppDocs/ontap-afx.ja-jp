@@ -15,6 +15,7 @@ summary: 環境に応じて、AFX の管理の一環としてデジタル証明�
 
 
 
+[[generate-a-certificate-signing-request]]
 == 証明書署名要求の生成
 
 デジタル証明書の使用を開始するには、証明書署名要求 (CSR) を生成する必要があります。  CSR は、証明機関 (CA) から署名付き証明書を要求するために使用されます。この一環として、 ONTAP は公開キーと秘密キーのペアを作成し、公開キーを CSR に含めます。
@@ -33,6 +34,7 @@ summary: 環境に応じて、AFX の管理の一環としてデジタル証明�
 
 
 
+[[add-a-trusted-certificate-authority]]
 == 信頼できる証明機関を追加する
 
 ONTAP は、トランスポート層セキュリティ (TLS) やその他のプロトコルで使用するための、信頼できるルート証明書のデフォルト セットを提供します。必要に応じて、信頼できる証明機関を追加できます。
@@ -50,6 +52,7 @@ ONTAP は、トランスポート層セキュリティ (TLS) やその他のプ�
 
 
 
+[[renew-or-delete-a-trusted-certificate-authority]]
 == 信頼できる証明機関を更新または削除する
 
 信頼できる証明機関は毎年更新する必要があります。期限切れの証明書を更新したくない場合は、削除する必要があります。
@@ -83,6 +86,7 @@ AFX システム上の既存の信頼された証明機関を更新または削�
 
 
 
+[[add-a-clientserver-certificate-or-local-certificate-authority]]
 == クライアント/サーバー証明書またはローカル証明機関を追加する
 
 安全な Web サービスの有効化の一環として、クライアント/サーバー証明書またはローカル証明機関を追加できます。
@@ -99,6 +103,7 @@ AFX システム上の既存の信頼された証明機関を更新または削�
 
 
 
+[[renew-or-delete-a-clientserver-certificate-or-local-certificate-authorities]]
 == クライアント/サーバー証明書またはローカル証明機関を更新または削除する
 
 クライアント/サーバー証明書とローカル証明機関は毎年更新する必要があります。期限切れの証明書またはローカル証明機関を更新しない場合は、それらを削除する必要があります。
@@ -130,6 +135,7 @@ AFX システム上の既存のクライアント/サーバー証明書または
 
 
 
+[[related-information]]
 == 関連情報
 
 * https://docs.netapp.com/us-en/ontap/authentication/install-server-certificate-cluster-svm-ssl-server-task.html["ONTAPでCA署名サーバ証明書を生成してインストールする"^]

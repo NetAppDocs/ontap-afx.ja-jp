@@ -20,6 +20,7 @@ NOTE: AutoSupport を管理するには、クラスタ管理者アカウント�
 
 
 
+[[test-autosupport-connectivity]]
 == AutoSupportの接続性をテストする
 
 クラスタをセットアップした後、 AutoSupport の接続をテストして、テクニカル サポートがAutoSupportによって生成されたメッセージを受信できることを確認する必要があります。
@@ -32,6 +33,7 @@ NOTE: AutoSupport を管理するには、クラスタ管理者アカウント�
 
 
 
+[[add-autosupport-recipients]]
 == AutoSupportの受信者を追加する
 
 オプションで、 AutoSupportメッセージを受信する電子メール アドレスのリストに社内サポート組織のメンバーを追加できます。
@@ -54,6 +56,7 @@ NOTE: AutoSupport を管理するには、クラスタ管理者アカウント�
 
 
 
+[[send-autosupport-data]]
 == AutoSupportデータの送信
 
 AFX システムに問題が発生した場合は、 AutoSupportデータを手動で送信する必要があります。これにより、問題を特定して解決するまでの時間が大幅に短縮されます。
@@ -70,6 +73,7 @@ AutoSupportデータはテクニカル サポートに送信されます。
 
 
 
+[[suppress-support-case-generation]]
 == サポートケースの生成を抑制する
 
 AFX システムでアップグレードまたはメンテナンスを実行している場合は、アップグレードまたはメンテナンスが完了するまでAutoSupportサポート ケースの生成を抑制することをお勧めします。
@@ -86,6 +90,7 @@ AFX システムでアップグレードまたはメンテナンスを実行し�
 
 
 
+[[resume-support-case-generation]]
 == サポートケース生成を再開する
 
 アップグレードまたはメンテナンス期間中にサポート ケースの生成を抑制した場合は、アップグレードまたはメンテナンスが完了したらすぐにサポート ケースの生成を再開する必要があります。
@@ -102,6 +107,7 @@ AutoSupportケースは、必要に応じて AFX システムに対して自動�
 
 
 
+[[related-information]]
 == 関連情報
 
 * https://docs.netapp.com/us-en/ontap/system-admin/manage-autosupport-concept.html["ONTAP AutoSupportについて学ぶ"^]

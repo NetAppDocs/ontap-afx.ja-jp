@@ -15,6 +15,7 @@ AFX の管理とサポートに役立つ追加のリソースがあり、 ONTAP�
 
 
 
+[[ontap-documentation]]
 == ONTAPのドキュメント
 
 * https://docs.netapp.com/us-en/ontap/["ユニファイドONTAP"^]
@@ -24,6 +25,7 @@ AFX の管理とサポートに役立つ追加のリソースがあり、 ONTAP�
 
 
 
+[[netapp-support]]
 == NetAppサポート
 
 * https://mysupport.netapp.com/["NetAppサポート サイト"^]

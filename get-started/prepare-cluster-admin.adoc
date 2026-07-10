@@ -15,6 +15,7 @@ AFX を運用環境に展開する前に、管理構造と構成オプション�
 
 
 
+[[understand-storage-virtual-machines]]
 == ストレージ仮想マシンを理解する
 
 ストレージ仮想マシン (SVM) は、 ONTAPクラスタ内の分離されたサーバーまたはテナント環境です。接続されたクライアントにデータを提供するように SVM を設定できます。  AFX SVM の機能と特性を理解しておく必要があります。
@@ -28,6 +29,7 @@ SVMスコープのリソース:: AFX リソースと構成可能なエンティ�
 
 
 
+[[two-afx-administrative-levels]]
 == 2つのAFX管理レベル
 
 AFX を使用して実行するONTAP管理タスクは、通常、2 つの異なるカテゴリに分類されます。一部のタスクはONTAPクラスタ全体に適用されますが、他のタスクは特定の SVM に適用されます。これにより、2 層の管理モデルが実現します。
@@ -43,6 +45,7 @@ SVM管理者:: SVM 管理者ロールは特定の SVM を制御するため、�
 
 
 
+[[three-administrative-interfaces]]
 == 3つの管理インターフェース
 
 AFFおよびFASシステムと同様に、AFX には 3 つの管理インターフェイスがあります。使用する必要がある LIF (または IP アドレス) は、管理インターフェイスと環境によって異なります。
@@ -65,12 +68,14 @@ NOTE: ほとんどの管理タスクでは、System Manager ユーザー イン�
 |===
 
 
+[[learn-to-search-filter-and-sort-information-in-system-manager]]
 == システム マネージャーで情報を検索、フィルタリング、並べ替える方法を学びます
 
 System Manager ユーザー インターフェイスには、必要な情報にアクセスして表示できるようにする強力な機能セットが含まれています。これらの機能の使い方を習得すると、AFX ストレージ システムをより適切に管理できるようになります。見る https://docs.netapp.com/us-en/ontap/task_admin_search_filter_sort.html["システムマネージャで情報を検索、フィルタリング、並べ替える"^]詳細についてはこちらをご覧ください。
 
 
 
+[[access-the-ontap-cli]]
 == ONTAP CLIにアクセスする
 
 ほとんどの AFX 管理には System Manager を使用できますが、 ONTAPコマンドライン インターフェイスを使用してのみ実行できるタスクもいくつかあります。
@@ -104,6 +109,7 @@ System Manager ユーザー インターフェイスには、必要な情報に�
 
 
 
+[[working-with-ontap-ha-pairs]]
 == ONTAP HAペアの操作
 
 Unified ONTAPと同様に、AFX クラスタ ノードは、フォールト トレランスと無停止運用を実現するために高可用性 (HA) ペアで構成されます。 HA ペアリングにより、ストレージ フェイルオーバーなどのノード障害が発生した場合でも、ストレージ操作をオンラインのまま維持できるようになります。各ノードは別のノードと提携して 1 つのペアを形成します。これは通常、2 つのノードのNVRAMモジュール間の直接接続を使用して行われます。
@@ -112,6 +118,7 @@ AFX では、バックエンド クラスター スイッチに新しい HA VLAN
 
 
 
+[[afx-cluster-deployment-limitations]]
 == AFX クラスターの展開の制限
 
 AFXでは、クラスタの設定および使用時に、最小値や最大値など、いくつかの制限が適用されます。これらの制限はいくつかのカテゴリに分類されます。
@@ -128,6 +135,7 @@ NetApp Hardware Universeおよび相互運用性マトリックスツールで�
 
 
 
+[[confirm-afx-system-health]]
 == AFXシステムの健全性を確認する
 
 AFX 管理タスクを実行する前に、クラスターの正常性を確認する必要があります。
@@ -170,6 +178,7 @@ link:../administer/view-insights.html["Insightsを使用してAFXクラスター
 
 
 
+[[quick-start-for-creating-and-using-an-svm]]
 == SVM の作成と使用のクイック スタート
 
 AFX クラスターをインストールしてセットアップしたら、ほとんどの AFX 展開に典型的な管理タスクの実行を開始できます。クライアントとデータを共有し始めるために必要な大まかな手順は次のとおりです。
@@ -192,6 +201,7 @@ link:../manage-data/prepare-manage-data.html["準備"]データの割り当て�
 
 
 
+[[related-information]]
 == 関連情報
 
 * https://hwu.netapp.com/["NetApp Hardware Universe"^]

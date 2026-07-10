@@ -43,12 +43,14 @@ CAUTION: 設置およびメンテナンス手順中は、検証済みの接地�
 
 
 
+[[cisco-nexus-9808-switch-installation]]
 == Cisco Nexus 9808スイッチの設置
 
 Cisco Nexus 9808 スイッチを取り付ける場合は、キャビネットまたはラックへのスイッチの取り付け方法に関する詳細な手順について、link:https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/hw/9800/9808/nx-os/cisco-nexus-9808-nx-os-mode-switch-hardware-installation-guide/m-8000-install-chassis.html["Cisco Nexus 9808 モードスイッチ ハードウェアインストールガイド"^]を参照してください。
 
 
 
+[[cisco-nexus-9332d-gx2b-and-9364d-gx2a-switch-installation]]
 == Cisco Nexus 9332D-GX2Bおよび9364D-GX2Aスイッチの設置
 
 Cisco Nexus 9332D-GX2B または 9364D を設置する場合は、以下の手順に従ってスイッチをキャビネットまたはラックに取り付けてください。

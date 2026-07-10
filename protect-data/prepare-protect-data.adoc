@@ -18,6 +18,7 @@ TIP: AFFおよびFASシステムで利用可能な概念や管理手順の多く
 
 
 
+[[terminology-and-options]]
 == 用語とオプション
 
 AFX データ保護に関連して、知っておくべき用語がいくつかあります。
@@ -30,6 +31,7 @@ SnapLock:: SnapLockは、ファイルを一度書き込み、何度も読み取�
 
 
 
+[[afx-data-protection-limitations]]
 == AFXデータ保護の制限
 
 AFX ストレージ システムによって適用されるONTAPデータ保護の制限と制約事項を認識しておく必要があります。
@@ -39,6 +41,7 @@ SM-S を使用する場合、スケール制限があります。単一の AFX �
 
 
 
+[[related-information]]
 == 関連情報
 
 * link:../administer/additional-ontap-svm.html["追加のAFX SVM管理"]

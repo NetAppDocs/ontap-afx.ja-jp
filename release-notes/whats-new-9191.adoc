@@ -21,6 +21,7 @@ TIP:  https://docs.netapp.com/us-en/ai-data-engine/release-notes/whats-new.html[
 
 
 
+[[performance]]
 == Performance
 
 [cols="2,4"]
@@ -44,6 +45,7 @@ Dynamic Storage Efficiency は、高いパフォーマンスと最大のスル�
 |===
 
 
+[[rest-api]]
 == REST API
 
 [cols="2,4"]
@@ -57,6 +59,7 @@ ONTAP 9.19.1では、 `/storage/volumes` REST APIエンドポイントで現�
 |===
 
 
+[[security]]
 == セキュリティ
 
 [cols="2,4"]
@@ -75,6 +78,7 @@ ARP/AIは、AFXシステムとのSnapMirror同期関係にある対象のプラ�
 |===
 
 
+[[storage-resource-management]]
 == ストレージ リソースの管理
 
 [cols="2,4"]
@@ -93,6 +97,7 @@ QoSポリシーグループが、短期的なパフォーマンス向上ニー�
 |===
 
 
+[[upgrade]]
 == Upgrade
 
 [cols="2,4"]

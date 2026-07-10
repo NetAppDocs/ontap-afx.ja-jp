@@ -15,6 +15,7 @@ summary: コントローラー ノードをネットワーク、スイッチ、�
 
 
 
+[[supported-afx-1k-cabling-configuration]]
 == サポートされているAFX 1Kケーブル構成
 
 AFX 1K ストレージ システムの初期構成では、デュアル スイッチを介してストレージ ディスク シェルフに接続された少なくとも 4 つのコントローラー ノードがサポートされます。
@@ -25,6 +26,7 @@ image:../media/drw_afx_cable_overview_half_node_ieops-2358.svg["AFX 1K ストレ
 
 
 
+[[supported-hardware-components]]
 == サポートされているハードウェアコンポーネント
 
 AFX 1K ストレージ システムと互換性のあるストレージ ディスク シェルフ、スイッチ、およびケーブル タイプを確認します。

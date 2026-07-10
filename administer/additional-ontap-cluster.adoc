@@ -18,18 +18,21 @@ NOTE: ここで説明するONTAP の機能と管理は、AFX ストレージ シ
 
 
 
+[[licensing]]
 == ライセンス
 
 AFX システムは、Unified ONTAP AFFおよびFASシステムと同様の方法でライセンスされます。  AFX クラスターには、サポートされているプロトコルのほとんどの機能がデフォルトで含まれています。
 
 
 
+[[ontap-license-management]]
 === ONTAPライセンス管理
 
 ONTAPライセンスは、1 つ以上のソフトウェア権限の記録です。すべてのライセンスは、 NetAppライセンス ファイル (NLF) を使用して定義および提供されます。参照 https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html["ONTAPライセンスの概要"^]詳細についてはこちらをご覧ください。
 
 
 
+[[install-a-license-on-an-afx-system]]
 === AFXシステムにライセンスをインストールする
 
 ライセンス ファイルをインストールして、AFX ストレージ システムの必要に応じて追加機能をアクティブ化できます。
@@ -45,12 +48,14 @@ ONTAPライセンスは、1 つ以上のソフトウェア権限の記録です�
 
 
 
+[[performance]]
 == Performance
 
 一般的な ONTAP 機能を使用して、AFX ストレージ システム クラスタのパフォーマンスを最適化します。
 
 
 
+[[modify-default-settings-that-control-automatic-qos-throughput-ceiling-increases]]
 === QoS スループット上限の自動増加を制御するデフォルト設定を変更します
 
 適応型および非適応型のQoSポリシーグループは、デフォルトで自動的に有効化され、ワークロードのスループット上限を1秒間、一時的に50%増加させることで、短期的なパフォーマンス向上要求に対応します。ONTAP 9.19.1以降では、これらのデフォルト設定を変更できます。ONTAP 9.18.1以前では、これらの設定を変更することはできません。
@@ -59,30 +64,35 @@ link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-
 
 
 
+[[security]]
 == セキュリティ
 
 AFX 展開で構成および使用できるオプションのセキュリティ機能がいくつかあります。
 
 
 
+[[ontap-security-and-data-encryption]]
 === ONTAPのセキュリティとデータ暗号化
 
 AFX ストレージ システムのセキュリティとプライバシーを保護することが重要です。言い及ぶ  https://docs.netapp.com/us-en/ontap/security-encryption/index.html["セキュリティとデータ暗号化"^]
 
 
 
+[[ontap-authentication-and-access-control]]
 === ONTAP認証とアクセス制御
 
 AFX ストレージ システムには、認証およびアクセス制御サービスを構成するためのいくつかのオプションが用意されています。参照 https://docs.netapp.com/us-en/ontap/authentication-access-control/index.html["認証とアクセス制御"^]詳細についてはこちらをご覧ください。
 
 
 
+[[ontap-tls-hardware-offload]]
 === ONTAP TLS ハードウェアオフロード
 
 サポートされているイーサネットカードに、クラスタ全体のトランスポート層セキュリティ（TLS）の暗号化と復号化をオフロードできます。これにより CPU 負荷が軽減され、TLS を使用するシステムのパフォーマンスが向上します。詳細については、 https://docs.netapp.com/us-en/ontap/networking/configure-tls-offload.html["ONTAP TLSハードウェアオフロードを設定する"^]を参照してください。
 
 
 
+[[administer-oauth-2-0-on-an-afx-system]]
 === AFX システムで OAuth 2.0 を管理する
 
 OAuth 2.0 は、署名されたアクセス トークンを使用して保護されたリソースへのアクセスを制限および制御するために使用される業界標準の認証フレームワークです。
@@ -97,6 +107,7 @@ OAuth 2.0 は、署名されたアクセス トークンを使用して保護さ
 
 
 
+[[related-information]]
 == 関連情報
 
 * link:../faq-ontap-afx.html["AFX ストレージ システムに関する FAQ"]

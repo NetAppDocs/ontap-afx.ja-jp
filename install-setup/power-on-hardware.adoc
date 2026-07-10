@@ -15,6 +15,7 @@ AFX 1K ストレージ システムのラック ハードウェアをインス�
 
 
 
+[[step-1-power-on-the-shelf-and-assign-shelf-id]]
 == ステップ1: シェルフの電源を入れ、シェルフIDを割り当てる
 
 各シェルフには固有のシェルフ ID があり、ストレージ システムのセットアップで区別されます。
@@ -122,6 +123,7 @@ NOTE: ID が点滅するまでに 15 秒以上かかる場合は、棚 ID ボタ
 
 
 
+[[step-2-power-on-the-controller-nodes]]
 == ステップ2: コントローラーノードの電源をオンにする
 
 ストレージ シェルフをオンにして一意の ID を割り当てた後、ストレージ コントローラー ノードの電源をオンにします。
@@ -160,6 +162,7 @@ image::../media/drw_affa1k_power_source_icon_ieops-1700.svg[AFXストレージ�
 
 
 
+[[step-3-verify-the-switch-connections]]
 == ステップ3：スイッチの接続を確認する
 
 スイッチのCLIから、クラスタポートに接続されているスイッチポートが稼働していること、クラスタノードが正しいクラスタVLANに属していること、および2つのスイッチ間のISL接続が正常に機能していることを確認します。
@@ -407,13 +410,4 @@ cs1#
 
 
 .次の手順
-AFX 1K ストレージ システムの電源をオンにした後、導入オプションに基づいてセットアップを完了します：
-
-* 専用のAFX 1Kストレージシステムの導入については、link:../install-setup/cluster-setup.html["AFXクラスタをセットアップする"]を参照してください。
-* AFX 1KとAI Data Engine（AIDE）を使用する導入環境では、AIDEサードパーティサーバーまたはNetApp提供のデータコンピューティングノードをインストールします：
-+
-** サードパーティ製サーバーの展開については、 https://docs.netapp.com/us-en/ai-data-engine/install-aide-server/aide-mde-server-hardware-requirements.html["サードパーティのサーバー上のAI Data Engineのハードウェアインストール"^]を完了してから、 https://docs.netapp.com/us-en/ai-data-engine/install-setup/install-aide-as-software.html["サードパーティサーバーにAIDEソフトウェアをインストールする"^]を実行してください。
-** NetApp DCN 展開の場合は、完了してください https://docs.netapp.com/us-en/ai-data-engine/install-dcn/aide-dcn-hardware-requirements.html["NetApp提供のデータコンピュートノードへのAI Data Engineのハードウェアインストール"^]。
-
-
-
+AFX 1Kストレージシステムの電源を入れた後、link:../install-setup/cluster-setup.html["AFXクラスターをセットアップする"]。

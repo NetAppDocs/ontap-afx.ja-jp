@@ -15,6 +15,7 @@ AFX システムで使用される認証および承認サービスを、ユー�
 
 
 
+[[configure-ldap]]
 == LDAPの設定
 
 認証情報を中央の場所で管理するように、Lightweight Directory Access Protocol (LDAP) サーバーを構成できます。
@@ -32,6 +33,7 @@ AFX システムで使用される認証および承認サービスを、ユー�
 
 
 
+[[configure-saml-authentication]]
 == SAML 認証の設定
 
 セキュリティアサーションマークアップ言語 (SAML) 認証を使用すると、LDAP などの他のプロトコルを使用するプロバイダーではなく、安全な ID プロバイダー (IdP) によってユーザーを認証できるようになります。
@@ -59,6 +61,7 @@ IdPシステムの認証画面が表示されます。
 
 
 
+[[related-information]]
 == 関連情報
 
 * link:../administer/manage-users-roles.html["AFX クラスターのユーザーとロールを管理する"]

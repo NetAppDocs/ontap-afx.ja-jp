@@ -18,6 +18,7 @@ TIP: AFX ドキュメントには、 ONTAPパーソナリティに関係なく�
 
 
 
+[[configuration-differences]]
 == 構成の違い
 
 AFX 構成がAFFおよびFASシステムと異なる領域がいくつかあります。
@@ -27,12 +28,14 @@ AFX 構成がAFFおよびFASシステムと異なる領域がいくつかあり�
 
 
 
+[[unsupported-or-restricted-unified-ontap-capabilities]]
 == サポートされていない、または制限されているUnified ONTAPの機能
 
 NetApp AFXは、ハイパフォーマンスNASおよびオブジェクトワークロード向けに最適化されています。このため、AFFおよびFASストレージシステムとの違いがあります。以下の機能はNetApp AFXでは利用できません。リストは主要な機能または機能領域別に整理されています。また、link:../release-notes/whats-new-9171.html["新機能"]に基づいて、お使いのONTAPリリースに対応したAFXのアップデートと変更点も確認する必要があります。
 
 
 
+[[block-and-san]]
 === ブロックとSAN
 
 * SAN管理とクライアントアクセス
@@ -42,6 +45,7 @@ NetApp AFXは、ハイパフォーマンスNASおよびオブジェクトワー�
 
 
 
+[[aggregates-and-physical-storage]]
 === 集約と物理的なストレージ
 
 * MetroCluster
@@ -56,6 +60,7 @@ NetApp AFXは、ハイパフォーマンスNASおよびオブジェクトワー�
 
 
 
+[[data-replication-snapmirror]]
 === データレプリケーション（SnapMirror）
 
 
@@ -67,6 +72,7 @@ NOTE: すべてのデータレプリケーションは、Unified ONTAPとAFXの�
 
 
 
+[[manageability]]
 === 管理性
 
 * ONTAPI API (ZAPI)
@@ -78,6 +84,7 @@ NOTE: すべてのデータレプリケーションは、Unified ONTAPとAFXの�
 
 
 
+[[changes-to-the-command-line-interface]]
 == コマンドラインインターフェースの変更
 
 AFX で使用できるONTAP CLI は、通常、 AFFおよびFASシステムで使用できる CLI と同じです。ただし、次のような違いがいくつかあります。
@@ -95,6 +102,7 @@ AFX で使用できるONTAP CLI は、通常、 AFFおよびFASシステムで�
 
 
 
+[[related-information]]
 == 関連情報
 
 * link:../get-started/system-design.html["AFXシステムの特徴"]

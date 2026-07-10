@@ -15,6 +15,7 @@ AFX システムのデータをバックアップするには、スナップシ�
 
 
 
+[[before-you-begin]]
 == 開始する前に
 
 スナップショットは、ボリュームを特定の時点に復元するために使用できる、データのローカルの読み取り専用コピーです。スナップショットは、必要に応じて手動で作成することも、link:policies-schedules.html["スナップショットポリシーとスケジュール"] 。
@@ -36,6 +37,7 @@ AFX システムのデータをバックアップするには、スナップシ�
 
 
 
+[[create-a-snapshot]]
 == スナップショットを作成する
 
 ボリュームまたは整合性グループのスナップショットを作成します。
@@ -149,6 +151,7 @@ SnapMirrorラベルはリモート宛先によって使用されます。
 ====
 
 
+[[related-information]]
 == 関連情報
 
 * https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["ONTAPスナップショットポリシーを作成する"^]

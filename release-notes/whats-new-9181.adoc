@@ -21,6 +21,7 @@ TIP:  https://docs.netapp.com/us-en/ai-data-engine/release-notes/whats-new.html[
 
 
 
+[[storage-resource-management-enhancements]]
 == ストレージ リソース管理の機能拡張
 
 [cols="2,4"]

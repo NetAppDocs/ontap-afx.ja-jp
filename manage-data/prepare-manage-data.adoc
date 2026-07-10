@@ -18,6 +18,7 @@ TIP: AFFおよびFASシステムで使用できる概念や管理手順の多く
 
 
 
+[[terminology-and-options]]
 == 用語とオプション
 
 AFX ストレージに関連して、知っておくべき用語がいくつかあります。
@@ -40,12 +41,14 @@ NFSセッショントランキング:: NFS トランキングは、NFS v4.1 ク�
 
 
 
+[[data-migration-options]]
 == データ移行オプション
 
 データ移行にはいくつかのオプションがあります。重点は、外部データを AFX クラスターに移行することにあります。
 
 
 
+[[migrating-data-from-aff-or-fas-systems]]
 === AFFまたはFASシステムからのデータの移行
 
 次のテクノロジーを使用することで、 AFFまたはFASシステム (Unified ONTAPパーソナリティを実行) から AFX への完全に統合された移行パスが利用できます。
@@ -59,18 +62,21 @@ NFSセッショントランキング:: NFS トランキングは、NFS v4.1 ク�
 
 
 
+[[migrating-data-from-a-non-ontap-source]]
 === ONTAP以外のソースからのデータの移行
 
 ONTAP以外のシステムからのデータ移行は、ファイル レベルのコピー操作を使用して実行できます。高速コピーユーティリティ https://docs.netapp.com/us-en/xcp/["XCP"^]または https://docs.netapp.com/us-en/data-services-copy-sync/["コピーと同期"^]RoboCopy (SMB 用) や rsync (NFS 用) などの標準ユーティリティや、DataDobi などのサードパーティ ツールも使用できます。
 
 
 
+[[migration-limitations]]
 === 移行の制限
 
 ソース データ ボリュームに LUN または NVMe 名前空間が含まれていない場合は、 AFFまたはFASシステムから AFX にデータを複製できます。AFX からAFFまたはFASシステムにレプリケートする場合、 AFFまたはFASシステムでサポートされる最小のONTAPバージョンは 9.16.1 です。これは、高度な容量バランシングをサポートする最初のONTAPリリースです。
 
 
 
+[[display-an-overview-of-your-storage]]
 == ストレージの概要を表示する
 
 AFX データの管理を開始するには、ストレージの概要を表示する必要があります。
@@ -87,6 +93,7 @@ AFX クラスターに定義されているすべてのボリュームとバケ�
 
 
 
+[[related-information]]
 == 関連情報
 
 * https://docs.netapp.com/us-en/ontap/concept_nas_file_system_analytics_overview.html["ONTAPファイル システム分析について学ぶ"^]

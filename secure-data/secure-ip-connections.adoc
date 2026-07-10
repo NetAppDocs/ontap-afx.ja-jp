@@ -15,12 +15,14 @@ IP セキュリティ (IPsec) は、ネットワーク エンドポイント間�
 
 
 
+[[configuring-ipsec-on-an-afx-system]]
 == AFX システムでの IPsec の構成
 
 AFX ストレージ システムの IPsec 構成手順は、ハードウェア オフロード機能で使用されるサポートされているネットワーク インターフェイス コントローラ (NIC) カードを除き、 AFFおよびFASシステムと同じです。参照 https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html["ONTAPネットワークのIPセキュリティを設定するための準備"^]詳細についてはこちらをご覧ください。
 
 
 
+[[hardware-offload-feature]]
 == ハードウェアオフロード機能
 
 暗号化や整合性チェックなどの IPsec 暗号化操作のいくつかは、AFX システムでサポートされている NIC カードにオフロードできます。これにより、IPsec によって保護されたネットワーク トラフィックのパフォーマンスとスループットが大幅に向上します。
@@ -38,6 +40,7 @@ ONTAP 9.17.1 以降の AFX ストレージ システムの IPsec ハードウェ
 
 
 
+[[related-information]]
 == 関連情報
 
 * https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html["ONTAPネットワークのIPセキュリティを設定するための準備"^]

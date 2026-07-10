@@ -15,6 +15,7 @@ AFX システムには、各クラスターが管理するストレージを監�
 
 
 
+[[display-nas-clients]]
 == NASクライアントを表示する
 
 現在 AFX クラスターに接続されている NFS および SMB/CIFS クライアントのリストを表示できます。
@@ -27,6 +28,7 @@ AFX システムには、各クラスターが管理するストレージを監�
 
 
 
+[[related-information]]
 == 関連情報
 
 * link:../manage-data/prepare-manage-data.html["AFXデータを管理する準備"]

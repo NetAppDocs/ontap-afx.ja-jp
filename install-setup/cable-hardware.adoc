@@ -54,8 +54,19 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg["ケーブルプル�
 
 NOTE: AFX 1K ストレージ システムへのCisco Nexus 9332D-GX2B および 9364D-GX2A スイッチ構成には、4x100GbE ブレークアウト ケーブル接続が必要です。
 
+* 銅線と光ファイバーのブレークアウト接続（ケーブル）の混用は、NVIDIA C6X-DX および CX7（100GbE）NIC アダプターではサポートされていません。接続には銅線接続か光ファイバー接続のいずれか一方のみを使用し、異なる種類の接続を併用することは避けてください。異なる種類のリンクを混在させると、長期間使用した後にリンクの飽和状態を引き起こす可能性があります。
++
+スイッチの配線を行う前に、接続タイプに合った正しいケーブルが揃っていることを確認してください。
+
++
+
+NOTE: 接続タイプの混合の詳細については、NetApp ナレッジベースの記事 link:https://kb.netapp.com/on-prem/ontap/OHW/OHW-Issues/CHW-3504["ポートに銅線と光ファイバーの混在ブレークアウトケーブルが接続されているCX6-DX NICでCRCリンクエラーが発生する"^] を参照してください。
 
 
+
+
+
+[[step-1-connect-the-controllers-to-the-management-network]]
 == ステップ1: コントローラを管理ネットワークに接続する
 
 各コントローラの管理（レンチ）ポートをいずれかの管理スイッチに接続するか、管理ネットワークに直接接続してください。
@@ -76,6 +87,7 @@ IMPORTANT: 電源コードをまだ差し込まないでください。
 
 
 
+[[step-2-connect-the-controllers-to-the-host-network]]
 == ステップ2: コントローラーをホストネットワークに接続する
 
 イーサネット モジュール ポートをホスト ネットワークに接続します。
@@ -125,6 +137,7 @@ image::../media/drw_afx_network_cabling_b_ieops-2814.svg[ケーブルからイ�
 
 
 
+[[step-3-cable-the-cluster-ha-and-storage-connections-to-switch-a]]
 == ステップ3：クラスタ、HA、およびストレージ接続をスイッチAにケーブル接続する
 
 4x100GbEブレークアウトケーブルを使用して、コントローラのクラスタ、HA、およびストレージポートをネットワーク スイッチAに接続します。クラスタとHAインターコネクトケーブルで、ポートe1aとe7aをスイッチAに接続します。e1aポートはHA接続に使用され、e7aポートはクラスタ接続に使用されます。ストレージ接続の場合、ポートe10aとe11aをスイッチAに接続します。
@@ -157,6 +170,7 @@ image::../media/drw_afx_ha_cluster_storage_a_ieops-2779.svg[ケーブルコン�
 
 
 
+[[step-4-cable-the-cluster-ha-and-storage-connections-to-switch-b]]
 == ステップ4：クラスタ、HA、およびストレージ接続をSwitch Bにケーブル接続する
 
 4x100GbEブレークアウトケーブルを使用して、コントローラのクラスタ、HA、およびストレージポートをネットワーク スイッチBに接続します。クラスタとHAインターコネクトケーブルで、ポートe1bとe7bをスイッチBに接続します。e1bポートはHA接続に使用され、e7bポートはクラスタ接続に使用されます。ストレージ接続の場合、ポートe10bとe11bをスイッチBに接続します。
@@ -188,6 +202,7 @@ image::../media/drw_afx_ha_cluster_storage_b_ieops-2780.svg[ケーブルコン�
 
 
 
+[[step-5-cable-the-shelf-to-switch-connections]]
 == ステップ5: シェルフとスイッチ間の接続を配線する
 
 NX224 ストレージ シェルフをスイッチに接続します。

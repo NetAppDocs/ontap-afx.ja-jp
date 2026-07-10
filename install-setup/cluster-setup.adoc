@@ -15,12 +15,14 @@ AFXハードウェアのインストールが完了したら、ONTAPクラスタ
 
 
 
+[[prepare-to-set-up-an-afx-storage-system]]
 == AFXストレージシステムのセットアップの準備
 
 ONTAPクラスターを設定する前に、コアAFX要件と追加のAIDEに関する考慮事項を確認して、セットアップ プロセスを正常に完了するために必要なすべての情報とリソースが揃っていることを確認する必要があります。
 
 
 
+[[core-afx-requirements]]
 === コアAFX要件
 
 AFX クラスターをセットアップする際には、考慮すべきコア要件がいくつかあります。
@@ -53,6 +55,7 @@ AFX システムのハードウェアのインストールが完了している�
 
 
 
+[[additional-aide-considerations]]
 === 追加のAIDE考慮事項
 
 AFXを初めてインストールおよびセットアップする際に、オプションでNetApp AI Data Engine（AIDE）を含めることができます。AIDEは2つのデプロイメントモデルをサポートしています：サードパーティサーバー上のAIDEソフトウェアまたはNetApp提供のデータコンピュートノード（DCN）。AIDEのセットアップを計画している場合は、まずデプロイメントモデルの前提条件を完了してください：
@@ -64,6 +67,7 @@ AFXを初めてインストールおよびセットアップする際に、オ�
 
 
 
+[[perform-initial-cluster-setup]]
 == 初期クラスタ設定を実行する
 
 ラップトップ デバイスを AFX クラスターに接続し、いくつかのグローバル構成値を設定できます。
@@ -111,6 +115,7 @@ NOTE: Windows以外の環境でクラスタを作成する方法については�
 
 
 
+[[complete-cluster-setup]]
 == クラスターのセットアップを完了する
 
 初期設定が完了したら、System Manager を使用してONTAPクラスタのセットアップを完了できます。
@@ -139,6 +144,7 @@ NOTE: Windows以外の環境でクラスタを作成する方法については�
 
 
 
+[[related-information]]
 == 関連情報
 
 * link:../get-started/learn-about-aide.html["NetApp AI Data Engineについて学ぶ"]

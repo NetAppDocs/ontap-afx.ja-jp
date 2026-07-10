@@ -15,6 +15,7 @@ AFX 2K ストレージシステムでサポートされているハードウェ�
 
 
 
+[[supported-afx-2k-cabling-configuration]]
 == サポートされているAFX 2Kケーブル構成
 
 AFX 2K ストレージシステムの初期構成では、デュアル スイッチを介してストレージ ディスク シェルフに接続された最低 4 つのコントローラ ノードをサポートします。
@@ -25,6 +26,7 @@ image:../media/drw_afx_2k_cable_overview_half_node_ieops-2871.svg["AFX 2Kスト�
 
 
 
+[[supported-hardware-components]]
 == サポートされているハードウェアコンポーネント
 
 AFX 2K ストレージシステムに対応するストレージ ディスク シェルフ、ネットワーク スイッチ、およびケーブルの種類を確認してください。

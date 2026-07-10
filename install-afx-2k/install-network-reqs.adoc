@@ -18,6 +18,7 @@ AFX 2Kストレージシステムに接続する各ネットワークについ�
 
 
 
+[[gather-network-information]]
 == ネットワーク情報を収集する
 
 AFX 2Kストレージシステムのインストールを開始する前に、必要なネットワーク情報を収集してください。
@@ -48,12 +49,14 @@ AFX 2Kストレージシステムのインストールを開始する前に、�
 
 
 
+[[network-requirements-for-cisco-switches]]
 == Ciscoスイッチのネットワーク要件
 
 Cisco Nexus 9808、Cisco Nexus 9332D-GX2、および9364D-GX2Aスイッチの設置および保守については、ケーブル配線とネットワーク要件を必ず確認してください。
 
 
 
+[[network-requirements]]
 === ネットワーク要件
 
 すべてのスイッチ構成には次のネットワーク情報が必要です。
@@ -65,6 +68,7 @@ Cisco Nexus 9808、Cisco Nexus 9332D-GX2、および9364D-GX2Aスイッチの設
 
 
 
+[[cabling-requirements]]
 === ケーブル要件
 
 * スイッチに適した数と種類のケーブルおよびケーブル コネクタがあります。参照 https://hwu.netapp.com["Hardware Universe"^]。
