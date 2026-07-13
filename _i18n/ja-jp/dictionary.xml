@@ -978,9 +978,7 @@
   <block id="c62737cdd3f658b2c080ea393539da49" category="list-text">各スイッチの電源を入れます。</block>
   <block id="74d427d525eaaf37db5bbbb57657cb0c" category="list-text">AFX 1K ストレージ システムをサポートするようにスイッチを構成します。</block>
   <block id="72295557ee935de6dcaaa496e9ffac7b" category="inline-link-macro">Cisco Nexus 9332D-GX2Bスイッチの設定</block>
-  <block id="ee580ea5ba41decce9294581c1bf8a36" category="list-text">Cisco Nexus 9332D-GX2Bスイッチについては、クラスタおよびストレージスイッチのドキュメントを参照してください。<block ref="ebd0953e922f25f223b8dff6a58fb84a" category="inline-link-macro-rx"></block> 。</block>
   <block id="1817109031f229042672af151b53e20f" category="inline-link-macro">Cisco Nexus 9364D-GX2Aスイッチの設定</block>
-  <block id="addfd44612da2038c3e3649fc9c115c5" category="list-text">Cisco Nexus 9364D-GX2Aスイッチについては、クラスタおよびストレージスイッチのドキュメントを参照してください。<block ref="d5fe58e0155150b259ce0bf656e34478" category="inline-link-macro-rx"></block> 。</block>
   <block id="20dca0630adbb0d8f903778442041063" category="inline-link-macro">AFX 1Kストレージシステムの電源をオンにする</block>
   <block id="daf056bef029d58c97e3fcabf3ff8cc1" category="paragraph">AFX 1Kストレージシステムのスイッチを設定したら、<block ref="cae83d99a1d1cc2243a2d6bbc5469664" category="inline-link-macro-rx"></block> 。</block>
   <block id="337e9239544f1891a09a6b9c13192533" category="summary">各シェルフの電源をオンにして一意のシェルフ ID を割り当て、AFX コントローラー ノードの電源をオンにして、電源ケーブルを固定します。</block>
@@ -1995,7 +1993,6 @@
   <block id="5a5c4176551fe6dd6fe6ee11995ce220" category="list-text">Cisco Nexus 9332D-GX2B スイッチの場合は、ISL 接続にポート 31/32 を使用します。詳細については、<block ref="2fc588ea5e031befba9fe0b0a6466061" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="1f87cb3b672fcebc0f3e8c027541a0f4" category="list-text">Cisco Nexus 9364D-GX2A スイッチの場合は、ISL 接続にポート 63/64 を使用します。詳細については、<block ref="9a6587d5653529e56536e1d546440a92" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="3f09832565123d546de503a179a2a73a" category="list-text">AFX 2Kストレージシステムをサポートするようにスイッチを設定します。</block>
-  <block id="6643d25175cee9ed135211156448f273" category="inline-link-macro">AFXストレージシステム用のスイッチを設定する</block>
   <block id="708b74e6831efbdefff002e1e0fa8f36" category="inline-link-macro">AFX 2Kストレージシステムの電源をオンにする</block>
   <block id="bdd33111aa5c5ee954d515d83c1a9731" category="paragraph">AFX 2Kストレージシステムのスイッチを設定した後、<block ref="50a620d565af3ded921cd2d40d21ce59" category="inline-link-macro-rx"></block>。</block>
   <block id="e9cff4d9b0d60850bd0c9246eb98b0bc" category="paragraph">AFX 2Kストレージシステムのラックハードウェアを取り付け、コントローラノードとストレージシェルフ用のケーブルを接続したら、ストレージシェルフとコントローラノードの電源をオンにしてください。</block>
@@ -2038,7 +2035,6 @@
   <block id="b1372c8bdf7b87f18c9db2e8270dce48" category="paragraph">スイッチの配線を行う前に、接続タイプに合った正しいケーブルが揃っていることを確認してください。</block>
   <block id="f4bbdec8095912d05fc0863b38ab874a" category="inline-link-macro">ポートに銅線と光ファイバーの混在ブレークアウトケーブルが接続されているCX6-DX NICでCRCリンクエラーが発生する</block>
   <block id="81ee74208c5c71f60d84fb449cb06237" category="admonition">接続タイプの混合の詳細については、NetApp ナレッジベースの記事 <block ref="c262586745798e29d31312374a9bf860" category="inline-link-macro-rx"></block> を参照してください。</block>
-  <block id="9a459af3fb0538682e15c7e05c266aeb" category="list-text">スイッチの設定に関する詳細については、<block ref="c680c8d03caae4efc1e016b731ff8649" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="c1153f83175c5dee9b88a5e820d6bfef" category="inline-link-macro">AFXクラスターをセットアップする</block>
   <block id="2a4823fb79409c272c92a0b82e9c3667" category="paragraph">AFX 2Kストレージシステムの電源を入れた後、<block ref="2072e5ec3241d0a9ac16c974239f2f84" category="inline-link-macro-rx"></block>。</block>
   <block id="cb030b87229281c1b5ed398ba50abebb" category="list-text">「今すぐ登録」を選択して、アカウントを作成してください。</block>
@@ -2050,4 +2046,8 @@
   <block id="373a0502633d2333dd8b952009c2d1ad" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> クラスタの管理を準備する</block>
   <block id="b6bc9b43cb446eaa57e2615dc37d813a" category="summary">AFXハードウェアのインストールが完了したら、ONTAPクラスタのセットアップを完了できます。このプロセスには、順番に実行する必要がある関連する構成フェーズが含まれます。</block>
   <block id="79977d403c6d53cd9f671794eeca0ed7" category="paragraph">ONTAP クラスターをセットアップする前に、AFX のコア要件を確認し、セットアッププロセスを正常に完了するために必要なすべての情報とリソースが揃っていることを確認してください。</block>
+  <block id="2c45e3fc76dd22d195877278acbafdf3" category="inline-link-macro">Cisco Nexus 9808スイッチの設定</block>
+  <block id="f177c581ed9f9f9a2ade361b69f40000" category="list-text">Cisco Nexus 9808スイッチについては、クラスタおよびストレージスイッチのドキュメントを参照してください<block ref="fd812bd375b22a989715c699eb7ed44d" category="inline-link-macro-rx"></block>。</block>
+  <block id="414467ebb81a54b0d2bfde0829d9be94" category="list-text">Cisco Nexus 9332D-GX2B スイッチについては、クラスタおよびストレージスイッチのドキュメントを参照してください<block ref="4267e88712cb2b91d08e1a42358e695f" category="inline-link-macro-rx"></block>。</block>
+  <block id="837d45987b31811e3c4dc00585c6683b" category="list-text">Cisco Nexus 9364D-GX2A スイッチについては、クラスタおよびストレージスイッチのドキュメントを参照してください<block ref="b235e965e82dd587688a629268d671aa" category="inline-link-macro-rx"></block>。</block>
 </blocks>
