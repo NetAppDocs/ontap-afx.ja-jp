@@ -64,6 +64,15 @@ link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-
 
 
 
+[[ipspace-tcp-performance]]
+=== IPspaceのTCPパフォーマンス
+
+ONTAP 9.19.1以降、ONTAPはPRRとRACKという2つの損失回復機能をONTAP TCPスタックに統合することで、損失が多く遅延の大きいWANリンク上のTCPデータ転送パフォーマンスを向上させます。PRRはすべてのネットワークに適しており、デフォルトで有効になっています。RACKは、リンク速度が約25 Gigabits/secondの輻輳したネットワークに適しており、デフォルトでは無効になっています。
+
+詳細については、link:https://docs.netapp.com/us-en/ontap/networking/improve-tcp-wan-performance.html["PRRとRACKを使用してTCP WANパフォーマンスを向上させる"] を参照してください。
+
+
+
 [[security]]
 == セキュリティ
 
@@ -107,6 +116,22 @@ OAuth 2.0 は、署名されたアクセス トークンを使用して保護さ
 
 
 
+[[data-protection]]
+== データ保護
+
+以下の ONTAP データ保護機能と、それらが AFX ストレージシステムとどのように関連しているかを理解しておく必要があります。
+
+
+
+[[load-share-mirrors]]
+=== 負荷分散ミラー
+
+ONTAP では、負荷分散ミラー（LSM）とは、SnapMirror によるストレージ VM（SVM）のルートボリュームのレプリカであり、SVM の NAS ネームスペースへのエントリポイントとして機能します。ロードシェアリングミラーは、ルートボリュームの読み取り専用コピーを他のノードに 1 つ以上保持することで、HA ペアの両方のノードが利用不能になった場合でも、クライアントが NAS ネームスペースにアクセスできるようにします。
+
+*AFXストレージシステムは、負荷分散ミラーをサポートしていません。*AFXでは、負荷分散ミラー関係を作成、初期化、または更新することはできません。AFXで名前空間の回復力、データ分散、または読み取りスケーリングを実現するには、代わりにFlexCacheボリュームまたはSnapMirrorレプリケーションを使用してください。これらの機能は、クライアントがデータと名前空間を利用できるようにするための同等以上の機能を提供し、AFXで完全にサポートされています。
+
+
+
 [[related-information]]
 == 関連情報
 
@@ -114,4 +139,5 @@ OAuth 2.0 は、署名されたアクセス トークンを使用して保護さ
 * https://kb.netapp.com/nss/Licensing/How_to_download_NLF_licenses_from_the_NetApp_Support_Site["NetApp Support SiteからNLFライセンスをダウンロードする方法"^]
 * https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html["ONTAP OAuth 2.0導入の概要"^]
 * link:../administer/additional-ontap-svm.html["AFX SVMの追加管理"]
+* https://docs.netapp.com/us-en/ontap/data-protection/manage-snapmirror-root-volume-replication-concept.html["ONTAP SnapMirrorルート ボリュームのレプリケーションについて学ぶ"^]
 

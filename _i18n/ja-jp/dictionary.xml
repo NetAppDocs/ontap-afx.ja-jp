@@ -1797,7 +1797,6 @@
   <block id="2de6d638a130f9818bda5d9a251ad5c8" category="admonition">ONTAP 9.19.1以降、SVM管理者は専用のSystem Managerダッシュボードを使用して、自身のSVMを監視および管理できます。詳細については、<block ref="2185e3072c3ca27b5462a691693a5a31" category="inline-link-rx"></block></block>
   <block id="867daeeeb6f3e3dbf90bc2470bdf5fa3" category="paragraph">AFXでは、クラスタの設定および使用時に、最小値や最大値など、いくつかの制限が適用されます。これらの制限はいくつかのカテゴリに分類されます。</block>
   <block id="e03d1a6e5f175f9e1dca199acd1ed7a4" category="admonition">AFXストレージシステムの運用パラメータを上げる前に、それがアプリケーションおよびクラスタ全体にどのような影響を与えるかを評価する必要があります。例えば、コントローラノードの数を増やすと全体の容量は増加するものの、クラスタネットワーク内のトラフィックも増加する可能性があります。これらの設定変更がもたらす影響と、それがお客様の環境にどのような影響を与える可能性があるかを理解することが重要です。</block>
-  <block id="737a863c22a0501aae47dfc0b82907b3" category="list-text">各AFXクラスタには、少なくとも4つのノードが必要です。ノードの最大数はONTAPリリースによって異なります。たとえば、9.19.1 RCリリースでは、AFXクラスタあたり最大32ノードまで使用できます。</block>
   <block id="471b5d11017777fb374abe9e4f2cfed4" category="paragraph">ONTAP の S3 ストレージのサポートに関する最新の変更や更新にも常に注意を払うことが重要です。たとえば、ONTAP 9.19.1 以降では、各 S3 ユーザーに対して 2 つ目のアクセスキーを生成できます。これにより、元のアクセスキーの有効期限が切れた場合でも、S3 リソースへのアクセスを維持できます。条件付き操作（書き込み、コピー、削除）の適用を制御することもできます。</block>
   <block id="1f88cf259e7331ee9666de0aed1e61b2" category="inline-link">ONTAP S3キーを再生成し、保持期間を変更する</block>
   <block id="da33e3b3b6f0f55817eb5e53583085c6" category="list-text"><block ref="da33e3b3b6f0f55817eb5e53583085c6" category="inline-link-rx"></block></block>
@@ -1810,7 +1809,6 @@
   <block id="9d8ca8942805bbef83b9c607e5358741" category="paragraph">グローバル重複排除により、ONTAPの重複排除による容量削減効果がストレージの可用性ゾーン（SAZ）全体に拡張されます。SAZ内のすべてのボリュームにわたる重複データブロックを排除することで、ストレージ効率を大幅に向上させ、総所有コストを削減できます。この機能はAFXシステムではデフォルトで有効になっており、管理者による設定を必要とせずに透過的に動作します。詳細については、<block ref="d20869026a82d2608dc3e8932f1a0bfe" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="5726d8d4b7f0b6d793e33cbdb3ddf7aa" category="cell">Kubernetesストレージオーケストレーションにおけるバランスのとれた配置機能の強化</block>
   <block id="f77466cfbba999a74a9b2bfdbefe7288" category="paragraph">ONTAP 9.19.1では、<block ref="3f7ecfe68df8aae32ef20639ae717f55" prefix=" " category="inline-code"></block> REST APIエンドポイントで現在利用可能な6つのパラメータが<block ref="74c1b9ffe0a04056613523d15a186b5a" prefix=" " category="inline-code"></block>エンドポイントに追加されます。この機能強化により、Kubernetesストレージオーケストレーション用のNetApp Tridentを使用しているお客様は、ONTAPのネイティブなバランス配置機能を使用してボリュームを作成できます。</block>
-  <block id="5473f7e1d0ef87e9a99388e05733c203" category="cell">対象となるSnapMirrorプライマリボリュームに対するARP/AIサポート</block>
   <block id="3def1da8e6d471a763e2b21ec25e0c82" category="paragraph">ARP/AIは、AFXシステムとのSnapMirror同期関係にある対象のプライマリボリュームをサポートしています。ARP/AIは、アクティブな読み書き可能なプライマリボリューム上で動作し、プライマリ専用のARPスナップショットを作成し、機械学習ベースのランサムウェア検出を提供します。</block>
   <block id="281fd14262fa7c1793e3c18dfd336f7f" category="inline-link-macro">TLS ハードウェアオフロードのサポート</block>
   <block id="9ae8ab2f2bc89803b54b2d95dc15e797" category="cell"><block ref="9ae8ab2f2bc89803b54b2d95dc15e797" category="inline-link-macro-rx"></block></block>
@@ -1836,8 +1834,6 @@
   <block id="4d209cddba5e4e3f517cda6d0180e867" category="cell">制限の変更点</block>
   <block id="534453c63ab1c5041c53f8bbc059a9b7" category="cell">リリースで変更</block>
   <block id="8010ab2f71c733c1a8013b31b901be79" category="cell">クラスタあたりのノード数</block>
-  <block id="355836185b6feaed32d56f19e33032eb" category="paragraph">AFXクラスターは最大32ノードまで拡張できます。これにより、ワークロードやアプリケーションの増大する需要に合わせて、AFXストレージシステムを拡張することが可能になります。</block>
-  <block id="5148c61a8c3e3afeb285a73e9241d26c" category="cell">ONTAP 9.19.1 RC</block>
   <block id="f80f1ede0c7983dcab18fc7104224f56" category="cell">動的ストレージ効率</block>
   <block id="00e7d9732d9f1a308baa60f42ec78d16" category="paragraph">Dynamic Storage Efficiency は、高いパフォーマンスと最大のスループットを必要とする大規模なワークロード向けに、ストレージ効率化操作（圧縮、重複排除、コンパクション）をインテリジェントに最適化します。大量の書き込み状況を自動的に検知し、ピーク時の負荷によるパフォーマンス低下を防ぐため、インラインおよびバックグラウンドのストレージ効率化プロセスを一時的に停止します。スループットが規定のしきい値を下回ると、ストレージ効率化操作が再開され、手動による介入なしに節約効果が回復されます。この機能は AFX ストレージシステムで利用可能で、デフォルトで有効になっており、設定は不要です。</block>
   <block id="0b6845dd2391304844b6f9578fd8c865" category="sidebar">ONTAPのデフォルトと制限に対する変更</block>
@@ -2050,4 +2046,36 @@
   <block id="f177c581ed9f9f9a2ade361b69f40000" category="list-text">Cisco Nexus 9808スイッチについては、クラスタおよびストレージスイッチのドキュメントを参照してください<block ref="fd812bd375b22a989715c699eb7ed44d" category="inline-link-macro-rx"></block>。</block>
   <block id="414467ebb81a54b0d2bfde0829d9be94" category="list-text">Cisco Nexus 9332D-GX2B スイッチについては、クラスタおよびストレージスイッチのドキュメントを参照してください<block ref="4267e88712cb2b91d08e1a42358e695f" category="inline-link-macro-rx"></block>。</block>
   <block id="837d45987b31811e3c4dc00585c6683b" category="list-text">Cisco Nexus 9364D-GX2A スイッチについては、クラスタおよびストレージスイッチのドキュメントを参照してください<block ref="b235e965e82dd587688a629268d671aa" category="inline-link-macro-rx"></block>。</block>
+  <block id="67de111be220e704fc0fcaa510ec0b92" category="section-title">IPspaceのTCPパフォーマンス</block>
+  <block id="d3e53b85a4d88cd5e122ce8261a4169a" category="paragraph">ONTAP 9.19.1以降、ONTAPはPRRとRACKという2つの損失回復機能をONTAP TCPスタックに統合することで、損失が多く遅延の大きいWANリンク上のTCPデータ転送パフォーマンスを向上させます。PRRはすべてのネットワークに適しており、デフォルトで有効になっています。RACKは、リンク速度が約25 Gigabits/secondの輻輳したネットワークに適しており、デフォルトでは無効になっています。</block>
+  <block id="eca8546fa06b104b28a6d070fd7aeaec" category="inline-link-macro">PRRとRACKを使用してTCP WANパフォーマンスを向上させる</block>
+  <block id="0d0ceb30517990e149f7c0115b20a144" category="paragraph">詳細については、<block ref="2f41cfc6efb882326a07e3acf541c6e5" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="6b6c95ed3ef78f4a7bc534697ad0c478" category="paragraph">以下の ONTAP データ保護機能と、それらが AFX ストレージシステムとどのように関連しているかを理解しておく必要があります。</block>
+  <block id="4855a7e19f65daa9af8f3596fa9d0c8c" category="section-title">負荷分散ミラー</block>
+  <block id="076d33100bcfd1f9076dfa799ac16b20" category="paragraph">ONTAP では、負荷分散ミラー（LSM）とは、SnapMirror によるストレージ VM（SVM）のルートボリュームのレプリカであり、SVM の NAS ネームスペースへのエントリポイントとして機能します。ロードシェアリングミラーは、ルートボリュームの読み取り専用コピーを他のノードに 1 つ以上保持することで、HA ペアの両方のノードが利用不能になった場合でも、クライアントが NAS ネームスペースにアクセスできるようにします。</block>
+  <block id="bd8277e79fa32895c76e47771ec3c027" category="paragraph">*AFXストレージシステムは、負荷分散ミラーをサポートしていません。*AFXでは、負荷分散ミラー関係を作成、初期化、または更新することはできません。AFXで名前空間の回復力、データ分散、または読み取りスケーリングを実現するには、代わりにFlexCacheボリュームまたはSnapMirrorレプリケーションを使用してください。これらの機能は、クライアントがデータと名前空間を利用できるようにするための同等以上の機能を提供し、AFXで完全にサポートされています。</block>
+  <block id="48943fd6a375d0852da5ac067bf413fe" category="inline-link">ONTAP SnapMirrorルート ボリュームのレプリケーションについて学ぶ</block>
+  <block id="cabcbbabc15f52713a62eb42f8484a28" category="list-text"><block ref="cabcbbabc15f52713a62eb42f8484a28" category="inline-link-rx"></block></block>
+  <block id="64500d2f1eb952270058fcdc56fc55cb" category="section-title">SnapMirror NAS 向けアクティブ シンク</block>
+  <block id="a4d5a9b04549fd43c1bca697b6ae8151" category="paragraph">SnapMirror active sync により、完全なサイト障害が発生した場合でもビジネスサービスが機能し続けることができます。この技術により、アプリケーションは手動操作やカスタムスクリプトを使用せずに、セカンダリコピーへシームレスにフェイルオーバーできます。詳細はこちらをご覧ください<block ref="0aa3a1786b7eb8f80dffac419450355e" category="inline-link-rx"></block>。</block>
+  <block id="4ade1e690485ace608877ec90f1e5fbc" category="section-title">NFS over TLS</block>
+  <block id="a8d13b5c2965c87ca9fbbcf9afd27457" category="inline-link">TLS 上で NFS を有効にする</block>
+  <block id="06c9fd0e4a1e637e7cd5da80408c883c" category="paragraph">ONTAP 9.19.1 以降、ONTAP はオンプレミスで NFS over TLS（TLS 1.3 使用）をサポートし、NFS 対応 SVM 上で転送中の NFS トラフィックを暗号化します。今回のリリースでは、LIF ごとのオプションの相互 TLS ホスト認証と、一致するクライアントからの非 TLS TCP アクセスを拒否するエクスポートポリシー制御もサポートされています。NFS over TLS は既存の ONTAP NFS インフラストラクチャと連携するため、アプリケーションは引き続き通常どおり NFS を使用でき、TLS が転送中の NFS トラフィックを暗号化します。NFS over TLS は、ONTAP 9.19.1 のクラウドプラットフォームでは利用できません。詳細については、<block ref="4cf4365fc3bcf33037d7569c83a99e13" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="58e9fd1349348ac0d3b814afbc757395" category="list-text">各AFXクラスターは、少なくとも4つのノードで構成されている必要があります。ノードの最大数はONTAPリリースによって異なります。たとえば、9.19.1リリースでは、AFXクラスターあたり最大32ノードまで使用可能です。</block>
+  <block id="c968f0f1a1f47bf53c5bb5503d2b9765" category="paragraph">AFXクラスターは最大32ノードまで拡張できます。これにより、ワークロードやアプリケーションの増大する需要に合わせて、AFXストレージシステムを拡張することが可能になります。32ノードのサポートは限定的な機能セットで利用可能です。詳細については、NetAppアカウントチームにお問い合わせください。</block>
+  <block id="ea7f38fbe84ac28be0f7c90cca730a69" category="cell">ONTAP 9.19.1</block>
+  <block id="6c4c7d8e76cfe8af8727252cf3e875b5" category="cell">FlexGroupあたりのボリューム数</block>
+  <block id="af6694594a3904e8c097275a5063d99b" category="paragraph">FlexGroup の最大ボリューム数が、32ノードで512に増加しました。これにより、AFXストレージシステムは、より大規模なクラスターに対しても、その性能を最大限に発揮できるようになります。</block>
+  <block id="d359aad806cfd9033ebf70235d998444" category="inline-link-macro">ONTAP SnapMirror アクティブ同期で NAS を保護する</block>
+  <block id="2e6bc327967589a31f3b3cf912541969" category="cell"><block ref="2e6bc327967589a31f3b3cf912541969" category="inline-link-macro-rx"></block></block>
+  <block id="6df678bfc8af1b23041d41f6cdba54ad" category="paragraph">SnapMirror active syncは、AFXクラスタ（4ノードのみ）上でNFSとSMBを使用してSVMレベルでNASワークロードをサポートし、プライマリクラスタ上では読み取り/書き込みアクセスのみをサポートします。</block>
+  <block id="a5fa5746370b608090b994a97b49e98b" category="section-title">ネットワーク</block>
+  <block id="1d3f2716111de88760369111858eeee2" category="inline-link-macro">TCPのパフォーマンス向上</block>
+  <block id="0564b4663ca85cec01dd40ac0620d42b" category="cell"><block ref="0564b4663ca85cec01dd40ac0620d42b" category="inline-link-macro-rx"></block></block>
+  <block id="a9ca0c6d9fc385c7343075bc02edc104" category="paragraph">ONTAP 9.19.1以降、ONTAPはPRRとRACKという2つの損失回復機能をONTAP TCPスタックに統合することで、損失が多く遅延の大きいWANリンク上のTCPデータ転送パフォーマンスを向上させます。</block>
+  <block id="f44c5b52283f6fd3cb045d14198dfa6e" category="inline-link">ARP/AIによるSnapMirrorプライマリボリュームのサポート</block>
+  <block id="2399496a6e54ed20ed46828a475f7a0e" category="cell"><block ref="2399496a6e54ed20ed46828a475f7a0e" category="inline-link-rx"></block></block>
+  <block id="e8eb207e6de7c7757810bc07b0846e79" category="inline-link-macro">NFS over TLS v3</block>
+  <block id="9f76431b14eae171858837b9c8175543" category="cell"><block ref="9f76431b14eae171858837b9c8175543" category="inline-link-macro-rx"></block></block>
+  <block id="fb78157da1449370c33ba54cae495e1f" category="paragraph">ONTAP 9.19.1 以降、ONTAP は NFS 対応 SVM 上で転送中の NFS トラフィックを暗号化するために、TLS 1.3 を使用した NFS over TLS のオンプレミスサポートを追加します。今回のリリースでは、LIF ごとのオプションの相互 TLS ホスト認証と、一致するクライアントからの非 TLS TCP アクセスを拒否するためのエクスポートポリシー制御もサポートされています。</block>
 </blocks>
