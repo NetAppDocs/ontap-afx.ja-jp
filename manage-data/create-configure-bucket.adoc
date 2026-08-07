@@ -25,3 +25,7 @@ summary: バケットを作成して SVM に接続できます。各バケット
 . 必要に応じて、データ保護、ロック、および権限に関連する追加の構成については、[*その他のオプション*] を選択します。
 . バケットを追加するには、[*保存*] を選択します。
 
+
+.関連情報
+* https://docs.netapp.com/us-en/ontap/data-protection/cloud-backup-with-snapmirror-task.html["ONTAP SnapMirror Cloud を使用してデータをクラウドにバックアップする"^]
+

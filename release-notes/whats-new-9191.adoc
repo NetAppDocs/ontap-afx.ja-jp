@@ -29,6 +29,11 @@ AFXストレージシステムで利用可能なONTAP 9.19.1に含まれる新�
 | link:../administer/additional-ontap-svm.html["ONTAP SnapMirror アクティブ同期で NAS を保護する"]  a| 
 SnapMirror active syncは、AFXクラスタ（4ノードのみ）上でNFSとSMBを使用してSVMレベルでNASワークロードをサポートし、プライマリクラスタ上では読み取り/書き込みアクセスのみをサポートします。
 
+
+
+| link:../manage-data/create-configure-bucket.html["SnapMirrorクラウドサポートの制限がS3バケット100個に引き上げられました"]  a| 
+SnapMirror クラウドでサポートされる S3 バケットの数が 100 に増加しました。
+
 |===
 
 
