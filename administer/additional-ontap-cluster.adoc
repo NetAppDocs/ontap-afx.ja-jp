@@ -11,10 +11,10 @@ summary: 一般的な AFX クラスター管理に加えて、環境に応じて
 
 
 [role="lead"]
-一般的な AFX クラスター管理に加えて、環境に応じて実行する必要がある他のタスクがある場合があります。追加タスクのほとんどは System Manager を使用して実行できますが、場合によっては CLI を使用する必要があることもあります。
+一般的なAFXクラスタ管理に加えて、環境によっては実行する必要のあるその他のタスクがある場合があります。ほとんどの追加タスクはSystem Managerを使用して実行できますが、場合によってはCLIを使用する必要があります。記載されているONTAPの機能と管理は、AFXストレージシステム、およびUnified ONTAPを実行しているAFFまたはFASシステムに共通しています。関連するUnified ONTAPドキュメントへのリンクが適宜含まれています。
 
 
-NOTE: ここで説明するONTAP の機能と管理は、AFX ストレージ システムと、Unified ONTAPを実行するAFFまたはFASシステムに共通です。関連する Unified ONTAPドキュメントへのリンクが必要に応じて含まれています。
+TIP: 追加の ONTAP AFX 機能と設定の概要を確認してください。お探しのオプションが見つからない場合は、ページ下部のリンクも併せてご確認ください。追加のリソースが掲載されています。
 
 
 
@@ -140,4 +140,6 @@ ONTAP では、負荷分散ミラー（LSM）とは、SnapMirror によるスト
 * https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html["ONTAP OAuth 2.0導入の概要"^]
 * link:../administer/additional-ontap-svm.html["AFX SVMの追加管理"]
 * https://docs.netapp.com/us-en/ontap/data-protection/manage-snapmirror-root-volume-replication-concept.html["ONTAP SnapMirrorルート ボリュームのレプリケーションについて学ぶ"^]
+* https://docs.netapp.com/us-en/ontap/networking/ipsec-prepare.html["ONTAPネットワークでIPセキュリティを使用するための準備"^]
+* https://docs.netapp.com/us-en/ontap/networking/configure_network_security_using_federal_information_processing_standards_fips.html["すべてのSSL接続に対してFIPSを使用してONTAPネットワークセキュリティを構成する"^]
 

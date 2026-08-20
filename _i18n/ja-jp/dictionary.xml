@@ -2,7 +2,6 @@
 <blocks>
   <block id="9300fda436a5cc421811b04dc04badf8" category="summary">一般的な AFX クラスター管理に加えて、環境に応じて実行する必要がある他のタスクがある場合があります。追加タスクのほとんどは System Manager を使用して実行できますが、場合によっては CLI を使用する必要があることもあります。</block>
   <block id="faede213fca7a18a345d45f0d29088a6" category="doc">AFX ストレージ システム クラスターの追加管理</block>
-  <block id="7d36f828619651b0ec19095f0f25dfc8" category="admonition">ここで説明するONTAP の機能と管理は、AFX ストレージ システムと、Unified ONTAPを実行するAFFまたはFASシステムに共通です。関連する Unified ONTAPドキュメントへのリンクが必要に応じて含まれています。</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">ライセンス</block>
   <block id="92ff5239ce1b1631936446319c85a178" category="paragraph">AFX システムは、Unified ONTAP AFFおよびFASシステムと同様の方法でライセンスされます。  AFX クラスターには、サポートされているプロトコルのほとんどの機能がデフォルトで含まれています。</block>
   <block id="b378946fe8453b6639548e16e14e8d27" category="section-title">ONTAPライセンス管理</block>
@@ -2092,4 +2091,22 @@
   <block id="6b10f0340ee90e881f251f6a6c1c50e5" category="paragraph"><block ref="6b10f0340ee90e881f251f6a6c1c50e5" category="inline-xref-macro-rx"></block></block>
   <block id="980de945038567285acd832eeffc81db" category="paragraph">条件を使用することで、オブジェクトのアップロードに対して条件付き書き込みを、オブジェクトの削除に対して条件付き削除を強制できます。条件付き書き込みと削除は、オブジェクトの上書きや意図しない削除を防ぐ手段を提供します。</block>
   <block id="2f3fb7b10644dc3204e82bf0a20ccfe1" category="paragraph">元のアクセスキーの有効期限が切れた場合でも、S3 リソースへのユーザーアクセスを維持するには、ONTAPクラスター管理者は、S3ユーザーごとに2つ目のアクセスキーを生成できます。</block>
+  <block id="11ba5c1727548057c68ac606191a008a" category="paragraph">一般的なAFXクラスタ管理に加えて、環境によっては実行する必要のあるその他のタスクがある場合があります。ほとんどの追加タスクはSystem Managerを使用して実行できますが、場合によってはCLIを使用する必要があります。記載されているONTAPの機能と管理は、AFXストレージシステム、およびUnified ONTAPを実行しているAFFまたはFASシステムに共通しています。関連するUnified ONTAPドキュメントへのリンクが適宜含まれています。</block>
+  <block id="95e6e1659bc28dbb709323a6e8ad256f" category="admonition">追加の ONTAP AFX 機能と設定の概要を確認してください。お探しのオプションが見つからない場合は、ページ下部のリンクも併せてご確認ください。追加のリソースが掲載されています。</block>
+  <block id="8f1df3d891a92d7cf641c00a5d10a5e1" category="inline-link">ONTAPネットワークでIPセキュリティを使用するための準備</block>
+  <block id="66a386fe45902150e921567e6268eea8" category="list-text"><block ref="66a386fe45902150e921567e6268eea8" category="inline-link-rx"></block></block>
+  <block id="0e39b789f7717bc975ea58eaf0db4905" category="inline-link">すべてのSSL接続に対してFIPSを使用してONTAPネットワークセキュリティを構成する</block>
+  <block id="9c40aa856fab06d435d3012a0852a8b9" category="list-text"><block ref="9c40aa856fab06d435d3012a0852a8b9" category="inline-link-rx"></block></block>
+  <block id="f94158b9ac425f46f5e560391d7810ea" category="paragraph">一般的なAFX SVMの管理に加えて、環境によっては他に実行する必要のあるタスクがある場合があります。ほとんどの追加タスクはSystem Managerを使用して実行できますが、場合によってはCLIを使用する必要があります。ここで説明するONTAPの機能と管理は、AFXストレージシステム、およびUnified ONTAPを実行しているAFFまたはFASシステムに共通しています。関連するUnified ONTAPドキュメントへのリンクが適宜含まれています。</block>
+  <block id="8a13505dd6946f762d484d5548520dad" category="inline-link">アダプティブQoSポリシー グループ</block>
+  <block id="cb0922a55eba1a82e50cf71c18ebe232" category="list-text"><block ref="cb0922a55eba1a82e50cf71c18ebe232" category="inline-link-rx"></block></block>
+  <block id="8e02fbebde6eda602f04ad6be7872598" category="inline-xref-macro">追加の管理：IPsec ハードウェアオフロード</block>
+  <block id="5b3998aa47cfda7a64ed6ff67b670846" category="paragraph"><block ref="5b3998aa47cfda7a64ed6ff67b670846" category="inline-xref-macro-rx"></block></block>
+  <block id="0e512d1b0e0eec22d9c82690b21dc8e3" category="paragraph">IPsec ハードウェア オフロードのサポートが IPv6 に拡張されました。</block>
+  <block id="dbdd0c87a08f7da829b770094938ec4f" category="inline-xref-macro">追加管理者：OpenSSL PQCアルゴリズム</block>
+  <block id="5a9a17f2a80f4bf17ebd21e4bd62d32c" category="paragraph"><block ref="5a9a17f2a80f4bf17ebd21e4bd62d32c" category="inline-xref-macro-rx"></block></block>
+  <block id="4f6ab42dbc66c329bdc56764d3561476" category="paragraph">ONTAPは、SSL向けにポスト量子コンピューティング暗号化アルゴリズムをサポートしています。これらのアルゴリズムは、将来起こり得る量子コンピューティング攻撃に対する追加の保護を提供し、SSL FIPSモードが無効になっている場合に利用できます。</block>
+  <block id="8e2c307ef6e54871dce87c1828dc21fd" category="inline-xref-macro">SVMおよびボリューム上の2レベルのネストされたQoSポリシー グループのサポート</block>
+  <block id="e08db9e8d24efaf5a7190ce782b11af3" category="paragraph"><block ref="e08db9e8d24efaf5a7190ce782b11af3" category="inline-xref-macro-rx"></block></block>
+  <block id="0d42fe34cb867538d9d93ccdd8b15ac7" category="paragraph">QoS ポリシーを SVM と SVM 配下のボリュームに同時に割り当てることができます。</block>
 </blocks>

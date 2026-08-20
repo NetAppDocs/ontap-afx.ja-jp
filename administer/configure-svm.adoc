@@ -42,3 +42,7 @@ SVMのアクティビティと分析を追跡できます
 . 目的の SVM を選択し、[設定] タブを選択します。
 . ページ上の構成オプションを確認し、必要に応じて設定を選択して更新します。
 
+
+.関連情報
+* https://docs.netapp.com/us-en/ontap/performance-admin/adaptive-qos-policy-groups-task.html["アダプティブQoSポリシー グループ"^]
+
