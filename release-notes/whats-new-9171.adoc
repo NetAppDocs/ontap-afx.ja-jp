@@ -17,6 +17,9 @@ summary: AFX ストレージ システムで利用できるONTAP 9.17.1 に含�
 AFX ストレージ システムで利用できるONTAP 9.17.1 に含まれる新機能について説明します。
 
 
+NOTE: AFX には、ONTAP 9.17.1 で利用可能な新機能がいくつかあります。これらのうちいくつかは AFX 固有のものですが、その他多くは共通の製品基盤から派生したものです。以下に説明する AFX の機能を確認することに加えて、 https://docs.netapp.com/us-en/ontap/release-notes/whats-new-9171.html["ONTAP 9.17.1の新機能"^]も参照してください。
+
+
 
 [[platforms]]
 == プラットフォーム

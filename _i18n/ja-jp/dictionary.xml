@@ -2085,4 +2085,11 @@
   <block id="9c1a79f4f2d2fd2b367f6ed1bb37d7ae" category="inline-link-macro">SnapMirrorクラウドサポートの制限がS3バケット100個に引き上げられました</block>
   <block id="b2d786633879a334695de09f0ae3cfb0" category="cell"><block ref="b2d786633879a334695de09f0ae3cfb0" category="inline-link-macro-rx"></block></block>
   <block id="0f2919ddc73a7864a3605abad5d389c6" category="paragraph">SnapMirror クラウドでサポートされる S3 バケットの数が 100 に増加しました。</block>
+  <block id="fab7289d2e0b55fc43d0b47d53a00fc3" category="admonition">AFX には、ONTAP 9.17.1 で利用可能な新機能がいくつかあります。これらのうちいくつかは AFX 固有のものですが、その他多くは共通の製品基盤から派生したものです。以下に説明する AFX の機能を確認することに加えて、<block ref="f893755dddb8099eec78a6462ce91d0b" category="inline-link-rx"></block>も参照してください。</block>
+  <block id="4104746c2a71c1942a4995ce44c82593" category="admonition">AFX には、ONTAP 9.18.1 で利用可能な新機能がいくつかあります。これらのうちいくつかは AFX 固有のものですが、その他多くは共通の製品基盤から派生したものです。以下に説明する AFX の機能を確認することに加えて、以下も参照してください<block ref="204bccace7f1ae9c578cbca9117d36d7" category="inline-link-rx"></block>。</block>
+  <block id="ecaf96cdec76c873c95a0fdcb5bf95c6" category="admonition">AFXには、ONTAP 9.19.1で利用可能な新機能がいくつかあります。これらのうちいくつかはAFX固有のものですが、その他多くは共通の製品基盤から派生したものです。下記に説明するAFXの機能を確認することに加えて、以下も参照してください<block ref="6397caa908413ec6433ae55aa1981652" category="inline-link-rx"></block>。</block>
+  <block id="51985b9bdf0ec7b57ade2b6af08c0214" category="section-title">S3オブジェクト ストレージ</block>
+  <block id="6b10f0340ee90e881f251f6a6c1c50e5" category="paragraph"><block ref="6b10f0340ee90e881f251f6a6c1c50e5" category="inline-xref-macro-rx"></block></block>
+  <block id="980de945038567285acd832eeffc81db" category="paragraph">条件を使用することで、オブジェクトのアップロードに対して条件付き書き込みを、オブジェクトの削除に対して条件付き削除を強制できます。条件付き書き込みと削除は、オブジェクトの上書きや意図しない削除を防ぐ手段を提供します。</block>
+  <block id="2f3fb7b10644dc3204e82bf0a20ccfe1" category="paragraph">元のアクセスキーの有効期限が切れた場合でも、S3 リソースへのユーザーアクセスを維持するには、ONTAPクラスター管理者は、S3ユーザーごとに2つ目のアクセスキーを生成できます。</block>
 </blocks>
