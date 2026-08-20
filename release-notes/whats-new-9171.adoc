@@ -38,6 +38,26 @@ NOTE: AFX には、ONTAP 9.17.1 で利用可能な新機能がいくつかあり
 
 
 |===
-.関連情報
+
+
+[[storage-resource-management-enhancements]]
+== ストレージ リソース管理の機能拡張
+
+[cols="30%,70%"]
+|===
+| 更新 | 説明 
+
+
+ a| 
+xref:../manage-data/monitor-debug-storage.html[AFX ストレージ システムの監視とトラブルシューティング]
+ a| 
+NASプロトコル用に割り当てられたONTAPクラスタ上の新規作成されたSVM上に作成されたボリュームでは、ファイルシステム分析（FSA）がデフォルトで有効になっています。FSAはボリュームの作成と同時に自動的に有効化され、追加設定なしですぐに分析機能を利用できます。
+
+|===
+
+
+[[related-information]]
+== 関連情報
+
 * https://docs.netapp.com/us-en/ontap/release-notes/index.html["ONTAP 9リリース ハイライト"^]
 

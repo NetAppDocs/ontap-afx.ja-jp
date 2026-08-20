@@ -32,4 +32,5 @@ AFX システムには、各クラスターが管理するストレージを監�
 == 関連情報
 
 * link:../manage-data/prepare-manage-data.html["AFXデータを管理する準備"]
+* https://docs.netapp.com/us-en/ontap/task_nas_file_system_analytics_enable.html["ONTAPファイルシステム分析を有効にする"^]
 

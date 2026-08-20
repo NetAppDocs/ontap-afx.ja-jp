@@ -170,6 +170,10 @@ QoSポリシーグループが、短期的なパフォーマンス向上ニー�
 自動アップグレード前チェックを実行する際、エラーと警告は別々に表示されるため、アップグレード前に解決する必要のある問題を簡単に特定できます。
 
 |===
-.関連情報
+
+
+[[related-information]]
+== 関連情報
+
 * https://docs.netapp.com/us-en/ontap/release-notes/index.html["ONTAP 9リリース ハイライト"^]
 
