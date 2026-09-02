@@ -1,0 +1,205 @@
+---
+sidebar: sidebar 
+permalink: administer/remove-nodes.html 
+keywords: netapp afx, remove node, unjoin, cluster remove-node, evacuate volumes, zero-copy volume move 
+summary: NetApp AFX クラスタからストレージノードを削除する方法（ボリュームの退避、LIF の移行、HA パートナーの切断を含む）について説明します。 
+---
+= AFXストレージシステムクラスタからノードを削除する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+メンテナンスやハードウェア交換のために、AFXクラスタからノードを削除する必要がある場合があります。一度に削除できるノードは1つだけです。ノードを削除した後は、そのHAパートナーも削除する必要があります。
+
+.タスク概要
+* AFXストレージシステムの場合、すべてのストレージは単一のストレージ可用性ゾーン（SAZ）内に格納され、クラスタ内のすべてのノードからアクセス可能です。その結果、ノードが削除された場合、削除されたノードからデータをコピーする必要はありません。その代わりに、離脱するノード上のボリュームへのポインタが、残りのノード間で更新されます。これはゼロコピーボリューム移動（ZCVM）と呼ばれ、実際にはデータがコピーまたは移動されないため、瞬時に実行されます。
++
+[NOTE]
+====
+ノードを削除する前に、ZCVMで移動できないボリュームを手動で処理してください。これらには、ボリュームクローン、オフラインボリューム、元の暗号化キーが変更または再キーイングされた暗号化ボリューム、および SnapMirror クラウドを使用して復元されたボリュームが含まれます。監査ステージングボリュームとルートボリュームは、ノードの分離処理中にZCVMによって移動されます。
+
+** link:https://docs.netapp.com/us-en/ontap/nas-audit/basic-auditing-concept.html["監査ステージングボリューム"^]の詳細をご覧ください。
+** link:https://docs.netapp.com/us-en/ontap/encryption-at-rest/rekey-encrypted-volume-task.html["再キー化された暗号化ボリューム"^]の詳細をご覧ください。
+
+
+====
+* ノードをクラスタから正常に切断すると、以下の処理が行われます。
++
+** ノードを不適格とマークし、CLAMのクォーラムから除外します。
+** ノードを正常にシャットダウンし、所有権を稼働中のノードに移します。
+** ノード上のRAID高可用性（HA）状態をクリーンアップし、クラスタデータベースから削除します。
+
+
+
+
+
+
+[[step-1-prepare-to-remove-nodes-from-an-afx-cluster]]
+== ステップ1：AFXクラスタからノードを削除する準備をする
+
+AFXクラスタからノードを削除する前に、クラスタが正常であること、および削除対象のノードにデータLIFが存在しないことを確認してください。
+
+.手順
+. クラスターが正常であることを確認します。
++
+[source, cli]
+----
+cluster show
+----
+. 削除するノードがオンラインで正常な状態であることを確認します。
++
+[source, cli]
+----
+system node show -node <node> -health -epsilon
+----
+. ノード上のLIFを表示する：
++
+[source, cli]
+----
+network interface show -curr-node <node>
+----
+. ノードからデータLIFを移行する：
++
+[source, cli]
+----
+network interface migrate -vserver <SVM> -lif <LIF> -dest-node <destination_node> -dest-port <destination_port>
+----
++
+このコマンドをすべてのデータLIFに対して繰り返します。ノード上には、クラスタLIFとノード管理LIFのみを残してください。
+
+. すべてのデータ LIF が削除され、クラスタ LIF とノード管理 LIF のみがノード上に残っていることを確認します。
++
+[source, cli]
+----
+network interface show -curr-node <node>
+----
+
+
+.次は？
+準備手順が完了したら、HAペアの最初のノードをクラスターから削除し、次にそのHAパートナーを削除できます。
+
+
+
+[[step-2-unjoin-a-single-node-from-an-afx-cluster]]
+== ステップ2：AFXクラスタから単一ノードの参加を解除する
+
+AFX クラスタからノードを削除する場合は、ノードを削除するための準備に必要な手順をすべて完了させてからにしてください。クラスタからノードを削除した後は、そのノードの HA パートナーも削除する必要があります。
+
+.開始する前に
+クラスターからノードを削除する前に、link:manage-autosupport.html["AutoSupport メッセージを発行する"]して、NetApp テクニカルサポートにその旨を通知することをお勧めします。
+
+.手順
+. ノードボリュームを退避します。
++
+[source, cli]
+----
+system node evacuate-volumes start -node <node_to_remove>
+----
+. ノードボリュームが退避されていることを確認してください。
++
+[source, cli]
+----
+system node evacuate-volumes show -node <node_to_remove>
+----
++
+処理を進める前に、*保留中のカウント*が0になるまでお待ちください。ボリュームが完全に退避されるまで、イプシロンまたは適格性を移動しないでください。
+
++
+必要に応じて、 `system node evacuate-volumes abort -node <node>`コマンドを使用して退避プロセスを中止できます。
+
+. epsilonを保持するノードを特定します。
++
+[source, cli]
+----
+cluster show -epsilon true
+----
++
+.. 削除したいノードにイプシロンが含まれている場合は、イプシロンを別のノードに移動します。
++
+[source, cli]
+----
+cluster modify -node <surviving_node> -epsilon true
+----
+
+
+. 現在のプライマリノードを特定します。
++
+[source, cli]
+----
+cluster ring show
+----
++
+.. 削除しようとしているノードが現在のプライマリノードである場合は、そのノードを対象外にします。
++
+[source, cli]
+----
+cluster modify -node <node_to_remove> -eligibility false
+----
+
+
+. 残りのデータLIFのホームノードを表示します：
++
+[source, cli]
+----
+network interface show -home-node <node_to_remove>
+----
+. 残りのデータLIFのホームノードを別のノードに変更します。
++
+[source, cli]
+----
+network interface modify -vserver <SVM> -lif <LIF> -home-node <surviving_node>
+----
++
+クラスタLIFとノード管理LIFは、離脱するノード上に残しておきます。
+
+. 削除対象ノードのテイクオーバーを無効にする：
++
+[source, cli]
+----
+storage failover modify -node <node_to_remove> -enable-takeover-of false
+----
+. 削除対象のノードでテイクオーバーが無効になっていることを確認してください。
++
+[source, cli]
+----
+storage failover show
+----
++
+フェイルオーバーが無効になっている間は、HAペアでのテイクオーバーはできません。
+
+. 正常に稼働しているノードで、権限レベルをadvancedに設定します。
++
+[source, cli]
+----
+privilege set -level advanced
+----
+. ノードをクラスターから切り離します。
++
+[source, cli]
+----
+cluster remove-node -node <node_to_remove>
+----
++
+警告内容を確認してください。ジョブは「ノードの削除に成功しました」というメッセージで終了するはずです。
+
+
+
+.次の手順
+HAパートナーをクラスターから削除するには、前の手順を繰り返してください。参加していないノードの HA パートナーが削除されるまで、追加のノードを削除することはできません。
+
+
+
+[[step-3-optionally-clean-the-removed-hardware]]
+== ステップ3：必要に応じて、取り外したハードウェアを清掃します
+
+クラスターから削除したノードを再利用する場合は、クラスターに再参加させる前に、ノード構成を消去し、すべてのディスクを初期化する必要があります。
+
+.手順
+. 起動プロセス中に、プロンプトが表示されたら、Ctrl-C を押してブートメニューを表示してください。
+. ブートメニューオプション*（4）構成をクリーンアップし、すべてのディスクを初期化する*を選択します。
+
+
+.次の手順
+ `cluster add-node`コマンドを使用して、同じクラスタ内でHAペアを再利用できます。

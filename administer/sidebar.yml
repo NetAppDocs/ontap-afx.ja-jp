@@ -46,6 +46,8 @@ entries:
   entries:
   - title: クラスターを拡張
     url: "/administer/expand-cluster.html"
+  - title: クラスタからのノードの削除
+    url: "/administer/remove-nodes.html"
   - title: ONTAPのアップグレード
     url: "/administer/upgrade-ontap.html"
   - title: ファームウェアの更新

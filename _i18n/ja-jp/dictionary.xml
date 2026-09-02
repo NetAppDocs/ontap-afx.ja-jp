@@ -2113,4 +2113,55 @@
   <block id="05ac85f50d8d37906293d2e2a6c88604" category="list-text"><block ref="05ac85f50d8d37906293d2e2a6c88604" category="inline-link-rx"></block></block>
   <block id="99a1ee6766885a2da62b660dd8ea16ac" category="paragraph"><block ref="99a1ee6766885a2da62b660dd8ea16ac" category="inline-xref-macro-rx"></block></block>
   <block id="d71e1a06e0aeac0cc6a7a6eb58601633" category="paragraph">NASプロトコル用に割り当てられたONTAPクラスタ上の新規作成されたSVM上に作成されたボリュームでは、ファイルシステム分析（FSA）がデフォルトで有効になっています。FSAはボリュームの作成と同時に自動的に有効化され、追加設定なしですぐに分析機能を利用できます。</block>
+  <block id="7a5cd40812fc4b3d065db77f8ad471a2" category="summary">NetApp AFX クラスタからストレージノードを削除する方法（ボリュームの退避、LIF の移行、HA パートナーの切断を含む）について説明します。</block>
+  <block id="4e5ba73143016dcff33719a396a6a145" category="doc">AFXストレージシステムクラスタからノードを削除する</block>
+  <block id="6f0c0dcb367b5c75b40798fbe71ce6cf" category="paragraph">メンテナンスやハードウェア交換のために、AFXクラスタからノードを削除する必要がある場合があります。一度に削除できるノードは1つだけです。ノードを削除した後は、そのHAパートナーも削除する必要があります。</block>
+  <block id="4dc248d72f6d53f41520e119f1f1df61" category="list-text">AFXストレージシステムの場合、すべてのストレージは単一のストレージ可用性ゾーン（SAZ）内に格納され、クラスタ内のすべてのノードからアクセス可能です。その結果、ノードが削除された場合、削除されたノードからデータをコピーする必要はありません。その代わりに、離脱するノード上のボリュームへのポインタが、残りのノード間で更新されます。これはゼロコピーボリューム移動（ZCVM）と呼ばれ、実際にはデータがコピーまたは移動されないため、瞬時に実行されます。</block>
+  <block id="2dbbd7a8acfe4ab40ac6e02f5b4365bd" category="paragraph">ノードを削除する前に、ZCVMで移動できないボリュームを手動で処理してください。これらには、ボリュームクローン、オフラインボリューム、元の暗号化キーが変更または再キーイングされた暗号化ボリューム、および SnapMirror クラウドを使用して復元されたボリュームが含まれます。監査ステージングボリュームとルートボリュームは、ノードの分離処理中にZCVMによって移動されます。</block>
+  <block id="7b556ab7df79413da0cc234f3e94ae5c" category="inline-link-macro">監査ステージングボリューム</block>
+  <block id="b94fbeba18cc08b1ba75cabcbc2e50a0" category="list-text"><block ref="9fec2c3b1c6739fae6e26aee450a7911" category="inline-link-macro-rx"></block>の詳細をご覧ください。</block>
+  <block id="791417c8f8a45d10a1481c1cdb8725eb" category="inline-link-macro">再キー化された暗号化ボリューム</block>
+  <block id="1ddf84f2c214ffe15e58979d29d13e7e" category="list-text"><block ref="c62dc8115ddd949100052ee500f4ed05" category="inline-link-macro-rx"></block>の詳細をご覧ください。</block>
+  <block id="03f868c6a771736d2ede498b24db10fd" category="list-text">ノードをクラスタから正常に切断すると、以下の処理が行われます。</block>
+  <block id="da83a680025062a416e893d926036b59" category="list-text">ノードを不適格とマークし、CLAMのクォーラムから除外します。</block>
+  <block id="1d6d051efd8278e7af988bc240035964" category="list-text">ノードを正常にシャットダウンし、所有権を稼働中のノードに移します。</block>
+  <block id="81969b995904bbc6ec383d70d109fe78" category="list-text">ノード上のRAID高可用性（HA）状態をクリーンアップし、クラスタデータベースから削除します。</block>
+  <block id="ee564f7d2a41885a7b7c447302897684" category="section-title">ステップ1：AFXクラスタからノードを削除する準備をする</block>
+  <block id="20f6fea895a9042d4cb497b9b561472f" category="paragraph">AFXクラスタからノードを削除する前に、クラスタが正常であること、および削除対象のノードにデータLIFが存在しないことを確認してください。</block>
+  <block id="50ab3243fc412f508feaf2651e35de5a" category="list-text">クラスターが正常であることを確認します。</block>
+  <block id="6ed6db99070eb594c7294b2758336a36" category="list-text">削除するノードがオンラインで正常な状態であることを確認します。</block>
+  <block id="c8bd62f17e39fb32ef39057543588fff" category="list-text">ノード上のLIFを表示する：</block>
+  <block id="b296f30bfe1b8d15961aace982c88ede" category="list-text">ノードからデータLIFを移行する：</block>
+  <block id="b7fb269285f339c28cc4295e470228ce" category="paragraph">このコマンドをすべてのデータLIFに対して繰り返します。ノード上には、クラスタLIFとノード管理LIFのみを残してください。</block>
+  <block id="67ad2de6e0aebb768d64f688a26f3263" category="list-text">すべてのデータ LIF が削除され、クラスタ LIF とノード管理 LIF のみがノード上に残っていることを確認します。</block>
+  <block id="3f297ef15cde0668e93b35f2752fd4fd" category="paragraph-title">次は？</block>
+  <block id="af7028a97133d9d6579e0120e4d2ac54" category="paragraph">準備手順が完了したら、HAペアの最初のノードをクラスターから削除し、次にそのHAパートナーを削除できます。</block>
+  <block id="129a0f9dbb25cd859dc8156de126758f" category="section-title">ステップ2：AFXクラスタから単一ノードの参加を解除する</block>
+  <block id="9e84e50094430ea932ef692f2de2fd8d" category="paragraph">AFX クラスタからノードを削除する場合は、ノードを削除するための準備に必要な手順をすべて完了させてからにしてください。クラスタからノードを削除した後は、そのノードの HA パートナーも削除する必要があります。</block>
+  <block id="ff13cd92e9c877582383685ad84e1408" category="inline-link-macro">AutoSupport メッセージを発行する</block>
+  <block id="e1e010021551213000f9a5ad8268a504" category="paragraph">クラスターからノードを削除する前に、<block ref="389d719ba9fa696dc8807adb3c915714" category="inline-link-macro-rx"></block>して、NetApp テクニカルサポートにその旨を通知することをお勧めします。</block>
+  <block id="61ef46349dc8aeb8c96f3f89d14d2e3b" category="list-text">ノードボリュームを退避します。</block>
+  <block id="4352398a52fe792d0d9bc8cd2e093100" category="list-text">ノードボリュームが退避されていることを確認してください。</block>
+  <block id="4fa4b393f4bd68dcb2697caa0d486054" category="paragraph">処理を進める前に、*保留中のカウント*が0になるまでお待ちください。ボリュームが完全に退避されるまで、イプシロンまたは適格性を移動しないでください。</block>
+  <block id="073a5eccc26b37d386010ab2297fb4ad" category="paragraph">必要に応じて、<block ref="1800c917431345cdd794d19f800ce56a" prefix=" " category="inline-code"></block>コマンドを使用して退避プロセスを中止できます。</block>
+  <block id="2cca63e4c1d7ec175a21377faff9a6ec" category="list-text">epsilonを保持するノードを特定します。</block>
+  <block id="e23022fe3595885bf954a01c22683bad" category="list-text">削除したいノードにイプシロンが含まれている場合は、イプシロンを別のノードに移動します。</block>
+  <block id="49e8d819c7a12b23ca983a3bc99e1bdf" category="list-text">現在のプライマリノードを特定します。</block>
+  <block id="14029d6b9a69926c796b630bd649fe4a" category="list-text">削除しようとしているノードが現在のプライマリノードである場合は、そのノードを対象外にします。</block>
+  <block id="7f6abdd99160e3d3527591b98c573c7f" category="list-text">残りのデータLIFのホームノードを表示します：</block>
+  <block id="b77fc9ce12284fe9cb0ed31c9a1f86d5" category="list-text">残りのデータLIFのホームノードを別のノードに変更します。</block>
+  <block id="c9b5aae4621661ad2ffccfee6c9b3874" category="paragraph">クラスタLIFとノード管理LIFは、離脱するノード上に残しておきます。</block>
+  <block id="f73e9b92493b90c37101390646ee7ff4" category="list-text">削除対象ノードのテイクオーバーを無効にする：</block>
+  <block id="2f6504307623c74dfa94926c73a36268" category="list-text">削除対象のノードでテイクオーバーが無効になっていることを確認してください。</block>
+  <block id="398e3c6027c9ad5a579ba201dbdf1422" category="paragraph">フェイルオーバーが無効になっている間は、HAペアでのテイクオーバーはできません。</block>
+  <block id="e66ad8765eff08cc92ad6062c3b5484e" category="list-text">正常に稼働しているノードで、権限レベルをadvancedに設定します。</block>
+  <block id="8e9c4f7e32d6d0c0b5026f9b1bd4cb0e" category="list-text">ノードをクラスターから切り離します。</block>
+  <block id="248d96fc2d0062d179e38ec920bbc9a6" category="paragraph">警告内容を確認してください。ジョブは「ノードの削除に成功しました」というメッセージで終了するはずです。</block>
+  <block id="fd7d664fcabce9a7163ddf544905c254" category="paragraph">HAパートナーをクラスターから削除するには、前の手順を繰り返してください。参加していないノードの HA パートナーが削除されるまで、追加のノードを削除することはできません。</block>
+  <block id="ebe7c0cf5ca9d4767514a83c4598b75c" category="section-title">ステップ3：必要に応じて、取り外したハードウェアを清掃します</block>
+  <block id="3212383e8d23d729b6cb21418a172111" category="paragraph">クラスターから削除したノードを再利用する場合は、クラスターに再参加させる前に、ノード構成を消去し、すべてのディスクを初期化する必要があります。</block>
+  <block id="9e870c65221f5c544b31efc1da95daeb" category="list-text">起動プロセス中に、プロンプトが表示されたら、Ctrl-C を押してブートメニューを表示してください。</block>
+  <block id="5b43d3aa91abf75fd24c44f1341b2f06" category="list-text">ブートメニューオプション*（4）構成をクリーンアップし、すべてのディスクを初期化する*を選択します。</block>
+  <block id="e482842fa3fe9110a14b09a7990fc7e3" category="paragraph"><block ref="5fc60967dddffb3c388156e897d54aad" prefix=" " category="inline-code"></block>コマンドを使用して、同じクラスタ内でHAペアを再利用できます。</block>
+  <block id="92157b9dae17603751a4d60f0f94bf8c" category="sidebar">クラスタからのノードの削除</block>
 </blocks>
