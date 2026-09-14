@@ -1446,7 +1446,6 @@
   <block id="b66a2d14c1891462455fed5e4a620880" category="list-text">KMIP クライアント証明書を追加します。</block>
   <block id="a2d38e07f32f557705115c0e67b1cf0c" category="list-text">ソフトウェア暗号化を有効にするには、「*二重層暗号化*」を選択します。</block>
   <block id="de6f6891ab1d865f318115a39e658b18" category="summary">AFX データを管理する前に、主要な概念と機能について理解しておく必要があります。</block>
-  <block id="9297a6c5e1e2ce6644265b71048498d4" category="doc">AFXストレージシステムのデータを保護する準備</block>
   <block id="fd0b40056f2f1d2d8b24894a14c29204" category="paragraph">AFX データ セキュリティに関連して、知っておくべき用語がいくつかあります。</block>
   <block id="232a2b16a1710c0ed1d16548ba8bb8f1" category="list-text">ランサムウェア</block>
   <block id="1dd2239be8a1348b44deadbaab8103bb" category="list-text">デジタル証明書とPKI</block>
@@ -1681,8 +1680,6 @@
   <block id="86921103071233483e469eaa840b0e55" category="list-text">暗号化とは、適切な認証なしには簡単に読み取ることができない安全な形式にデータを変換するプロセスです。ONTAP は、保存中のデータを保護するために、ソフトウェア ベースとハードウェア ベースの両方の暗号化テクノロジを提供します。これにより、ストレージ メディアが再利用、返却、紛失、盗難された場合でも、読み取ることができなくなります。これらの暗号化ソリューションは、外部のキー管理サーバーまたはONTAPが提供するオンボード キー マネージャーを使用して管理できます。参照<block ref="c93bd16a781b45e60a7d7d16eedf487d" category="inline-link-macro-rx"></block>詳細についてはこちらをご覧ください。</block>
   <block id="420d6d4489a72885833a9c3cef85fb57" category="list-text">デジタル証明書は、公開鍵の所有権を証明するために使用される電子文書です。公開キーと関連する秘密キーは、通常、TLS や IPsec などの大規模なセキュリティ フレームワークの一部として ID を確立するなど、さまざまな方法で使用できます。これらのキーと、それをサポートするプロトコルおよびフォーマット標準は、公開キー インフラストラクチャ (PKI) の基礎を形成します。参照<block ref="e4dcc7e3ac3e4848bf64003b8c2cdc66" category="inline-link-macro-rx"></block>詳細についてはこちらをご覧ください。</block>
   <block id="04c053beb02ce1214b9f43301cc9ee58" category="list-text">インターネットプロトコルセキュリティ</block>
-  <block id="4504e962308541316b8f741529026c50" category="inline-link-macro">AFXストレージシステム上の安全なIP接続</block>
-  <block id="b434862bc36c3dfc5a3f669575381d37" category="list-text">IPsec は、IP レベルでネットワーク エンドポイント間を流れるトラフィックに対して、転送中のデータの暗号化、整合性、および認証を提供するインターネット標準です。  NFS や SMB などの上位レベルのプロトコルを含む、 ONTAPとクライアント間のすべての IP トラフィックを保護します。 IPsec は、データに対する悪意のあるリプレイ攻撃や中間者攻撃から保護します。参照<block ref="fefb8a20b2037a3c6c06f48d1c1a3c61" category="inline-link-macro-rx"></block>詳細についてはこちらをご覧ください。</block>
   <block id="4f6a6f917a61b67c18bc3831abc050e2" category="summary">IP セキュリティ (IPsec) は、ネットワーク エンドポイント間を流れるトラフィックに対して IP レベルでデータの暗号化、整合性、および認証を提供するインターネット プロトコル標準です。  IPsec を使用すると、AFX クラスターとクライアント間のフロントエンド ネットワークのセキュリティを強化できます。</block>
   <block id="ff3b00711e5ec535f68b25c53f6c52ea" category="section-title">AFX システムでの IPsec の構成</block>
   <block id="b73a4478ceeb8906001c1f76559a3230" category="inline-link">ONTAPネットワークのIPセキュリティを設定するための準備</block>
@@ -2164,4 +2161,7 @@
   <block id="5b43d3aa91abf75fd24c44f1341b2f06" category="list-text">ブートメニューオプション*（4）構成をクリーンアップし、すべてのディスクを初期化する*を選択します。</block>
   <block id="e482842fa3fe9110a14b09a7990fc7e3" category="paragraph"><block ref="5fc60967dddffb3c388156e897d54aad" prefix=" " category="inline-code"></block>コマンドを使用して、同じクラスタ内でHAペアを再利用できます。</block>
   <block id="92157b9dae17603751a4d60f0f94bf8c" category="sidebar">クラスタからのノードの削除</block>
+  <block id="b2375be1b55171fc0fe7ba669593238f" category="doc">AFXストレージシステムのデータセキュリティオプションの詳細</block>
+  <block id="37dd71b6db62e453909fcf1f5be615ed" category="inline-link-macro">AFXストレージシステム向けIPセキュリティ</block>
+  <block id="9af24b0bdb566c1fee75a1df0538116b" category="list-text">IPsecは、IPレベルでネットワークエンドポイント間を流れるトラフィックに対して、転送中のデータの暗号化、完全性、および認証を提供するインターネット標準です。これは、NFSやSMBなどの上位プロトコルを含む、ONTAPとクライアント間のすべてのIPトラフィックを保護します。IPsecは、悪意のあるリプレイ攻撃や中間者攻撃からデータを保護します。詳細については、<block ref="54df1974748af2173ffe01e9841e7cb0" category="inline-link-macro-rx"></block>を参照してください。</block>
 </blocks>
