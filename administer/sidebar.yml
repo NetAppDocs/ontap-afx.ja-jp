@@ -36,6 +36,20 @@ entries:
     url: "/administer/configure-svm.html"
   - title: SVMの移行
     url: "/administer/migrate-svm.html"
+- title: クラスターデータの管理
+  entries:
+  - title: FabricPool階層の管理
+    entries:
+    - title: FabricPool について学ぶ
+      url: "/administer/fabricpool.html"
+    - title: FabricPool の実装準備
+      url: "/administer/fabricpool-prepare.html"
+    - title: FabricPoolの設定
+      url: "/administer/fabricpool-configure.html"
+    - title: FabricPoolの管理
+      url: "/administer/fabricpool-manage.html"
+    - title: その他の考慮事項
+      url: "/administer/fabricpool-additional.html"
 - title: クラスターをサポートする
   entries:
   - title: AutoSupportの管理

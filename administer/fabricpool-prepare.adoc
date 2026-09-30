@@ -1,0 +1,67 @@
+---
+permalink: administer/fabricpool-prepare.html 
+sidebar: sidebar 
+keywords: afx, fabricpool, requirements, limitations, licensing, prepare, prerequisites, storagegrid, ontap s3 
+summary: AFFストレージシステムでFabricPoolを設定する前に、要件、制限事項、および選択したテクノロジについて十分に理解しておく必要があります。 
+---
+= AFXストレージシステムにFabricPoolを実装するための準備
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFFストレージシステムでFabricPoolを設定する前に、要件、制限事項、および選択したテクノロジについて十分に理解しておく必要があります。
+
+
+
+[[requirements]]
+== 要件
+
+AFXストレージにFabricPoolを導入する際の最も重要な要件は次のとおりです：
+
+* *ONTAPリリース。*FabricPool は、ONTAP 9.19.1 P3以降のリリースを搭載したAFXストレージシステムでサポートされています。ストレージのアドレス指定方法に内部的な変更があったため、9.18.1からアップグレードされたAFXクラスターでは、この機能はサポートされていません。
+* *オブジェクトストア。*NetApp StorageGRID または ONTAP S3 バケットが必要です。統合 ONTAP を実行している AFF および FAS ストレージと同様に、バケットはすでに存在し、データに基づいて十分な容量を備えている必要があります。証明書の検証が明示的に無効になっていない限り、CA 証明書の使用をお勧めします。
+* *ネットワーク接続。*AFXクラスタ内のすべてのノードは、オブジェクトストアへのネットワーク接続が必要です。これは、各ノードでクラスター間LIFのペアを使用して実装されます。これはAFFおよびFASシステムと同様です。
+
+
+AFX と ONTAP FabricPool の実装は非常に似ています。詳細については、 https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html["ONTAP FabricPool の使用要件"^]を参照してください。
+
+
+
+[[limitations-and-restrictions]]
+== 制限事項と制約
+
+AFX FabricPool の実装は、いくつかの点で統合 ONTAP よりも制限があります。以下の機能は、AFX の FabricPool では*サポートされていません*：
+
+* Amazon S3やGoogle Cloud StorageなどのONTAPで使用可能なパブリッククラウドオブジェクトストアは、AFXではサポートされていません。サポートされているのはStorageGRIDとONTAP S3のみです。
+* FabricPoolミラーリング。
+* 複数のオブジェクトストアバケットまたはボリューム単位のバケットのアタッチ。AFXクラスタごとに単一のクラスタレベルバケットが使用されます。
+* 最適化されたボリューム移動、最適化されたSVM移行、および最適化されたクローン スプリット。
+* AFF または FAS システムから AFX システムへの SVM の移行とマイグレーション。
+* 非アクティブデータレポート（IDR/AutoIDR）。
+
+
+
+
+[[licensing]]
+== ライセンス
+
+AFF および FAS システムでは、サードパーティのパブリッククラウドオブジェクトストアへの階層化には容量ベースの FabricPool ライセンスが必要ですが、StorageGRID または ONTAP S3 を使用する場合は追加ライセンスは不要です。AFX は StorageGRID と ONTAP S3 のみをサポートしているため、AFX FabricPool には FabricPool 容量ライセンスは不要です。
+
+
+
+[[intercluster-lifs]]
+== クラスタ間LIF
+
+クラスター間LIFは、クラスター間または外部との通信に使用される論理ネットワークインターフェースです。AFF および FAS システムでは、FabricPool HA ペアはクラウド層に到達するためにペアごとに2つのクラスター間LIFが必要であり、NetApp は回復性強化のためにクラスター間LIFの追加を推奨しています。AFX では、クラスター間LIFはオブジェクトストアとの通信にも使用されます。オブジェクトストア構成を作成する過程で、クラスター内のすべてのノード間で接続性が検証されます。
+
+
+
+[[related-information]]
+== 関連情報
+
+* https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html["ONTAP FabricPool の使用要件"^]
+* https://docs.netapp.com/us-en/ontap/peering/peering-basics-concept.html["ONTAPピアリングの基本"^]
+* https://docs.netapp.com/us-en/ontap/peering/configure-intercluster-lifs-share-data-ports-task.html["共有データポート上でONTAPインタークラスタLIFを構成する"^]
+

@@ -1,0 +1,41 @@
+---
+permalink: administer/fabricpool-manage.html 
+sidebar: sidebar 
+keywords: afx, oam, fabricpool, manage, monitor, space, tiering policy, zcvm, volume move, node join, node unjoin, flexaggr 
+summary: AFXシステムにおけるFabricPoolの継続的な管理は、AFFおよびFASシステムと同様です。スペース利用状況を監視し、ボリュームを管理し、階層化ポリシーを調整する必要があります。AFX環境には、ノードがAFXクラスタに参加または離脱する際の動作など、いくつかの注目すべき追加機能があります。 
+---
+= AFFストレージシステムのFabricPoolを管理する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFXシステムにおけるFabricPoolの継続的な管理は、AFFおよびFASシステムと同様です。スペース利用状況を監視し、ボリュームを管理し、階層化ポリシーを調整する必要があります。AFX環境には、ノードがAFXクラスタに参加または離脱する際の動作など、いくつかの注目すべき追加機能があります。
+
+
+
+[[monitor-space-and-manage-volumes]]
+== スペースを監視し、ボリューム管理を行う
+
+AFXで容量層とパフォーマンス層の使用状況を監視する手順、および定期的なボリューム管理は、一般的にONTAPで使用されるものと同じです。AFXでは、スペースレポートは分散アーキテクチャを考慮していることに注意してください。容量層の空き容量情報は、管理者が参照できるアグリゲートではなく、クラスタレベルおよびアベイラビリティゾーンのレポートを通じて確認できます。
+
+
+
+[[node-join-and-node-unjoin]]
+== ノードの参加とノードの参加解除
+
+ノード操作はAFXシステムではFabricPoolに対応しており、これはONTAPとの大きな違いです。以下の動作に注意してください。
+
+* *ノードへの参加。*ノードがAFXクラスタに参加し、クラスタオブジェクトストア構成が既に存在する場合、オブジェクトストアのアタッチが自動的にトリガーされます。アタッチが失敗した場合、ノード参加操作も失敗します。
+* *ノードの参加解除。*ノードがクラスターから切断または削除されると、そのデータには「無効」というラベルが付けられます。関連するボリュームは ZCVM を使用して再配置されます。無効になったオブジェクトのメタファイルは、そのクラウドオブジェクトへのアクセスを維持し、ガベージコレクションの対象となるように保持されます。
+
+
+
+
+[[related-information]]
+== 関連情報
+
+* https://docs.netapp.com/us-en/ontap/fabricpool/determine-data-inactive-reporting-task.html["FabricPoolの管理"^]
+* link:../administer/expand-cluster.html["AFXストレージシステムクラスターを拡張する"]
+

@@ -1,0 +1,114 @@
+---
+permalink: administer/fabricpool-additional.html 
+sidebar: sidebar 
+keywords: afx, fabricpool, mirrors, commands, cli, encryption, nve 
+summary: AFXストレージシステムにFabricPoolを導入する際には、いくつかの追加の考慮事項があります。 
+---
+= AFXストレージシステムでFabricPoolを使用する場合の追加の考慮事項
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AFXストレージシステムにFabricPoolを導入する際には、いくつかの追加の考慮事項があります。
+
+
+
+[[fabricpool-mirrors]]
+== FabricPool ミラー
+
+FabricPool mirror は階層化されたクラウドデータの高可用性構成であり、単一の FabricPool に 2 番目のオブジェクトストアを接続することによって作成されます。追加ミラーの設定が完了すると、ONTAP はデータを両方のオブジェクトストアに同時に同期的に階層化することで、災害発生時やオブジェクトストアの障害発生時にもデータへのアクセスが維持されるようにします。AFX はクラスタレベルの単一オブジェクトストアを構成するため、*FabricPool ミラーリングは AFX の初期リリースではサポートされていません。
+
+
+
+[[encryption]]
+== 暗号化
+
+暗号化は、追加設定なしでAFX上のFabricPoolで動作します。ただし、以下の点に注意してください。
+
+* AFX は NetApp Volume Encryption（NVE）をサポートしています。NetApp Aggregate Encryption（NAE）はサポートされていません。
+* NVEは、パフォーマンス層と容量層で同じキーを使用します。
+* キー再設定操作では、クラウド階層データを含むボリューム全体のデータが新しいキーで書き換えられます。
+* キー再作成操作とゼロコピーボリューム移動は同時に実行できません。
+
+
+
+
+[[alternative-administrative-interfaces]]
+== 代替管理インターフェース
+
+System Manager は、AFX 上で FabricPool を構成および管理するための主要かつ推奨される管理インターフェースです。ただし、コマンドラインインターフェイス（CLI）または REST API を使用してこれらのタスクを実行することもできます。
+
+
+
+[[command-line-interface]]
+=== コマンドライン インターフェイス
+
+AFX CLI は、クラスターへの注力とアグリゲートの廃止に対応するため、FabricPool をサポートするように再設計されました。
+
+
+
+==== クラスタレベルのオブジェクトストアコマンド
+
+以下のコマンドは、 `admin`レベルで使用でき、階層化されたデータのオブジェクトストアを管理するために使用されます。
+
+* *cluster object-store config create* StorageGRID または ONTAP S3 オブジェクトストアの構成を定義し、クラスター内のすべての flexaggr に自動的に接続します。この単一のコマンドは、統合 ONTAP で使用されていた 2 段階のプロセス （config create + attach） を置き換えます。この操作は冪等性を持ち、最初の接続が失敗した場合でも再実行できます。
+* *cluster object-store config modify* オブジェクトストア構成属性を変更します。統合 ONTAP で変更可能な属性（接続設定、認証情報、証明書オプション）と同じ属性を AFX でも変更できます。
+* *cluster object-store config rename* 既存のオブジェクトストア構成の名前を変更します。
+* *cluster object-store config show* は、接続の詳細やアタッチメントの状態など、現在のオブジェクトストア構成を表示します。
+* *cluster space show* クラスターレベルのスペース使用状況を表示します。これには、累積オブジェクトストア使用量も含まれます。出力には、クラウド層における使用済み論理容量、論理参照容量、論理非参照容量、および総物理使用容量が含まれます。
+
+
+
+
+==== ボリュームレベルの階層化コマンド（管理者モードおよび詳細モード）：
+
+階層化の動作を制御するすべての ONTAP ボリュームの作成および変更コマンドは、AFX でも同じ構文で完全にサポートされています。これには、階層化関連のパラメーターを含む標準のボリューム作成コマンドとボリューム変更コマンドが含まれます。次のものが含まれます：
+
+* -tiering-policy
+* -tiering-minimum-cooling-days
+* -cloud-retrieval-policy
+* -is-cloud-write-enabled
+* -tiering-object-tags
+
+
+ボリュームのデフォルトの階層化ポリシーは「なし」になっているため、階層化はボリュームごとに明示的に有効にする必要があります。
+
+
+
+[[rest-api]]
+=== REST API
+
+AFX 上の FabricPool REST API エンドポイントは、クラスタレベルのオブジェクトストア管理とボリュームレベルの階層化構成をサポートします。クラスタレベルのアーキテクチャのため、アグリゲートベースのエンドポイントはサポートされていません。
+
+サポートされているエンドポイントはいくつかあります：
+
+*  `/cloud/targets`用のGETおよびPOST
+* GETとPATCHは `/cloud/targets/{uuid}`
+* GET と POST（ `/storage/volumes`用）
+* `/storage/volumes/`{uuid}の GET と PATCH（以下の階層化パラメータを使用）：
++
+** tiering.policy
+** tiering.min_cooling_days
+** tiering.object_tags
+** クラウド取得ポリシー
+** cloud_write_enabled
+
+
+
+
+サポートされていないエンドポイントとパラメーターは以下のとおりです：
+
+* DELETE `/cloud/targets/{uuid}`
+* `tiering.supported parameter`ボリューム操作
+* すべての操作 `/storage/aggregates/{aggregate.uuid}/cloud-stores`
+
+
+
+
+[[related-information]]
+== 関連情報
+
+* https://docs.netapp.com/us-en/ontap/fabricpool/commands-manage-aggregates-reference.html["FabricPoolリソースを管理するためのONTAPコマンド"^]
+

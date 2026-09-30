@@ -1,0 +1,65 @@
+---
+permalink: administer/fabricpool.html 
+sidebar: sidebar 
+keywords: afx, fabricpool, tiering, data tiering, cloud tier, object store 
+summary: ONTAP 9.19.1 P3 以降では、FabricPool を設定して、AFX ストレージシステムの使用可能容量を拡張し、コストを削減して効率を向上させることができます。 
+---
+= FabricPool（AFF ストレージシステム向け）について学ぶ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 9.19.1 P3 以降では、FabricPool を設定して、AFX ストレージシステムの使用可能容量を拡張し、コストを削減して効率を向上させることができます。
+
+
+
+[[fabricpool-overview]]
+== FabricPool - 概要
+
+FabricPoolは、データの活動状況、つまり「温度」に基づいて、ハイパフォーマンスなローカル層と低コストのリモートクラウドまたは容量層の間でデータを移動させるONTAP機能です。頻繁にアクセスされる「ホット」データは高速なローカルSSDストレージに保持し、使用頻度の低い「コールド」データはより安価なオブジェクトストレージに移動します。FabricPoolはバックグラウンドで自動的かつ透過的に動作するため、アプリケーションの変更や継続的な管理作業は不要です。圧縮や重複排除などのONTAP関連ストレージ効率化機能は、データがクラウド層に移動したり、クラウド層から戻ったりする際にも維持されます。
+
+FabricPoolの階層化は、ONTAP 9.19.1 P3以降のリリースを使用するAFXストレージシステムでサポートされており、データ量の多いワークロード向けにローカル層を超えてAFXクラスタの容量を拡張します。AFXにおけるFabricPoolの実装にはいくつかのアーキテクチャ上の変更が加えられていますが、ONTAP機能のコアとなる操作と特性は変わりません。
+
+管理者は、ボリュームごとのポリシーと、非アクティブなデータが移動可能になる時期を定義する最小冷却期間を通じて、データの階層化を引き続き制御します。このポリシーベースのモデルは、高価なフラッシュ容量を再利用し、ハイブリッド ストレージ環境へのシンプルなパスを提供することで、ストレージの経済性を向上させます。これにより、階層化されたデータを保護し、アクティブな作業セットへのパフォーマンスへの影響を最小限に抑えながら、データの可用性を維持します。
+
+
+
+[[compare-aff-and-fas-with-afx-implementations]]
+== AFF と FAS を AFX 実装と比較する
+
+FabricPoolの動作は、ONTAPの種別（AFFおよびFASシステム向けの統合ONTAP、およびAFXシステム向けのAFX ONTAPパーソナリティ）全体でよく似ていますが、分散型AFXアーキテクチャにはいくつかの相違点があります。これら2つの実装を比較する上で最も重要な点を以下にまとめます。
+
+[cols="1,2,2"]
+|===
+| エリアまたは操作 | AFFおよびFASストレージ | AFXストレージ 
+
+
+| オブジェクトストアのスコープ | アグリゲートごとに2つのステップで設定します。config createしてからアタッチします。 | 単一のコマンドでクラスタレベルで設定され、クラスタごとに1つのバケットが定義されます。 
+
+
+| デフォルトの階層化ポリシー | デフォルトポリシーは `none`；階層化を開始するには、ボリュームポリシーを明示的に設定する必要があります | デフォルトポリシーは `none`；階層化を開始するには、ボリュームポリシーを明示的に設定する必要があります 
+
+
+| 温度追跡 | ボリューム単位の粒度 | ボリューム単位の粒度 
+
+
+| クラウド層プロバイダー | StorageGRID、ONTAP S3、およびいくつかの主要なパブリッククラウド | StorageGRID または ONTAP S3 のみ 
+
+
+| MetroClusterによるミラーリング | サポート | サポート対象外 
+
+
+| ボリュームの移動 | 標準および最適化されたボリューム移動 | 容量階層データを移動せずにゼロコピーボリューム移動（ZCVM）を実行する 
+|===
+
+
+[[related-information]]
+== 関連情報
+
+* https://docs.netapp.com/us-en/ontap/concepts/fabricpool-concept.html["FabricPool の基本概念"^]
+* https://docs.netapp.com/us-en/ontap/fabricpool/index.html["ONTAP FabricPoolによるデータ階層化について学ぶ"^]
+* https://docs.netapp.com/us-en/ontap-technical-reports/tiering.html["ONTAPティアリングテクニカルレポート"^]
+* link:../faq-ontap-afx.html["AFX ストレージ システムに関する FAQ"]
+
