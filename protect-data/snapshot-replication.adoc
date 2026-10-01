@@ -4,7 +4,7 @@ permalink: protect-data/snapshot-replication.html
 keywords: afx, afx system, manage replication, manage snapshot replication 
 summary: スナップショット レプリケーションは、AFX システム上の整合性グループを地理的に離れた場所にコピーするプロセスです。最初のレプリケーションの後、整合性グループへの変更は、レプリケーション ポリシーに基づいてリモート ロケーションにコピーされます。複製された整合性グループは、災害復旧やデータ移行に使用できます。 
 ---
-= AFX ストレージ システムでのスナップショット レプリケーションの管理
+= AFXストレージシステムのスナップショットレプリケーションワークフロー
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

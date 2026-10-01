@@ -1316,7 +1316,6 @@
   <block id="e2bf3258a6bd916a9b75ab07319e2aa4" category="list-text">階層的整合性グループはONTAP 9.16.1 で導入され、AFX で利用できます。階層構造では、1 つ以上の整合性グループを親の下の子として構成できます。これらの階層グループを使用すると、子の整合性グループに個別のスナップショット ポリシーを適用し、親を複製することで、すべての子のスナップショットを単一のユニットとしてリモート クラスターに複製できます。</block>
   <block id="85fdd77d0274be7a2ed2bdefd292e18c" category="list-text">SnapLockは、ファイルを一度書き込み、何度も読み取り可能な (WORM) 状態に移行して保護できるONTAP の機能です。これにより、指定された保持期間中は変更や削除が防止されます。作成されたSnapLockボリュームは、保持期間に基づいて作成後に非SnapLockボリュームから変換することはできません。</block>
   <block id="f5ec2b2f45cf6729ee766559c7aa50f1" category="summary">スナップショット レプリケーションは、AFX システム上の整合性グループを地理的に離れた場所にコピーするプロセスです。最初のレプリケーションの後、整合性グループへの変更は、レプリケーション ポリシーに基づいてリモート ロケーションにコピーされます。複製された整合性グループは、災害復旧やデータ移行に使用できます。</block>
-  <block id="1fb9148e9e8349d6e785a8abe0e5fdba" category="doc">AFX ストレージ システムでのスナップショット レプリケーションの管理</block>
   <block id="a7ee55059187c77f0db0f1191da3e6c8" category="paragraph">スナップショット レプリケーションを設定するには、AFX ストレージ システムとリモート ロケーションの間にレプリケーション関係を確立する必要があります。レプリケーション関係はレプリケーション ポリシーによって管理されます。すべてのスナップショットを複製するデフォルトのポリシーは、クラスターのセットアップ中に作成されます。デフォルトのポリシーを使用することも、オプションで新しいポリシーを作成することもできます。</block>
   <block id="bb35c8e1197f3cb1f834baa178f51fdd" category="section-title">ステップ1: クラスタピア関係を作成する</block>
   <block id="256483a2b5ed8710e7c8fdf9ce515426" category="paragraph">データをリモート クラスターに複製して保護する前に、ローカル クラスターとリモート クラスターの間にクラスター ピア関係を作成する必要があります。</block>
@@ -2332,4 +2331,5 @@
   <block id="e23d29d70657da965822a4e0ec8f546b" category="cell">デフォルトポリシーは<block ref="334c4a4c42fdb79d7ebc3e73b517e6f8" prefix=" " category="inline-code"></block></block>
   <block id="5933d9a0441d1f9543a9286674ef11b5" category="doc">AFX S3バケット管理オプション</block>
   <block id="b8efc14136159d215438d8120125f40e" category="doc">AFXストレージシステムのデータ管理について</block>
+  <block id="f71f016f7ff1ffe09fcc0bb6c3f2c337" category="doc">AFXストレージシステムのスナップショットレプリケーションワークフロー</block>
 </blocks>
