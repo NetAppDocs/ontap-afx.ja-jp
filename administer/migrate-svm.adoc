@@ -100,6 +100,6 @@ MetroCluster:: AFX ストレージ システムはNetApp MetroClusterをサポ�
 == 関連情報
 
 * https://docs.netapp.com/us-en/ontap/svm-migrate/index.html["ONTAP SVMデータモビリティ"^]
-* link:../get-started/compare-unified-ontap.html["AFXストレージシステムをAFFおよびFASシステムと比較する"]
+* link:../get-started/compare-unified-ontap.html["AFXとAFFおよびFASストレージシステムの違い"]
 * link:../faq-ontap-afx.html["AFX ストレージ システムに関する FAQ"]
 

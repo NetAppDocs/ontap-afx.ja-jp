@@ -4,7 +4,7 @@ permalink: get-started/quick-start.html
 keywords: afx, afx system, quick start 
 summary: AFX システムを最初に起動して実行するには、ハードウェア コンポーネントをインストールし、クラスターをセットアップして、クラスタと SVM を管理する準備をする必要があります。 
 ---
-= AFXストレージシステムのセットアップのクイックスタート
+= AFXストレージシステムのクイックスタート
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

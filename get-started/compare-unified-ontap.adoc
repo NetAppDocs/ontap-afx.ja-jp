@@ -4,7 +4,7 @@ permalink: get-started/compare-unified-ontap.html
 keywords: afx, afx system, compare afx, compare unified ontap 
 summary: 'NetApp AFX システムは、 AFFおよびFASストレージ上で実行されるONTAPパーソナリティ (Unified ONTAPと呼ばれる) とは異なる、カスタマイズされたONTAPパーソナリティを実行します。 AFX システムとFASシステムおよびAFFシステムとの類似点と相違点を認識しておく必要があります。これは貴重な視点を提供し、環境に AFX を展開するときに役立ちます。' 
 ---
-= AFXストレージシステムをAFFおよびFASシステムと比較する
+= AFXとAFFおよびFASストレージシステムの違い
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -106,7 +106,7 @@ AFX で使用できるONTAP CLI は、通常、 AFFおよびFASシステムで�
 == 関連情報
 
 * link:../get-started/system-design.html["AFXシステムの特徴"]
-* link:../get-started/software-architecture.html["AFXアーキテクチャの詳細"]
+* link:../get-started/software-architecture.html["AFXストレージシステムアーキテクチャ"]
 * link:../faq-ontap-afx.html["AFX ストレージ システムに関する FAQ"]
 * link:../administer/additional-ontap-cluster.html["追加のAFXクラスター管理"]
 * link:../administer/additional-ontap-svm.html["追加のAFX SVM管理"]

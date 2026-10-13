@@ -555,7 +555,6 @@
   <block id="515a19ff656ef4e9a76499b11053c88b" category="paragraph">各ノードは SAZ 内のすべてのストレージを可視化できます。ストレージ シェルフがクラスターに追加されると、 ONTAPによってディスクが自動的に追加されます。</block>
   <block id="0dffaaac24629ec57e41901c2c49b5e9" category="paragraph">AFX には、システムとユーザー オブジェクトの不均衡に対応する Automated Topology Management (ATM) と呼ばれる機能が含まれています。 ATM の主な目的は、AFX クラスター全体のボリュームのバランスを取ることです。不均衡が検出されると、アクティブ ノード全体にデータを均等に分散するための内部ジョブがトリガーされます。データは、オブジェクト メタデータのコピーと更新のみを必要とする ZCVM を使用して再割り当てされます。</block>
   <block id="1bce74755c5e5305616eddc17873d185" category="summary">NetApp AFX システムは、 AFFおよびFASストレージ上で実行されるONTAPパーソナリティ (Unified ONTAPと呼ばれる) とは異なる、カスタマイズされたONTAPパーソナリティを実行します。 AFX システムとFASシステムおよびAFFシステムとの類似点と相違点を認識しておく必要があります。これは貴重な視点を提供し、環境に AFX を展開するときに役立ちます。</block>
-  <block id="9f2c66d4e6da8c9b288f3ecdc75c974a" category="doc">AFXストレージシステムをAFFおよびFASシステムと比較する</block>
   <block id="99d6ed6b3347c27373da6da2f7b952a7" category="section-title">構成の違い</block>
   <block id="00ee6ecb3fb7eed883369282913b6d76" category="paragraph">AFX 構成がAFFおよびFASシステムと異なる領域がいくつかあります。</block>
   <block id="51d20ad0622a1bf32203f0fd69eff8ee" category="list-text">高度な容量バランス調整</block>
@@ -577,8 +576,6 @@
   <block id="863a16df67e2ceabb787910e2b537e42" category="list-text">集計管理コマンドは不要になりました</block>
   <block id="f716c6e3202ed7d92fc8348d46cf91c0" category="inline-link-macro">AFXシステムの特徴</block>
   <block id="ddd733c8c3891b4ecfcd87a0c6163694" category="list-text"><block ref="ddd733c8c3891b4ecfcd87a0c6163694" category="inline-link-macro-rx"></block></block>
-  <block id="82a5887f8adb06bd19d86cf8996f4769" category="inline-link-macro">AFXアーキテクチャの詳細</block>
-  <block id="ce3c74e16eea034f818cc30b0eea56e3" category="list-text"><block ref="ce3c74e16eea034f818cc30b0eea56e3" category="inline-link-macro-rx"></block></block>
   <block id="fc123d34fbcca975f8c6b4bcc69de12b" category="summary">NetApp AFX ストレージ システムは、 ONTAPストレージ モデルを分散型の高性能 NAS ソリューションに進化させた次世代ストレージ アーキテクチャに基づいています。  AFX は、非常に高いパフォーマンスを提供する高度なテクノロジーと処理手法により、ファイルとオブジェクトの両方のワークロードをサポートします。</block>
   <block id="eb945734dba0e6e93fb79ddc0d55d4bf" category="doc">AFXストレージシステムについて学ぶ</block>
   <block id="b03a11c36ac9c614434dc119668e67f2" category="section-title">一般的なアプリケーションのワークロード</block>
@@ -674,12 +671,10 @@
   <block id="67901f429b628d99fcc5a2d234be3c16" category="list-text"><block ref="67901f429b628d99fcc5a2d234be3c16" category="inline-link-rx"></block></block>
   <block id="be295ac553513eb5e74d13f03267efb7" category="inline-link">ONTAP CLI を使用したクラスタ管理について学習します</block>
   <block id="b1ca62b8e216e4c4af0bae762b5c33bf" category="list-text"><block ref="b1ca62b8e216e4c4af0bae762b5c33bf" category="inline-link-rx"></block></block>
-  <block id="22735d3e264cefb0543000862e7f0904" category="doc">AFXストレージシステムのセットアップのクイックスタート</block>
   <block id="d5158c215f75d40b3dc3a9efd519b60a" category="inline-link-macro">設定</block>
   <block id="0ee63ccea22773b7b711a299adc32792" category="inline-link-macro">準備する</block>
   <block id="862b23ef0c9f5a6e409d8a2a17fe80e2" category="paragraph">AFXを本番環境に導入する前に、<block ref="8b4d8002fc8012c25c048b6e7a24771f" category="inline-link-macro-rx"></block>ストレージ仮想マシン (SVM)、ユーザー、ロール、管理インターフェイスなどの管理構造を理解することで、安全で効率的かつ効果的なクラスター管理を実現します。</block>
   <block id="0a6e83c5c4575b7e80d6da08f9735aa2" category="summary">AFX アーキテクチャは、複数のハードウェア コンポーネントとソフトウェア コンポーネントで構成されています。これらのシステム コンポーネントは、さまざまなカテゴリに分類されます。</block>
-  <block id="5f22b34c52ed9e5684053416c7412701" category="doc">AFXストレージシステムアーキテクチャの詳細</block>
   <block id="ff33f3d250bf1c214d487036a93cec89" category="section-title">物理コンポーネント</block>
   <block id="bcd4325c773021c3146f76c78bf5c14d" category="paragraph">AFX を初めて使用する場合、データ センターにインストールされている物理コンポーネントの概要から始めると役立ちます。</block>
   <block id="96e16c6817f708a3a1c07d37d2e0d140" category="section-title">コントローラーノード</block>
@@ -1602,7 +1597,6 @@
   <block id="d66c3d45d2bb8165afc4400849d5ef66" category="section-title">追加の制限</block>
   <block id="110352dfc6688e1ab1d9271ac5a2552b" category="paragraph">SVM を移行する前に考慮する必要がある追加の制限があります。</block>
   <block id="937992c5285f166aa01c3633fc6cb85b" category="list-text">AFX ストレージ システムはNetApp MetroClusterをサポートしていません。これにより、SVM の移行時に制限が生じます。 MetroCluster を使用するように設定されているAFFまたはFASシステム（または Unified ONTAPパーソナリティを実行している任意のNetAppシステム）との間で AFX SVM を移行することはできません。これらの移行シナリオはサポートされていませんが、AFX 事前チェックによって明示的にブロックされることもないため、試行しないように注意する必要があります。</block>
-  <block id="372a3016fd08d93f2bfe7c10abae9936" category="list-text"><block ref="372a3016fd08d93f2bfe7c10abae9936" category="inline-link-macro-rx"></block></block>
   <block id="f090951c6f34b76fa7499153d4fd51be" category="sidebar">ハードウェアのメンテナンス</block>
   <block id="e54c3f54834f8c71fc8b62702e6e49d6" category="paragraph-title">AFX クラスターではデータはどのように割り当てられますか?</block>
   <block id="8d32ce02a0e3a054354be2b6938e411d" category="paragraph">データが割り当てられると、SAZ 内の任意のディスクに配置できます。一度データを配置したら、移動する必要はありません。ボリュームは基礎となるデータに基づいて作成され、特定のノードに割り当てられます。ボリュームは、通常はバランス調整プロセスの一環として AFX によって移動できます。これは、どのノードのNVRAMがディスクへの書き込み操作をコミットするかに影響します。ボリュームを移動すると、ボリュームを所有するノードが変わりますが、データ自体はそのまま残ります。</block>
@@ -2335,4 +2329,9 @@
   <block id="a5ca85d705ee24e667c1206bd5c112b4" category="paragraph">いいえ。AFXは、単一のストレージシェルフ内で異なるサイズのドライブを混在させることをサポートしていません。シェルフ内のドライブはすべて同じサイズでなければなりません。AFXストレージシステム構成の完全な互換性情報については、<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>を参照してください。</block>
   <block id="147085887c747ae25d5c898682fdb3b2" category="doc">AFXストレージシステムのREST APIドキュメントへのアクセス</block>
   <block id="e0bb0202db2abc666440192da58b5166" category="doc">最初のAFXストレージシステムREST API呼び出しを実行します</block>
+  <block id="9686282a3986f63a25dad9e06d5246cd" category="inline-link-macro">AFXとAFFおよびFASストレージシステムの違い</block>
+  <block id="33b4dc9eb5421a6b2e47c0f3945d1458" category="list-text"><block ref="33b4dc9eb5421a6b2e47c0f3945d1458" category="inline-link-macro-rx"></block></block>
+  <block id="bfa05672c85840c82ceb3de90233d9fc" category="inline-link-macro">AFXストレージシステムアーキテクチャ</block>
+  <block id="a061b4886dc8395b711334fbef7bb048" category="list-text"><block ref="a061b4886dc8395b711334fbef7bb048" category="inline-link-macro-rx"></block></block>
+  <block id="cffcf217d120cb1a72a68c2a76dd120c" category="doc">AFXストレージシステムのクイックスタート</block>
 </blocks>

@@ -4,7 +4,7 @@ permalink: get-started/software-architecture.html
 keywords: afx, afx system, cluster, architecture, components, physical, logical 
 summary: AFX アーキテクチャは、複数のハードウェア コンポーネントとソフトウェア コンポーネントで構成されています。これらのシステム コンポーネントは、さまざまなカテゴリに分類されます。 
 ---
-= AFXストレージシステムアーキテクチャの詳細
+= AFXストレージシステムアーキテクチャ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
