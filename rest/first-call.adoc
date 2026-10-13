@@ -4,7 +4,7 @@ permalink: rest/first-call.html
 keywords: afx, afx system, rest api, first call, curl 
 summary: 簡単な curl コマンドを発行して、AFX REST API の使用を開始し、その可用性を確認できます。 
 ---
-= 最初のAFXストレージシステムREST API呼び出し
+= 最初のAFXストレージシステムREST API呼び出しを実行します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

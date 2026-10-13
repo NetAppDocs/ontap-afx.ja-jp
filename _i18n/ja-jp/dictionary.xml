@@ -1392,7 +1392,6 @@
   <block id="51048cf34d4c82d7ae92b4e8b33ccc35" category="inline-link">ONTAP 9リリース ハイライト</block>
   <block id="858426bc9cba92152de24f66ed20c19b" category="list-text"><block ref="858426bc9cba92152de24f66ed20c19b" category="inline-link-rx"></block></block>
   <block id="a94bc3cecb41ed2607e30e4137f48423" category="summary">AFX REST API リファレンスには、すべての API 呼び出しに関する詳細が含まれています。このドキュメントは、自動化アプリケーションを開発するときに役立ちます。</block>
-  <block id="9d9d25e0255ab68716120450f05905de" category="doc">AFX ストレージ システムの REST API リファレンス</block>
   <block id="21ffe7e5e1175fdf48a61fcd9c71ff47" category="list-text">AFX クラスタ管理 LIF の IP アドレスまたは FQDN</block>
   <block id="33eb1e63e3f6eb080297d3d1813fb0fc" category="list-text">クラスタ管理者アカウントの資格情報</block>
   <block id="1aaa22d05f688af827774a38c8cc4a4f" category="list-text">Web ブラウザをクラスター管理 IP アドレスまたはドメイン名に接続します。</block>
@@ -1403,7 +1402,6 @@
   <block id="8162203e3ec38c896e5f6d688115d731" category="inline-link">ONTAP REST APIリファレンス</block>
   <block id="99ec9f1726a6519eae656fd574344d13" category="list-text"><block ref="99ec9f1726a6519eae656fd574344d13" category="inline-link-rx"></block></block>
   <block id="1b145f28c9e1e4044efc92e3e1567780" category="summary">簡単な curl コマンドを発行して、AFX REST API の使用を開始し、その可用性を確認できます。</block>
-  <block id="82c5461d1a57f884eb846ca365801e17" category="doc">最初のAFXストレージシステムREST API呼び出し</block>
   <block id="7013ac323311e3dab810263b1d637a84" category="paragraph">ローカル ワークステーションで curl ユーティリティが使用できることに加えて、次のものも必要になります。</block>
   <block id="e57ddd021ae925c610e301862e495d93" category="list-text">AFX システム クラスタ管理 LIF の IP アドレスまたは FQDN</block>
   <block id="6c62a36f8e262347f2ba79452265a020" category="list-text">ONTAP REST APIにアクセスする権限を持つアカウントのONTAP認証情報</block>
@@ -2335,4 +2333,6 @@
   <block id="320808ffdec6f54122d23d5939b758f2" category="admonition">AFXは、単一のストレージシェルフ内で異なるサイズのドライブを混在させることをサポートしていません。シェルフ内のドライブはすべて同じサイズでなければなりません。AFXストレージシステム構成の完全な互換性情報については、<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>を参照してください。</block>
   <block id="df0a5fa7367c040e26263e7f6bd5d3bb" category="paragraph-title">AFXストレージシェルフに異なるサイズのドライブを使用することはできますか？</block>
   <block id="a5ca85d705ee24e667c1206bd5c112b4" category="paragraph">いいえ。AFXは、単一のストレージシェルフ内で異なるサイズのドライブを混在させることをサポートしていません。シェルフ内のドライブはすべて同じサイズでなければなりません。AFXストレージシステム構成の完全な互換性情報については、<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="147085887c747ae25d5c898682fdb3b2" category="doc">AFXストレージシステムのREST APIドキュメントへのアクセス</block>
+  <block id="e0bb0202db2abc666440192da58b5166" category="doc">最初のAFXストレージシステムREST API呼び出しを実行します</block>
 </blocks>
