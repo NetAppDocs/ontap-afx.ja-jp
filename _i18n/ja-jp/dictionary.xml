@@ -1556,7 +1556,6 @@
   <block id="43d14ed81363c455618b5103ece599d4" category="paragraph-title">AFX ストレージ システムはいつ利用可能になりましたか? AFX でサポートされている最も古いONTAPバージョンは何ですか?</block>
   <block id="7f24225fb2bbf5b324522918a991d678" category="paragraph">AFX ストレージ システムは、2025 年 10 月のNetApp Insightカンファレンスで発表されました。AFX はONTAP 9.17.1 以降のリリースをサポートしています。詳細については、 NetApp の営業担当者にお問い合わせください。</block>
   <block id="3c9f430479263b3b25ec8e84988d27be" category="paragraph-title">FlexCache をAFX システム クラスターで使用できますか?</block>
-  <block id="d53231824f8827127654628ac3883d6c" category="paragraph">○AFX ストレージ システムは、Unified ONTAPパーソナリティを実行するAFFまたはFASシステムとの間のFlexCache をサポートします。唯一の制限は、ライトバック モードのFlexCache がAFX ではサポートされないことです。</block>
   <block id="f580013220a8ab44a2f9b864e7f6425a" category="paragraph-title">AFFまたはFASシステム (Unified ONTAPパーソナリティを実行) をSnapMirrorまたはFlexCacheの AFX システムと併用する場合、必要なONTAPのバージョンは何ですか?</block>
   <block id="4d4bcd00dec0ee009c6a6c831d33fda4" category="inline-link">NetApp AFX</block>
   <block id="7eee2dae65b99dd9a2020ea7343b8b68" category="list-text"><block ref="7eee2dae65b99dd9a2020ea7343b8b68" category="inline-link-rx"></block></block>
@@ -2334,4 +2333,5 @@
   <block id="bfa05672c85840c82ceb3de90233d9fc" category="inline-link-macro">AFXストレージシステムアーキテクチャ</block>
   <block id="a061b4886dc8395b711334fbef7bb048" category="list-text"><block ref="a061b4886dc8395b711334fbef7bb048" category="inline-link-macro-rx"></block></block>
   <block id="cffcf217d120cb1a72a68c2a76dd120c" category="doc">AFXストレージシステムのクイックスタート</block>
+  <block id="eaea4e2a08bd5c2b6c418b3299505e0f" category="paragraph">はい。AFX ストレージシステムは、unified ONTAP パーソナリティを実行している AFF または FAS システムとの間で、双方向の FlexCache をサポートしています。ただし、同じボリュームで FlexGroup Advanced Capacity Balancing が有効になっている場合は、FlexCache ライトバックを使用できません。ACB はすべてのボリュームでデフォルトで有効になっているため、FlexCache ライトバックを有効にする前に、まずオプション<block ref="decee3a1bb405f7a75c75230927c0fdc" prefix=" " category="inline-code"></block>を使用して無効にする必要があります。同じ制限は unified ONTAP にも存在します。</block>
 </blocks>
