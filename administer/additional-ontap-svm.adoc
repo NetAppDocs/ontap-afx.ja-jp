@@ -130,6 +130,10 @@ AFX 展開で構成および使用できるオプションのセキュリティ�
 
 FPolicyは、ストレージ仮想マシン（SVM）上のファイルアクセスイベントを監視および管理するために使用されるファイルアクセス通知フレームワークです。FPolicyを使用すると、定義した基準に基づいて、監視するファイル操作、および必要に応じてブロックするファイル操作を定義するポリシーを作成できます。FPolicyは、セキュリティ監査、コンプライアンス、データ ガバナンスによく使用されます。詳細については https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy ソリューション"^]をご覧ください。
 
+詳細はこちらをご覧ください https://docs.netapp.com/us-en/ontap/nas-audit/supported-file-operation-filter-fpolicy-nfsv4-concept.html["ONTAP FPolicyがNFSv4で監視する、サポートされているファイル操作とフィルタの組み合わせ"^]。
+
+詳細はこちらをご覧ください https://docs.netapp.com/us-en/ontap/nas-audit/supported-file-operation-filter-fpolicy-s3-concept.html["FPolicyがS3で監視できるサポート対象のファイル操作とフィルタの組み合わせ"^]。
+
 
 
 [[nfs-over-tls]]

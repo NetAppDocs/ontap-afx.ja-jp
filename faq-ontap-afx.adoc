@@ -63,7 +63,7 @@ AFX ストレージ システムは、2025 年 10 月のNetApp Insightカンフ�
 .AFFまたはFASシステム (Unified ONTAPパーソナリティを実行) をSnapMirrorまたはFlexCacheの AFX システムと併用する場合、必要なONTAPのバージョンは何ですか?
 AFX のSnapMirrorバージョン ルールは、Unified ONTAPと同じです。つまり、Unified ONTAPからレプリケートするには、ソース システムがサポートされているバージョン範囲内にある必要があります。  AFX からレプリケートするには、Unified ONTAPシステムがONTAP 9.16.1 以降 (Advanced Capacity Balancing 機能がサポートされている最も古いリリース) である必要があります。  FlexCacheの場合、ソースシステムと宛先システムに同じルールが適用されます。 https://www.netapp.com/pdf.html?item=/media/7336-tr4743.pdf["TR-4743"^] 。
 
-FlexGroupボリュームのサポートにはいくつかの違いがあります。  AFX 上のFlexGroupボリュームは、Writeback モードを使用するFlexCacheボリュームの元のボリュームになることはできません。
+FlexGroupボリュームのサポートにはいくつかの違いがあります。AFX上のFlexGroupボリュームは、ライトバックモードを使用するFlexCacheボリュームのオリジンボリュームにすることはできません。
 
 .AFX クラスターに対して ONTAPI (ZAPI) API 呼び出しを行うことはできますか?
 いいえ。AFX ではONTAP REST API のみがサポートされています。  ZAPI を使用する自動化コードは、AFX で使用するために REST API に変換する必要があります。
